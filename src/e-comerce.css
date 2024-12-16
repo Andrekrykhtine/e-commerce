@@ -10,11 +10,9 @@
   
 }
 
-
-
 .header{
    grid-area: header;
-    background-color: blue;
+    background-color: rgb(207, 207, 233);
 }
 .conteudo_principal{
     grid-area:main1; 
@@ -32,4 +30,13 @@ background-color: brown;
 .footer{
 grid-area: footer;
 background-color: aqua;
+}
+.header{
+    display: flex;
+    
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+    
 }
