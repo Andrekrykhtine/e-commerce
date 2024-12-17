@@ -1,0 +1,39 @@
+/* PROMOÇÃO */
+.promotion{
+    display: flex;
+    
+}
+.flex{
+    display: flex;
+    gap: 10px;
+}
+.conteudo.one{
+    background-image: url("https://placehold.co/500x200");
+    width: 500px;
+    height: 200px;
+}
+.conteudo.two{
+    background-image: url("https://placehold.co/500x200");
+    width: 500px;
+    height: 200px;
+}
+.conteudo.three{
+    background-image: url("https://placehold.co/500x200");
+    width: 500px;
+    height: 200px;
+}
+.conteudo.four{
+    background-image: url("https://placehold.co/500x200");
+    width: 500px;
+    height: 200px;
+}
+
+/* NEWS */ 
+.news{
+    display: flex;  
+
+}
+.card{
+    display:flex;
+flex-direction: column;
+}
