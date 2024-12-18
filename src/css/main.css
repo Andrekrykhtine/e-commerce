@@ -6,6 +6,7 @@
 .flex{
     display: flex;
     gap: 10px;
+    width: 100vw;
 }
 .conteudo.one{
     background-image: url("https://placehold.co/500x200");
@@ -30,10 +31,17 @@
 
 /* NEWS */ 
 .news{
-    display: flex;  
-
+  display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #fff;
+    max-width: 100vw;
+    margin: 0 auto;
 }
 .card{
     display:flex;
 flex-direction: column;
+}
+.card img{
+    width: 100px;
+    height: 200px;
 }

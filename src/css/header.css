@@ -2,9 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    align-content: space-between;
     overflow: hidden;
-    
+    width: 100vw;
+
 
 }
 .logo img{
@@ -19,16 +19,27 @@
     height: 30px;
     border-radius: 10px;
     text-align:center;
+    position:relative;
+}
+ul{
+display: flex;
+align-items: center;
 }
 .login{
-    padding: auto;
-    background-color: aliceblue;
-    font-size: 20px;
+color: #fff;
+
+font-size: 30px;
+border-radius: 12px;
+
 
 }
 .car{
-    padding: auto;  
-    background-color: aliceblue;
-    font-size: 20px;
-    margin: 30px;
+    font-size: 30px;
+    color: #fff;
+  margin:0 50px 0 50px;
+}
+.magnifying_glass{
+    position: absolute;
+   right: 39.5%;
+   font-size: 17px;
 }

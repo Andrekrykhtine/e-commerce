@@ -1,18 +1,18 @@
 .container{
     display: grid;
     grid-template-areas: 
-    "header"
-    "main1"
-    "main2"
-    "main3"
-   "footer"
-    ;
+    "header header header header"
+    "main1 main1 main1 main1"
+    "main2 main2 main2 main2"
+    "main3 main3 main3 main3"
+   "footer footer footer footer";
+width: auto;
   
 }
 
 .header{
    grid-area: header;
-    background-color: rgb(32, 32, 137);
+    background-color: #333333;
 }
 .promotion{
     grid-area:main1; 
