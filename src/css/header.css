@@ -10,13 +10,14 @@
 .logo img{
     width: 80px;
     height: 80px;
-    margin: 5px 30px 0px 20px;
-    background-color: white;
+    margin: 10px 0px 10px 60px;
+    
+    background: #fff;
     border-radius: 50%;
 }
 .search{
     width: 400px;
-    height: 30px;
+    height: 35px;
     border-radius: 10px;
     text-align:center;
     position:relative;
@@ -27,19 +28,17 @@ align-items: center;
 }
 .login{
 color: #fff;
-
-font-size: 30px;
+font-size: 15px;
 border-radius: 12px;
-
-
+font-weight: 700;
 }
 .car{
-    font-size: 30px;
+    font-size: 25px;
     color: #fff;
   margin:0 50px 0 50px;
 }
 .magnifying_glass{
     position: absolute;
-   right: 39.5%;
+   right: 36.5%;
    font-size: 17px;
 }
