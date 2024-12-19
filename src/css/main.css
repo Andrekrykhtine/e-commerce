@@ -1,0 +1,85 @@
+/* PROMOÇÃO */
+.promotion{
+    display: flex;
+    
+}
+.imagens-slider{
+    align-items: center;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.flex{
+ display: flex;
+    gap: 10px;
+    width: 100vw;
+}
+.conteudo.one{
+    background-image: url("https://placehold.co/500x200");
+    width: 500px;
+    height: 200px;
+}
+.conteudo.two{
+    background-image: url("https://placehold.co/500x200");
+    width: 500px;
+    height: 200px;
+}
+.conteudo.three{
+    background-image: url("https://placehold.co/500x200");
+    width: 500px;
+    height: 200px;
+}
+.conteudo.four{
+    background-image: url("https://placehold.co/500x200");
+    width: 500px;
+    height: 200px;
+}
+.seta-voltar, .seta-avancar{
+    position: absolute;
+    z-index: 1;
+  }
+  .seta-voltar{
+    left: 2%;
+    font-size: 30px;
+  }
+  .seta-avancar{
+    right: 4%;
+    font-size: 30px;
+  } 
+
+/* NEWS */ 
+.news{
+  display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #fff;
+    max-width: 100vw;
+    margin: 0 auto;
+}
+.card{
+    display:flex;
+flex-direction: column;
+}
+.card img{
+width: 100%;
+height: 200px;
+}
+.angles{
+    display: flex;
+
+}
+.card .descricao, .colection-news{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+/*products */
+.product{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff;
+    max-width: 100vw;
+    margin: 0 auto;
+}
