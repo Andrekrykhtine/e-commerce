@@ -73,10 +73,7 @@ height:100%;
 
 /*products */
 .produto{
-margin: 20px 0 20px;
+display: flex;
+justify-content: center;
 
-}
-.angles{
-    gap: 10px;
-    margin: 30px;
 }

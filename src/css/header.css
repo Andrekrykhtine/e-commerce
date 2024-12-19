@@ -4,8 +4,6 @@
     align-items: center;
     overflow: hidden;
     width: 100vw;
-
-
 }
 .logo img{
     width: 80px;
@@ -14,6 +12,10 @@
     
     background: #fff;
     border-radius: 50%;
+}
+.logo:hover img{
+    background: rgb(14, 29, 239);
+    transition: ease-in-out 0.3s;
 }
 .search{
     width: 400px;
@@ -39,6 +41,15 @@ font-weight: 700;
 }
 .magnifying_glass{
     position: absolute;
-   right: 36.5%;
+   right: 38.5%;
    font-size: 17px;
+   /*ajeitar para não sair no responsivo*/
 }
+.header .login:hover a{
+    color: saddlebrown;
+    transition: ease-in-out 0.3s;
+} 
+.header .car: i{
+    color: saddlebrown;
+    transition: ease-in-out 0.3s;
+} 
