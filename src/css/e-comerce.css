@@ -4,14 +4,9 @@
     "header header header header" 100px
     "main1 main1 main1 main1" 500px
     "news1 news2 news3 news4" 500px
-    "main2 main2 main2 main2" 300px
+    "product product product product" 300px
    "footer footer footer footer" 100px
     / 1fr 1fr 1fr 1fr;
-/*    
-    "cabecalho cabecalho cabecalho" 200px
-    "menu secao-principal aside" 400px
-    "rodape rodape rodape"  250px
-    / 160px auto 160px; */
 }
 
 .header{
@@ -39,8 +34,8 @@
     grid-area: news4;
     background-color: rgb(255, 0, 102);
 }
-.product{
-    grid-area: main2;
+.produto{
+    grid-area: product;
     background-color: rgb(255, 0, 0);}
 
 .footer{
