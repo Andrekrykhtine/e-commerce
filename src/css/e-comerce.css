@@ -1,13 +1,17 @@
 .container{
     display: grid;
-    grid-template-areas: 
-    "header header header header"
-    "main1 main1 main1 main1"
-    "main2 main2 main2 main2"
-    "main3 main3 main3 main3"
-   "footer footer footer footer";
-width: auto;
-  
+    grid: 
+    "header header header header" 100px
+    "main1 main1 main1 main1" 500px
+    "news1 news2 news3 news4" 500px
+    "main2 main2 main2 main2" 300px
+   "footer footer footer footer" 100px
+    / 1fr 1fr 1fr 1fr;
+/*    
+    "cabecalho cabecalho cabecalho" 200px
+    "menu secao-principal aside" 400px
+    "rodape rodape rodape"  250px
+    / 160px auto 160px; */
 }
 
 .header{
@@ -19,14 +23,26 @@ width: auto;
     background-color: red ;
 }
 
-.news{
- grid-area: main2;
+.news1{
+ grid-area: news1;
  background-color: chartreuse;
 }
-.product{
-grid-area: main3;
-background-color: brown;
+.news2{
+    grid-area: news2;
+    background-color: rgb(1, 1, 0);
 }
+.news3{
+    grid-area: news3;
+    background-color: rgb(21, 0, 255);
+}
+.news4{
+    grid-area: news4;
+    background-color: rgb(255, 0, 102);
+}
+.product{
+    grid-area: main2;
+    background-color: rgb(255, 0, 0);}
+
 .footer{
 grid-area: footer;
 background-color: aqua;
