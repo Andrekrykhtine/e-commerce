@@ -3,38 +3,65 @@
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    width: 100vw;
-}
-.logo img{
-    width: 125px;
-    height: 125px;
-    margin: 10px 0px 10px 60px;
-    
-    border-radius: 50%;
-    position: relative;
-    z-index: 1;
-}
 
-.logo2{
+}
+.fundo_logo{
     width: 80px;
     height: 80px;
     background: #fff;
     border-radius: 50%;
-    position: absolute;
-    left: 6.4%;
-}
-.logo2 a:hover {
-    background: #FF8C00;
+    position: relative;
+    display: flex; /* Para usar Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    overflow: hidden; /* Garante que nada "vaze" da borda */
+    margin-left: 30px;
     transition: ease-in-out 0.3s;
-}
+  }
+  
+  .logo img {
+    width: 120px; /* Ajusta para o tamanho do logo2 */
+    height: 120px;
+    object-fit: cover; /* Ajusta a proporção da imagem */
+  }
+  .fundo_logo:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do logo2 */
+   background-color:#FF8C00 ;
+  }
+  
+
 
 .search {
     width: 400px;
     height: 35px;
     border-radius: 10px;
-    text-align: center;
     position: relative;
-}
+    display: flex; /* Usando Flexbox */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 0 10px;
+  }
+  
+  .search input {
+    width: 100%; /* Ocupa toda a largura disponível */
+    height: 100%;
+    border: none;
+    outline: none;
+    text-align: left; /* Texto alinhado à esquerda */
+    padding-right: 40px; /* Espaço para o ícone da lupa */
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  
+  .magnifying_glass {
+    position: absolute;
+    right: 10px; /* Ajusta o ícone à direita */
+    font-size: 17px;
+    cursor: pointer;
+  }
 
 ul {
     display: flex;
@@ -54,14 +81,10 @@ ul {
     margin: 0 50px 0 50px;
 }
 
-.magnifying_glass {
-    position: absolute;
-    right: 38.5%;
-    font-size: 17px;
-    overflow: hidden;
-    /*ajeitar para não sair no responsivo*/
-}
-.header .car a:hover{
-    color: rgb(239, 59, 14);
-    transition: ease-in-out 0.3s;
+
+
+.car:hover, .login:hover {
+    color: #FF8C00;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out
 }
