@@ -2,7 +2,7 @@
     display: grid;
     grid: 
     "header header header header" 100px
-    "main1 main1 main1 main1" 300px
+    "main1 main1 main1 main1" 250px
     "news1 news2 news3 news4" 350px
     "product product product product" 300px
    "footer footer footer footer" 100px
@@ -15,7 +15,7 @@
 }
 .promotion{
     grid-area:main1; 
-    background-color:#f7f5f5 ;
+    background-color:#aeaeae ;
 }
 
 .news1{
