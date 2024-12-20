@@ -6,15 +6,25 @@
     width: 100vw;
 }
 .logo img{
-    width: 80px;
-    height: 80px;
+    width: 125px;
+    height: 125px;
     margin: 10px 0px 10px 60px;
     
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.logo2{
+    width: 80px;
+    height: 80px;
     background: #fff;
     border-radius: 50%;
+    position: absolute;
+    left: 6.4%;
 }
-.logo:hover img{
-    background: rgb(14, 29, 239);
+.logo2 a:hover {
+    background: #FF8C00;
     transition: ease-in-out 0.3s;
 }
 .search{
@@ -45,11 +55,7 @@ font-weight: 700;
    font-size: 17px;
    /*ajeitar para não sair no responsivo*/
 }
-.header .login:hover a{
-    color: saddlebrown;
+.header .car a:hover{
+    color: rgb(239, 59, 14);
     transition: ease-in-out 0.3s;
-} 
-.header .car: i{
-    color: saddlebrown;
-    transition: ease-in-out 0.3s;
-} 
+}
