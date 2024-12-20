@@ -1,55 +1,65 @@
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
     width: 100vw;
 }
-.logo img{
+
+.logo img {
     width: 80px;
     height: 80px;
     margin: 10px 0px 10px 60px;
-    
+
     background: #fff;
     border-radius: 50%;
 }
-.logo:hover img{
+
+.logo:hover img {
     background: rgb(14, 29, 239);
     transition: ease-in-out 0.3s;
 }
-.search{
+
+.search {
     width: 400px;
     height: 35px;
     border-radius: 10px;
-    text-align:center;
-    position:relative;
+    text-align: center;
+    position: relative;
 }
-ul{
-display: flex;
-align-items: center;
+
+ul {
+    display: flex;
+    align-items: center;
 }
-.login{
-color: #fff;
-font-size: 15px;
-border-radius: 12px;
-font-weight: 700;
+
+.login {
+    color: #fff;
+    font-size: 15px;
+    border-radius: 12px;
+    font-weight: 700;
 }
-.car{
+
+.car {
     font-size: 25px;
     color: #fff;
-  margin:0 50px 0 50px;
+    margin: 0 50px 0 50px;
 }
-.magnifying_glass{
+
+.magnifying_glass {
     position: absolute;
-   right: 38.5%;
-   font-size: 17px;
-   /*ajeitar para não sair no responsivo*/
+    right: 38.5%;
+    font-size: 17px;
+    overflow: hidden;
+    /*ajeitar para não sair no responsivo*/
 }
-.header .login:hover a{
+
+.header a:hover{
     color: saddlebrown;
     transition: ease-in-out 0.3s;
-} 
-.header .car:hover i{
+}
+
+.header .carr i:hover{
     color: saddlebrown;
     transition: ease-in-out 0.3s;
-} 
+}
