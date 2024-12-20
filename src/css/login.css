@@ -1,14 +1,15 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
+
 html body {
     background-color: #5366c6;
     height: 100vh;
     width: 100vw;
 }
 
-body{
+body {
     background-image: linear-gradient(to top, #5366c6, #49A09D);
 }
 
@@ -25,11 +26,38 @@ div.campo label {
     display: none
 }
 
-div.campo i{
+div.campo i {
     font-size: 1.9em;
 }
 
-div.campo input{
+.campo {
+    position: relative;
+    margin: 5px;
+}
+
+.person {
+    position: absolute;
+    background-color: #49A09D;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.key {
+    position: absolute;
+    background-color: #49A09D;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.email {
+    text-align: center;
+}
+
+.senha {
+    text-align: center;
+}
+
+div.campo input {
     width: 40%;
     height: 30px;
     border: 0.8px solid blue;
@@ -64,11 +92,11 @@ form input[type=submit] {
     margin-top: 7px;
 }
 
-form input[type=submit]:hover{
+form input[type=submit]:hover {
     background-color: aqua;
 }
 
-form button{
+form button {
     width: 40%;
     height: 30px;
     background-color: white;
@@ -82,6 +110,32 @@ form button:hover {
     color: white;
 }
 
-div#formulario{
+.esqueci {
+    display: flex;
+    justify-content: center;
+}
+
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    color: #49A09D;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 0.8px solid #49A09D;
+    margin :10px;
+}
+
+
+.carta {
+    font-size: 24px;
+    /* Tamanho do ícone */
+}
+
+
+div#formulario {
     flex-direction: column;
 }
