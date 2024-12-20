@@ -1,0 +1,17 @@
+.footer h3{
+  text-align: center;
+ 
+    
+}
+.redes_social{
+    font-size: 40px;
+    display: flex ;
+    justify-content: center;
+    margin: 20px 0px 0px 0px;
+    gap: 50px;
+}
+.redes_social a:hover{
+    color: rgb(239, 59, 14);
+    transition: ease-in-out 0.3s;
+}
+

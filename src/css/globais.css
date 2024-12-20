@@ -2,8 +2,8 @@
     display: grid;
     grid: 
     "header header header header" 100px
-    "main1 main1 main1 main1" 500px
-    "news1 news2 news3 news4" 500px
+    "main1 main1 main1 main1" 300px
+    "news1 news2 news3 news4" 350px
     "product product product product" 300px
    "footer footer footer footer" 100px
     / 1fr 1fr 1fr 1fr;
