@@ -1,70 +1,85 @@
 /* PROMOÇÃO */
-.promotion{
+.promotion {
     display: flex;
-    
+
 }
-.imagens-slider{
+
+.imagens-slider {
     align-items: center;
     position: relative;
     align-items: center;
     justify-content: center;
     display: flex;
 }
-.flex{
- display: flex;
+
+.flex {
+    display: flex;
     gap: 10px;
     width: 100vw;
 }
-.conteudo.one{
+
+.conteudo.one {
     background-image: url("https://placehold.co/500x200");
     width: 500px;
     height: 200px;
 }
-.conteudo.two{
+
+.conteudo.two {
     background-image: url("https://placehold.co/500x200");
     width: 500px;
     height: 200px;
 }
-.conteudo.three{
+
+.conteudo.three {
     background-image: url("https://placehold.co/500x200");
     width: 500px;
     height: 200px;
 }
-.conteudo.four{
+
+.conteudo.four {
     background-image: url("https://placehold.co/500x200");
     width: 500px;
     height: 200px;
 }
-.seta-voltar, .seta-avancar{
+
+.seta-voltar,
+.seta-avancar {
     position: absolute;
     z-index: 1;
-  }
-  .seta-voltar{
+}
+
+.seta-voltar {
     left: 2%;
     font-size: 30px;
-  }
-  .seta-avancar{
+}
+
+.seta-avancar {
     right: 4%;
     font-size: 30px;
-  } 
+}
 
-/* NEWS */ 
-.news{
-}
-.card{
-    display:flex;
-flex-direction: column;
-align-items: center;
-}
-.card img{
-width: 100%;
-height:100%;
-}
-.angles{
+/* NEWS */
+.news {}
+
+.card {
     display: flex;
-
+    flex-direction: column;
+    align-items: center;
 }
-.card .descricao, .colection-news{
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.angles {
+    display: flex;
+    gap: 8px;
+}
+
+.card .descricao,
+.colection-news {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -72,8 +87,8 @@ height:100%;
 }
 
 /*products */
-.produto{
-display: flex;
-justify-content: center;
+.produto {
+    display: flex;
+    justify-content: center;
 
 }
