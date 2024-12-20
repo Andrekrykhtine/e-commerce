@@ -5,7 +5,6 @@
     overflow: hidden;
     width: 100vw;
 }
-<<<<<<< HEAD
 .logo img{
     width: 125px;
     height: 125px;
@@ -19,27 +18,13 @@
 .logo2{
     width: 80px;
     height: 80px;
-=======
-
-.logo img {
-    width: 80px;
-    height: 80px;
-    margin: 10px 0px 10px 60px;
-
->>>>>>> a14a8c310c1c2a052455ff9e7dfe43c9f54fc62d
     background: #fff;
     border-radius: 50%;
     position: absolute;
     left: 6.4%;
 }
-<<<<<<< HEAD
 .logo2 a:hover {
     background: #FF8C00;
-=======
-
-.logo:hover img {
-    background: rgb(14, 29, 239);
->>>>>>> a14a8c310c1c2a052455ff9e7dfe43c9f54fc62d
     transition: ease-in-out 0.3s;
 }
 
@@ -76,19 +61,7 @@ ul {
     overflow: hidden;
     /*ajeitar para não sair no responsivo*/
 }
-<<<<<<< HEAD
 .header .car a:hover{
     color: rgb(239, 59, 14);
     transition: ease-in-out 0.3s;
-=======
-
-.header a:hover{
-    color: saddlebrown;
-    transition: ease-in-out 0.3s;
-}
-
-.header .carr i:hover{
-    color: saddlebrown;
-    transition: ease-in-out 0.3s;
->>>>>>> a14a8c310c1c2a052455ff9e7dfe43c9f54fc62d
 }
