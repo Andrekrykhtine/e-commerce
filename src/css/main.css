@@ -72,7 +72,10 @@
     height: 100%;
     border-radius: 10px;
 }
-
+.colection-news img {
+    width: 225px;
+    border-radius: 10px;
+}
 .angles {
     display: flex;
     gap: 8px;

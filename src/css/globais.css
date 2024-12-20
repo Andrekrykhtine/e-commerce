@@ -3,6 +3,7 @@
     grid: 
     "header header header header" 100px
     "main1 main1 main1 main1" 250px
+    "news news news news" 30px
     "news1 news2 news3 news4" 350px
     "product product product product" 300px
    "footer footer footer footer" 100px
@@ -17,7 +18,10 @@
     grid-area:main1; 
     background-color:#aeaeae ;
 }
-
+.news{
+    grid-area: news;
+    background-color: #333333;
+}
 .news1{
  grid-area: news1;
  background-color: chartreuse;
