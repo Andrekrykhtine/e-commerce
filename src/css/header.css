@@ -49,7 +49,7 @@ font-weight: 700;
     color: saddlebrown;
     transition: ease-in-out 0.3s;
 } 
-.header .car: i{
+.header .car:hover i{
     color: saddlebrown;
     transition: ease-in-out 0.3s;
 } 
