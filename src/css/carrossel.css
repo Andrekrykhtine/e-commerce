@@ -27,8 +27,8 @@
 .conteudo{
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-  width: 500px;
-  height: 200px;
+  max-width: 100%; /* Não ultrapassa a largura do pai */
+  max-height: 100%; /* Não ultrapassa a altura do pai */
 }
 
 .conteudo.one {
@@ -60,16 +60,40 @@
   position: absolute;
   z-index: 1;
 }
-
-.seta-voltar {
-  left: 2%;
+.seta-voltar{
+  left: 0%;
   font-size: 30px;
+  padding: 10px;
+  color: #333333;
+  background-color: #FF8C00;
+}
+.seta-avancar{
+  right: 0%;
+  font-size: 30px;
+  padding: 10px;
+  color: #333333;
+  background-color: #FF8C00;
 }
 
-.seta-avancar {
-  right: 4%;
-  font-size: 30px;
+/* .dots {
+  text-align: center;
+  margin-top: 10px;
 }
+
+.dot{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.active{
+  background: #FF8C00;
+  opacity: 0.5;
+} */
 
 .imagens-slider .slide {
   opacity: 0;

@@ -1,6 +1,10 @@
+
+
 const imagens = document.querySelectorAll('.slide');
 const setaVoltar = document.getElementById('seta-voltar');
 const setaAvancar = document.getElementById('seta-avancar');
+const btnNext = document.querySelectorAll('.swiper-button-next');
+const btnPrev = document.querySelectorAll('.swiper-button-next');
 
 let imagemAtual = 0;
 
@@ -10,6 +14,27 @@ let imagemAtual = 0;
 //     imagemAtual = (imagemAtual + 1) % imagens.length;
 //     imagens[imagemAtual].classList.add('mostrar');
 // });
+
+// const creatDots = () => {
+//   for (let i = 0; i < imagens.length; i++){
+//     const dot = document.createElement('span');
+//     dot.classList.add('dot');
+//     dotsContainer.appendChild(dot);
+//   }
+//   dotsContainer.children[imagemAtual].classList.add('active');
+// }
+
+// const updateUI = () => {
+//   imagens[imagemAtual].style.margingLeft = '0';
+//   const dots = document.querySelectorAll('.dot');
+//   dots.forEach((dot, index) => {
+//     dot.classList.remove('active');
+//   })
+//   dots[imagemAtual].classList.add('active');
+
+//   setaVoltar.disabled = imagemAtual === 0;
+//   setaAvancar.disable = imagemAtual === imagens.length - 1;
+// }
 setaAvancar.addEventListener('click', () => {
     if (imagemAtual === imagens.length - 1) {
       return;
@@ -21,6 +46,8 @@ setaAvancar.addEventListener('click', () => {
     mostrarImagem();
   
     mostrarOuEsconderSetas();
+
+    updateUI();
   });
 
 // setaVoltar.addEventListener('click', () => {
@@ -39,6 +66,8 @@ setaVoltar.addEventListener('click', () => {
     mostrarImagem();
   
     mostrarOuEsconderSetas();
+
+    updateUI();
   });
   
 
@@ -67,6 +96,8 @@ function mostrarImagem() {
     }else{
       setaAvancar.classList.remove('opacidade');
     }
-  } 
-//setaVoltar.style.display = 'none';
+  };
+
+  // creatDots();
+  // updateUI();
 

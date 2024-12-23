@@ -37,7 +37,7 @@
     grid-area: news4;
     background-color: rgb(255, 0, 102);
 }
-.produto{
+.swiper{
     grid-area: product;
     background-color: rgb(255, 0, 0);}
 
