@@ -42,6 +42,18 @@
     height: 200px;
 }
 
+.conteudo.five {
+    background-image: url("https://placehold.co/500x200");
+    width: 500px;
+    height: 200px;
+}
+
+.conteudo.six {
+    background-image: url("https://placehold.co/500x200");
+    width: 500px;
+    height: 200px;
+}
+
 .seta-voltar,
 .seta-avancar {
     position: absolute;

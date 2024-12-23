@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <link rel="shortcut icon" href="./src/images/shop-solid.svg" type="">
     <title>Login</title>
 </head>
+
 <body>
     <main>
         <section id="login">
@@ -20,20 +22,25 @@
 
                 <form action="" method="post">
                     <div class="campo">
-                        <i class="material-symbols-outlined">person</i>
-                        <input type="email" name="email" id="iemail" required placeholder="seu email">
+                        <i class="person material-symbols-outlined">person</i>
+                        <input class="email" type="email" name="email" id="iemail" required placeholder="seu email">
                         <label for="iemail">Login</label>
                     </div>
 
                     <div class="campo">
-                        <i class="material-symbols-outlined">vpn_key</i>
-                        <input type="text" name="senha" id="isenha" required placeholder="sua senha">
+                        <i class="key material-symbols-outlined">vpn_key</i>
+                        <input class="senha" type="text" name="senha" id="isenha" required placeholder="sua senha">
                         <label for="isenha">Senha</label>
                     </div>
-                    
+
+
                     <input id="submit" type="submit" value="Entrar">
-                    <button>Esqueci a senha <i class="material-symbols-outlined">mail</i></button>
-            
+                    <div class="campo esqueci">
+                        <button class="btn">
+                            <i class="carta material-symbols-outlined">mail</i>
+                            Esqueci a senha
+                        </button>
+                    </div>
                 </form>
 
                 <p>Não tem cadastro?<a href="#">cadastre-se</a></p>
@@ -44,4 +51,5 @@
         </section>
     </main>
 </body>
+
 </html>
