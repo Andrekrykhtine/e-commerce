@@ -98,17 +98,21 @@ ul {
     position: absolute;
     right: 0%;
     top: 12%;
-    text-align: right;
-    padding: 10px;
     border-radius: 10px;
-    font-size: 15px;
-    font-weight: 500;
     display: none;
     transform: translateY(-10px);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
+.menu_car p   { 
+    color: #FF8C00;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px;
+
+  }
 .menu_car.show{
   display: block;
   opacity: 1;
     transform: translateY(0);
+    z-index: 2;
 }
