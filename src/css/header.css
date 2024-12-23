@@ -79,6 +79,7 @@ ul {
     font-size: 25px;
     color: #fff;
     margin: 0 50px 0 50px;
+    position: relative;
 }
 
 
@@ -89,6 +90,25 @@ ul {
     transition: transform 0.3s ease-in-out
 }
 
-.car_produtos{
-  
+.menu_car { 
+    background-color: #333333;
+    color: #fff;
+    min-width: 200px;
+    min-height: 250px;
+    position: absolute;
+    right: 0%;
+    top: 12%;
+    text-align: right;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    display: none;
+    transform: translateY(-10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.menu_car.show{
+  display: block;
+  opacity: 1;
+    transform: translateY(0);
 }
