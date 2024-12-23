@@ -4,8 +4,6 @@
     align-items: center;
     overflow: hidden;
     background-color: #333333;
-
-
 }
 .fundo_logo{
     width: 80px;
@@ -83,8 +81,6 @@ ul {
     margin: 0 50px 0 50px;
     position: relative;
 }
-
-
 
 .car:hover, .login:hover {
     color: #FF8C00;
