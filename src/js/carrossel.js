@@ -2,6 +2,7 @@ const imagens = document.querySelectorAll('.slide');
 const setaVoltar = document.getElementById('seta-voltar');
 const setaAvancar = document.getElementById('seta-avancar');
 
+
 let imagemAtual = 0;
 
 // setaAvancar.addEventListener('click', () => {
@@ -9,6 +10,7 @@ let imagemAtual = 0;
 //     imagens[imagemAtual].classList.remove('mostrar');
 //     imagemAtual = (imagemAtual + 1) % imagens.length;
 //     imagens[imagemAtual].classList.add('mostrar');
+
 // });
 setaAvancar.addEventListener('click', () => {
     if (imagemAtual === imagens.length - 1) {
