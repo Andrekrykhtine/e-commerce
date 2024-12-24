@@ -1,7 +1,7 @@
 /* PROMOÇÃO */
 .promotion {
     display: flex;
-
+    flex-direction: row;
 }
 
 .imagens-slider {
@@ -13,9 +13,15 @@
 }
 
 .flex {
+    width: 100%;
     display: flex;
     gap: 10px;
-    width: 100vw;
+    overflow: hidden;
+    margin: 15px;
+}
+.slide{
+    display: flex;
+    gap: 10px;
 }
 
 .conteudo.one {

@@ -70,5 +70,5 @@ function mostrarImagem() {
       setaAvancar.classList.remove('opacidade');
     }
   } 
-// setaVoltar.style.display = 'none';
+//setaVoltar.style.display = 'none';
 

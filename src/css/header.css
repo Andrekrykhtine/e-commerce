@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-
+    background-color: #333333;
 }
 .fundo_logo{
     width: 80px;
@@ -79,9 +79,8 @@ ul {
     font-size: 25px;
     color: #fff;
     margin: 0 50px 0 50px;
+    position: relative;
 }
-
-
 
 .car:hover, .login:hover {
     color: #FF8C00;
@@ -89,6 +88,29 @@ ul {
     transition: transform 0.3s ease-in-out
 }
 
-.car_produtos{
-  
+.menu_car { 
+    background-color: #333333;
+    color: #fff;
+    min-width: 200px;
+    min-height: 250px;
+    position: absolute;
+    right: 0%;
+    top: 12%;
+    border-radius: 10px;
+    display: none;
+    transform: translateY(-10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.menu_car p   { 
+    color: #FF8C00;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px;
+
+  }
+.menu_car.show{
+  display: block;
+  opacity: 1;
+    transform: translateY(0);
+    z-index: 2;
 }
