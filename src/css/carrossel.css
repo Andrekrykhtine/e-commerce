@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* /* /* .imagens-slider{
     position: relative;
     height: 100vh;
@@ -39,8 +40,91 @@
     min-width: 200px; 
     max-width: 430px; 
   }
+=======
+/* PROMOÇÃO */
+.promotion {
+  display: flex;
+  flex-direction: row;
+}
 
+.imagens-slider {
+  align-items: center;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+  background-size: cover;
+  margin: 15px;
+  border-radius: 10px;  
+}
+>>>>>>> 4940010f8fc4e73b8c45c355e38565141258b146
+
+
+
+.slide {
+  display: flex;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.conteudo{
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  width: 500px;
+  height: 200px;
+}
+
+.conteudo.one {
+  background-image: url("https://placehold.co/500x200");
+}
+
+.conteudo.two {
+  background-image: url("https://placehold.co/500x200");
+}
+
+.conteudo.three {
+  background-image: url("https://placehold.co/500x200");  
+}
+
+.conteudo.four {
+  background-image: url("https://placehold.co/500x200");  
+}
+
+.conteudo.five {
+  background-image: url("https://placehold.co/500x200"); 
+}
+
+.conteudo.six {
+  background-image: url("https://placehold.co/500x200"); 
+}
+
+.seta-voltar,
+.seta-avancar {
+  position: absolute;
+  z-index: 1;
+}
+
+.seta-voltar {
+  left: 2%;
+  font-size: 30px;
+}
+
+.seta-avancar {
+  right: 4%;
+  font-size: 30px;
+}
+
+.imagens-slider .slide {
+  opacity: 0;
+  position: absolute;
+}
+
+.conteudo {
+  flex: 1;
+  min-width: 200px;
   
+<<<<<<< HEAD
   .imagens-slider .slide.mostrar{
     opacity: 1;
     position: relative;
@@ -79,3 +163,50 @@
   .botao.azul{
     color: #10ACDD;
   }   
+=======
+}
+
+
+.imagens-slider .slide.mostrar {
+  opacity: 1;
+  position: relative;
+}
+
+.opacidade {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.conteudo .titulo {
+  margin-bottom: 10px;
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+.conteudo .texto {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.conteudo .botao {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.botao.rosa {
+  color: #C50000;
+}
+
+.botao.verde {
+  color: #D9DD10;
+}
+
+.botao.laranja {
+  color: #A63A17;
+}
+
+.botao.azul {
+  color: #10ACDD;
+}
+>>>>>>> 4940010f8fc4e73b8c45c355e38565141258b146
