@@ -6,6 +6,7 @@ const setaAvancar = document.getElementById('seta-avancar');
 const btnNext = document.querySelectorAll('.swiper-button-next');
 const btnPrev = document.querySelectorAll('.swiper-button-next');
 
+
 let imagemAtual = 0;
 
 // setaAvancar.addEventListener('click', () => {
@@ -13,6 +14,7 @@ let imagemAtual = 0;
 //     imagens[imagemAtual].classList.remove('mostrar');
 //     imagemAtual = (imagemAtual + 1) % imagens.length;
 //     imagens[imagemAtual].classList.add('mostrar');
+
 // });
 
 // const creatDots = () => {
