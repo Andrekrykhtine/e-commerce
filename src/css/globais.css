@@ -37,9 +37,10 @@
     grid-area: news4;
     background-color: rgb(255, 0, 102);
 }
-.swiper{
+.product{
     grid-area: product;
-    background-color: rgb(255, 0, 0);}
+    background-color: #130c5b;
+}
 
 .footer{
 grid-area: footer;
