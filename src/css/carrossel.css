@@ -1,12 +1,13 @@
 /* PROMOÇÃO */
-.promotion {
-  display: flex;
-  flex-direction: row;
+ .promotion {
+ 
+width: 100%;
 }
 
-.promotion.swiper {
+.promotion .swiper {
+  position: absolute;
   align-items: center;
-  position: relative;
+  
   align-items: center;
   justify-content: center;
   display: flex;
@@ -17,7 +18,6 @@
 }
 
 .promotion.swiper.swiper-wrapper.swiper-slide {
-  display: flex;
   gap: 10px;
   border-radius: 10px;
 }
@@ -26,8 +26,9 @@
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   max-width: 100%; /* Não ultrapassa a largura do pai */
-  max-height: 100%; /* Não ultrapassa a altura do pai */
-}
+   max-height: 100%;}
+    /* Não ultrapassa a altura do pai 
+
 
 .promotion.swiper-slide img {
   background-image: url("https://placehold.co/500x200");
@@ -43,7 +44,7 @@
 
 /*PRODUTOS*/
 
-.produto{
+/* .produto{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,7 +93,7 @@
   padding: 10px;
   color: #333333;
   background-color: #FF8C00;
-}
+}  */
 
 /* .dots {
   text-align: center;
@@ -114,7 +115,7 @@
   opacity: 0.5;
 } */
 
-.imagens-slider .slide {
+/* .imagens-slider .slide {
   opacity: 0;
   position: absolute;
 }
@@ -167,4 +168,4 @@
 
 .botao.azul {
   color: #10ACDD;
-}
+} */ 

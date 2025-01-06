@@ -37,9 +37,9 @@
     grid-area: news4;
     background-color: rgb(255, 0, 102);
 }
-.product{
+.produto{
     grid-area: product;
-    background-color: #130c5b;
+    background-color: #c9c8da;
 }
 
 .footer{
