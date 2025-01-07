@@ -1,4 +1,4 @@
-NAO ESTÁ FUNCIONANDO 
+FTFT
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -15,6 +15,7 @@ NAO ESTÁ FUNCIONANDO
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
+    
 }
 
 .product-card {
@@ -24,10 +25,8 @@ NAO ESTÁ FUNCIONANDO
     display: none; /* Produtos inicialmente ocultos */
     animation: fadeIn 0.5s ease-in;
     background-color: #ddd;
-    z-index: 3;
-    
+    z-index: 3; 
 }
-
 .product-card.show {
     display: block;
 }
