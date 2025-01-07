@@ -8,8 +8,8 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-pagination',
         clickable: true,
     },
-    autoplay: {
-        delay: 3000, // Tempo entre as transições
-    },
+    // autoplay: {
+    //     delay: 3000, // Tempo entre as transições
+    // },
 });
 
