@@ -13,6 +13,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 80%;
+    margin-top: -15px;
+}.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card img {
@@ -26,7 +32,30 @@
 }
 .angles {
     display: flex;
+    justify-content: center;
+    width: 100%;
     gap: 8px;
+}
+
+.card .angles .botao {
+    display: grid;
+    width: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card .angles .botao i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card .angles button {
+    height: 40px;
+    border-radius: 10px;
+    
 }
 
 .card .descricao,

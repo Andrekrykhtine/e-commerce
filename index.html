@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/globais.css">
     <link rel="stylesheet" href="./src/css/header.css">
@@ -14,6 +16,12 @@
     <link rel="stylesheet" href="./src/css/promotion.css">
     <link rel="stylesheet" href="./src/css/pesquisa.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Bootstrap início -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap fim -->
+
     <script src="https://kit.fontawesome.com/4f077d5d34.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glide-js/dist/glide.min.css">
@@ -38,11 +46,12 @@
             </div>
 
             <div class="search">
-                <input type="search" class="search-input" id="searchInput" placeholder="Pesquisar..." required placeholder="input">
+                <input type="search" class="search-input" id="searchInput" placeholder="Pesquisar..." required
+                    placeholder="input">
                 <span class="magnifying_glass">🔍</span>
             </div>
-            
-            
+
+
 
             <ul class="menu">
                 <li><a class="login" href="./login.html">Login</a></li>
@@ -52,6 +61,11 @@
                         <ul id="menu_car" class="menu_car">
                             <li>
                                 <p href="#home">MEUS PRODUTOS</p>
+                                <div class="carrinho">
+                                    <!-- <button onclick="limparCarrinho()">Limpar carrinho</button> -->
+                                    <ul id="listaCarrinho"></ul>
+                                    <p>Total: R$ <span id="total">0.00</span></p>
+                                </div>
                             </li>
                             <li><a href="#about"></a></li>
                             <li><a href="#contact"></a></li>
@@ -73,10 +87,11 @@
                 <div class="swiper-wrapper um  ">
                     <!-- Slides -->
                     <div class="swiper-slide um ">
-                    <img src="./src/images/bike02.jpeg" alt="bike corrida">
+                        <img src="./src/images/bike02.jpeg" alt="bike corrida">
                     </div>
                     <div class="swiper-slide um "><img src="./src/images/bike-crianca.png" alt="bike de criança"></div>
-                    <div class="swiper-slide um "><img src="./src/images/bike-trilha.png" alt="bike de bike-trilha"></div>
+                    <div class="swiper-slide um "><img src="./src/images/bike-trilha.png" alt="bike de bike-trilha">
+                    </div>
 
                 </div>
                 <!-- If we need pagination -->
@@ -129,17 +144,22 @@
             <div class="card">
                 <h2>
                     <a href="#">
-                        <p>BIKE PRETA</p>
+                        <p>BIKE VERDE</p>
                     </a>
                 </h2>
                 <div class="colection-news">
                     <img src="https://placehold.co/200x200" alt="Bike preta">
                 </div>
+                <p style="color: white;">Preço: R$ 99,90</p>
                 <div class="angles">
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
-                    <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
+                    <div class="botao">
+                        <button type="button" class="btn btn-success" onclick="adicionarItem()">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -153,11 +173,16 @@
                 <div class="colection-news">
                     <img src="https://placehold.co/200x200" alt="Bike preta">
                 </div>
+                <p style="color: white;">Preço: R$ 220,00</p>
                 <div class="angles">
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
-                    <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
+                    <div class="botao">
+                        <button type="button" class="btn btn-success" onclick="adicionarItem()">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -166,17 +191,22 @@
             <div class="card">
                 <h2>
                     <a href="#">
-                        <p>BIKE PRETA</p>
+                        <p>BIKE AZUL</p>
                     </a>
                 </h2>
                 <div class="colection-news">
                     <img src="https://placehold.co/200x200" alt="Bike preta">
                 </div>
+                <p style="color: white;">Preço: R$ 200,00</p>
                 <div class="angles">
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
-                    <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
+                    <div class="botao">
+                        <button type="button" class="btn btn-success" onclick="adicionarItem()">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -184,17 +214,22 @@
             <div class="card">
                 <h2>
                     <a href="#">
-                        <p>BIKE PRETA</p>
+                        <p>BIKE VERMELHA</p>
                     </a>
                 </h2>
                 <div class="colection-news">
                     <img src="https://placehold.co/200x200" alt="Bike preta">
                 </div>
+                <p style="color: white;">Preço: R$ 150,90</p>
                 <div class="angles">
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
-                    <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
+                    <div class="botao">
+                        <button type="button" class="btn btn-success" onclick="adicionarItem()">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
