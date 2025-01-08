@@ -51,20 +51,24 @@
                 <span class="magnifying_glass">🔍</span>
             </div>
 
-
-
             <ul class="menu">
                 <li><a class="login" href="./login.html">Login</a></li>
+                
                 <li>
+        
                     <div>
+            
                         <button id="car" href="#"><i class="car fa-solid fa-cart-shopping"></i></button>
                         <ul id="menu_car" class="menu_car">
+                            
                             <li>
+                                
                                 <p href="#home">MEUS PRODUTOS</p>
                                 <div class="carrinho">
                                     <!-- <button onclick="limparCarrinho()">Limpar carrinho</button> -->
                                     <ul id="listaCarrinho"></ul>
                                     <p>Total: R$ <span id="total">0.00</span></p>
+                                    <button class="btn btn-success" onclick="finalizarCompra()">Finalizar compra</button>
                                 </div>
                             </li>
                             <li><a href="#about"></a></li>
@@ -72,8 +76,11 @@
                         </ul>
                     </div>
                 </li>
+                <div class="cart-icon">
+                    <i class="fa-shopping-cart fa-2x"></i>
+                    <span class="cart-counter">0</span>
+                </div>
             </ul>
-
 
         </div>
 
@@ -141,7 +148,7 @@
         </div>
         <h2 class="news">Confira nossas novidades</h2>
         <div class="news1">
-            <div class="card">
+            <div class="card produto" data-id="1">
                 <h2>
                     <a href="#">
                         <p>BIKE VERDE</p>
@@ -150,13 +157,13 @@
                 <div class="colection-news">
                     <img src="https://placehold.co/200x200" alt="Bike preta">
                 </div>
-                <p style="color: white;">Preço: R$ 99,90</p>
+                <p id="preco" class="preco" style="color: white;">R$ 99,50</p>
                 <div class="angles">
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
                     <div class="botao">
-                        <button type="button" class="btn btn-success" onclick="adicionarItem()">
+                        <button type="button" class="btn btn-success" onclick="adicionarItem(this)" title="Adicionar ao carrinho">
                             <i class="fas fa-plus"></i>
                         </button>
                     </div>
@@ -164,7 +171,7 @@
             </div>
         </div>
         <div class="news2">
-            <div class="card">
+            <div class="card produto" data-id="2">
                 <h2>
                     <a href="#">
                         <p>BIKE PRETA</p>
@@ -173,13 +180,13 @@
                 <div class="colection-news">
                     <img src="https://placehold.co/200x200" alt="Bike preta">
                 </div>
-                <p style="color: white;">Preço: R$ 220,00</p>
+                <p id="preco" class="preco" style="color: white;">R$ 220,00</p>
                 <div class="angles">
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
                     <div class="botao">
-                        <button type="button" class="btn btn-success" onclick="adicionarItem()">
+                        <button type="button" class="btn btn-success" onclick="adicionarItem(this)" title="Adicionar ao carrinho">
                             <i class="fas fa-plus"></i>
                         </button>
                     </div>
@@ -188,7 +195,7 @@
         </div>
         <div class="news3">
 
-            <div class="card">
+            <div class="card produto" data-id="3">
                 <h2>
                     <a href="#">
                         <p>BIKE AZUL</p>
@@ -197,13 +204,13 @@
                 <div class="colection-news">
                     <img src="https://placehold.co/200x200" alt="Bike preta">
                 </div>
-                <p style="color: white;">Preço: R$ 200,00</p>
+                <p id="preco" class="preco" style="color: white;">R$ 200,00</p>
                 <div class="angles">
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
                     <div class="botao">
-                        <button type="button" class="btn btn-success" onclick="adicionarItem()">
+                        <button type="button" class="btn btn-success" onclick="adicionarItem(this)" title="Adicionar ao carrinho">
                             <i class="fas fa-plus"></i>
                         </button>
                     </div>
@@ -211,7 +218,7 @@
             </div>
         </div>
         <div class="news4">
-            <div class="card">
+            <div class="card produto" data-id="4">
                 <h2>
                     <a href="#">
                         <p>BIKE VERMELHA</p>
@@ -220,13 +227,13 @@
                 <div class="colection-news">
                     <img src="https://placehold.co/200x200" alt="Bike preta">
                 </div>
-                <p style="color: white;">Preço: R$ 150,90</p>
+                <p id="preco" class="preco" style="color: white;">R$ 150,90</p>
                 <div class="angles">
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
                     <div class="botao">
-                        <button type="button" class="btn btn-success" onclick="adicionarItem()">
+                        <button type="button" class="btn btn-success" onclick="adicionarItem(this)" title="Adicionar ao carrinho">
                             <i class="fas fa-plus"></i>
                         </button>
                     </div>

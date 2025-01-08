@@ -37,6 +37,12 @@
     gap: 8px;
 }
 
+.angles .price {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 .card .angles .botao {
     display: grid;
     width: 50px;
