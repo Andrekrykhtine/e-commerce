@@ -60,8 +60,7 @@
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #fff;
-    padding: 0 10px;
-    top: 20px;
+ 
   }
   
   .search input {
@@ -173,7 +172,19 @@ ul {
   font-size: 12px;
   font-weight: bold;
 }
-
+.nav-menu-list{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #3b3b3b;
+}
+.nav-menu-item{
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+ 
+}
 .nav-menu-item a{
   all: unset;
     text-decoration: none;

@@ -2,6 +2,7 @@
     display: grid;
     grid: 
     "header header header header" 100px
+    "nav nav nav nav" 45px
     "main1 main1 main1 main1" 350px
     "news news news news" 70px
     "news1 news2 news3 news4" 350px
@@ -12,6 +13,10 @@
 
 .header{
    grid-area: header;
+}
+.nav-header-plus{
+    grid-area: nav ;
+    background-color: #aeaeae;
 }
 .promotion{
     grid-area:main1;
