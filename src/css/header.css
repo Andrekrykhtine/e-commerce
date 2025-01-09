@@ -173,3 +173,13 @@ ul {
   font-size: 12px;
   font-weight: bold;
 }
+
+.nav-menu-item a{
+  all: unset;
+    text-decoration: none;
+    color: inherit;
+  color: #FF8C00;
+}
+.meus_produtos{
+  text-align:center
+}

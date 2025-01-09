@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+    
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/globais.css">
     <link rel="stylesheet" href="./src/css/header.css">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./src/css/promotion.css">
     <link rel="stylesheet" href="./src/css/pesquisa.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
+    
     <!-- Bootstrap início -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -76,10 +76,13 @@
 
                             <li>
 
-                                <p href="#home">MEUS PRODUTOS</p>
+                                <p class="meus_produtos" href="#home">MEUS PRODUTOS</p>
                                 <div class="carrinho">
                                     <!-- <button onclick="limparCarrinho()">Limpar carrinho</button> -->
                                     <ul id="listaCarrinho"></ul>
+                                    <div id="carrinhoVazio" >
+                                        <p>Seu carrinho está vazio</p>
+                                    </div>
                                     <p>Total: R$ <span id="total">0.00</span></p>
                                     <button class="btn btn-success" onclick="finalizarCompra()">Finalizar
                                         compra</button>

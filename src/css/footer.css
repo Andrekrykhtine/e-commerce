@@ -1,8 +1,9 @@
 .footer h3{
-  text-align: center;
- 
-    
+  text-align: center; 
 }
+.footer {
+  background-color: #333333;
+} 
 .redes_sociais{
     font-size: 40px;
     display: flex ;
