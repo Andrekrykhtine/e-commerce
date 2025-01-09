@@ -21,10 +21,14 @@
      align-content: center;
     
    }
-   .swiper-slide img {
-     width: 100%;
-     height: 100%;
-   }
+   .swiper-slide.dois img {
+  
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Preenche o contêiner sem distorção */
+    max-width: 33%; /* Impede que a imagem ultrapasse o tamanho original */
+
+}
+   
    .swiper-button-next.dois,
    .swiper-button-prev.dois {
      color: #FF8C00;
