@@ -160,6 +160,7 @@ function atualizarCarrinho() {
             <span class="remover-item" onclick="removerItem('${produto.id}')">
                 <i class="fas fa-trash"></i>
             </span>
+            <hr style="border: 0.5px solid #ccc;">
         `;
         listaCarrinho.appendChild(li);
     });
