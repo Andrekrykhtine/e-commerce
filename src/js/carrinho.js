@@ -104,8 +104,11 @@ function adicionarItem(button) {
         contador.style.transform = 'scale(1.2)';
         setTimeout(() => {
             contador.style.transform = 'scale(1)';
-        }, 200);
+        }, 100);
+    } else {
+        contador.textContent = carrinho.remove();
     }
+
     
     // Adiciona efeito visual de confirmação
     button.classList.remove('btn-success');
@@ -129,6 +132,18 @@ function removerItem(id) {
     
     // Remove o produto do carrinho
     carrinho = carrinho.filter(item => item.id !== id);
+
+    // IMPORTANTE: Atualiza o contador aqui
+    const contador = document.querySelector('.cart-counter');
+    if (contador) {
+        contador.textContent = carrinho.length;
+        
+        // Adiciona animação ao decrementar
+        contador.style.transform = 'scale(0.8)';
+        setTimeout(() => {
+            contador.style.transform = 'scale(1)';
+        }, 200);
+    }
     
     // Atualiza a lista visual do carrinho
     atualizarCarrinho();
