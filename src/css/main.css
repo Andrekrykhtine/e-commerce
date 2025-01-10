@@ -25,7 +25,7 @@
 }
 .colection-news img {
     width: 225px;
-    border-radius: 10px;
+    height: 225px;
 }
 .angles {
     display: flex;
