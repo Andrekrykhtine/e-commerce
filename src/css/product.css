@@ -23,11 +23,11 @@
    }
    .swiper-slide.dois img {
   
-    height: auto; /* Mantém a proporção da imagem */
-    object-fit: cover; /* Preenche o contêiner sem distorção */
-    max-width: 33%; /* Impede que a imagem ultrapasse o tamanho original */
-
+    width: 100%; /* Ou qualquer largura desejada */
+    height: 100%; /* Ou qualquer altura desejada */
+    object-fit: contain; /* Mantém a proporção e ajusta a imagem dentro do contêiner */
 }
+
    
    .swiper-button-next.dois,
    .swiper-button-prev.dois {
