@@ -8,8 +8,9 @@
     display: grid;
     grid: 
     "header header header header" 100px
+    "nav nav nav nav" 45px
     "main1 main1 main1 main1" 350px
-    "news news news news" 50px
+    "news news news news" 70px
     "news1 news2 news3 news4" 350px
     "product product product product" 300px
    "footer footer footer footer" 100px
@@ -19,36 +20,45 @@
 .header{
    grid-area: header;
 }
+.nav-header-plus{
+    grid-area: nav ;
+    background-color: #aeaeae;
+}
 .promotion{
     grid-area:main1;
     background-color:#aeaeae ;
 }
 .news{
     grid-area: news;
+    background-color:#aeaeae 
    
 }
 .news1{
  grid-area: news1;
- background-color: chartreuse;
+ background-color:#aeaeae 
 }
 .news2{
     grid-area: news2;
-    background-color: rgb(1, 1, 0);
+    background-color:#aeaeae 
 }
 .news3{
     grid-area: news3;
-    background-color: rgb(21, 0, 255);
+    background-color:#aeaeae 
 }
 .news4{
     grid-area: news4;
-    background-color: rgb(255, 0, 102);
+    background-color:#aeaeae 
 }
 .produto{
     grid-area: product;
-    background-color: #c9c8da;
+    background-color:#aeaeae 
 }
 
 .footer{
 grid-area: footer;
 background-color: aqua;
+}
+
+.empty-cart {
+    display: none;
 }

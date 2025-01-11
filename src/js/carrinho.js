@@ -1,5 +1,6 @@
 const car = document.getElementById('car');
 const menuCar = document.getElementById('menu_car');
+const emptyCart = document.getElementById('emptyCart');
 
 car.addEventListener('click', () => {
     menuCar.classList.toggle('show');
@@ -151,8 +152,14 @@ function removerItem(id) {
 
 function atualizarCarrinho() {
     const listaCarrinho = document.getElementById('listaCarrinho');
+    const mensagemVazio = document.getElementById('carrinhoVazio');
     listaCarrinho.innerHTML = '';
-    
+
+    carrinho.length === 0 
+        ? (mensagemVazio.style.display = 'block', listaCarrinho.style.display = 'none')
+        : (mensagemVazio.style.display = 'none', 
+           listaCarrinho.style.display = 'block',
+
     carrinho.forEach(produto => {
         const li = document.createElement('li');
         li.innerHTML = `
@@ -162,6 +169,9 @@ function atualizarCarrinho() {
             </span>
             <hr style="border: 0.5px solid #ccc;">
         `;
+
         listaCarrinho.appendChild(li);
-    });
-}
+    
+        }));
+    }
+

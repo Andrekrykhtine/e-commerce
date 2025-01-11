@@ -14,8 +14,15 @@ html{
 ul, li{
     list-style: none;
 }  
+
 button {
     all: unset; /* Remove todas as propriedades padrão */
     display: inline-block; /* Garante que o botão seja exibido corretamente */
     cursor: pointer; /* Adiciona o cursor de "mão" */
+}
+
+a{
+    all: unset;
+    text-decoration: none;
+    color: inherit;
 }
