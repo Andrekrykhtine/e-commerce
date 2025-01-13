@@ -35,7 +35,7 @@
         rel="stylesheet">
     <link rel="shortcut icon" href="./src/images/shop-solid.svg" type="">
 
-    <title>Home</title>
+    <title>Click & Buy </title>
 </head>
 
 <body>
@@ -52,26 +52,7 @@
                         placeholder="input">
                     <span class="magnifying_glass">🔍</span>
                 </div>
-                <!-- Estrutura HTML ajustada -->
-                <div id="nav" class="nav-header-plus">
-                    <ul id="nav-menu" class="nav-menu">
-                        <li id="category" class="nav-menu-item-category">
-                            <a href="#" class="category-button">
-                                Categorias <i class="fas fa-chevron-down"></i>
-                            </a>
-                            <div class="category-dropdown" id="categoryDropdown">
-                                <ul class="dropdown-list">
-                                    <li><a href="#"><i class="fas fa-mobile-alt"></i> Eletrônicos</a></li>
-                                    <li><a href="#"><i class="fas fa-tshirt"></i> Roupas</a></li>
-                                    <li><a href="#"><i class="fas fa-glasses"></i> Acessórios</a></li>
-                                    <li><a href="#"><i class="fas fa-shoe-prints"></i> Calçados</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-menu-item"><a href="#">Ofertas</a></li>
-                        <li class="nav-menu-item"><a href="#">Sobre</a></li>
-                    </ul>
-                </div>
+               
             </div>
 
 
@@ -113,10 +94,23 @@
         </div>
         <div class="nav-header-plus">
             <div class="nav-menu">
-                <ul class="nav-menu-list">
-                    <li class="nav-menu-item"><a href="#">Categorias</a></li>
+                <ul id="nav-menu" class="nav-menu">
+                    <li id="category" class="nav-menu-item-category">
+                        <a href="#" class="category-button">
+                            Categorias <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="category-dropdown" id="categoryDropdown">
+                            <ul class="dropdown-list">
+                                <li><a href="#"><i class="fas fa-mobile-alt"></i> Eletrônicos</a></li>
+                                <li><a href="#"><i class="fas fa-tshirt"></i> Roupas</a></li>
+                                <li><a href="#"><i class="fas fa-glasses"></i> Acessórios</a></li>
+                                <li><a href="#"><i class="fas fa-shoe-prints"></i> Calçados</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li class="nav-menu-item"><a href="#">Ofertas</a></li>
-                    <li class="nav-menu-item"><a href="#">Sobre</a></li>
+                    <li class="nav-menu-item"><a href="#news1">Novidades</a></li>
+                    <li class="nav-menu-item"><a href="#footer">Sobre</a></li>
                 </ul>
             </div>
         </div>
@@ -124,7 +118,7 @@
             <!-- Os produtos serão inseridos aqui via JavaScript -->
         </div>
 
-        <div class="promotion">
+        <div class="promotion" id="promotion">
             <div class="swiper ">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper um  ">
@@ -182,8 +176,8 @@
             </div> -->
 
         </div>
-        <h2 class="news">Confira nossas novidades</h2>
-        <div class="news1">
+        <h2 class="news" >Confira nossas novidades</h2>
+        <div class="news1" id="news1">
             <div class="card produto" data-id="1">
                 <h2>
                     <a href="#">
@@ -302,7 +296,7 @@
             </div>
         </div>
 
-        <div class="footer">
+        <div class="footer" id="footer">
             <ul class="redes_sociais">
                 <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
