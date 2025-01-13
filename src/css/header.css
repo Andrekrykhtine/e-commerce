@@ -25,7 +25,6 @@
   align-items: flex-start;
 }
 
-<<<<<<< HEAD
 .nav-header-plus ul li {
   display: flex;
   justify-content: space-between;
@@ -102,63 +101,6 @@
   font-size: 17px;
   cursor: pointer;
 }
-=======
-.fundo_logo{
-    width: 80px;
-    height: 80px;
-    background: #fff;
-    border-radius: 50%;
-    position: relative;
-    display: flex; /* Para usar Flexbox */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    overflow: hidden; /* Garante que nada "vaze" da borda */
-    margin-left: 30px;
-    transition: ease-in-out 0.3s;
-  }
-  
-  .logo img {
-    width: 120px; /* Ajusta para o tamanho do logo2 */
-    height: 120px;
-    object-fit: cover; /* Ajusta a proporção da imagem */
-  }
-
-  .fundo_logo:hover {
-    transform: scale(1.1); /* Aumenta o tamanho do logo2 */
-   background-color:#FF8C00 ;
-  }
-  
-.search {
-    width: 400px;
-    height: 35px;
-    border-radius: 10px;
-    position: relative;
-    display: flex; /* Usando Flexbox */
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #fff;
-   }
-  
-  .search input {
-    width: 100%; /* Ocupa toda a largura disponível */
-    height: 100%;
-    border: none;
-    outline: none;
-    text-align: left; /* Texto alinhado à esquerda */
-    padding-right: 40px; /* Espaço para o ícone da lupa */
-    font-size: 16px;
-    border-radius: 10px;
-  }
-  
-  .magnifying_glass {
-    position: absolute;
-    right: 10px; /* Ajusta o ícone à direita */
-    font-size: 17px;
-    cursor: pointer;
-  }
->>>>>>> f45b5650fe0240d73ac2e1b569a980b34cdc1387
 
 ul {
   display: flex;
@@ -255,7 +197,6 @@ ul {
   font-size: 12px;
   font-weight: bold;
 }
-<<<<<<< HEAD
 
 /* Menu de navegação  */
 
@@ -369,27 +310,4 @@ body {
 
 .category-dropdown.active {
   animation: fadeIn 0.3s ease;
-=======
-.nav-menu-list{
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  gap: 20px;
-  background-color: #3b3b3b;
-}
-.nav-menu-item{
-  font-size: 20px;
-  color: #fff;
-  font-weight: 700;
- 
-}
-.nav-menu-item a{
-  all: unset;
-    text-decoration: none;
-    color: inherit;
-  color: #FF8C00;
-}
-.meus_produtos{
-  text-align:center
->>>>>>> f45b5650fe0240d73ac2e1b569a980b34cdc1387
 }
