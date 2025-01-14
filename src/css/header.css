@@ -15,7 +15,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  min-height: 100%;
 }
 
 .nav-header ul {
@@ -62,34 +62,27 @@
   background-color: #FF8C00;
 }
 
-
-
 .search {
   width: 400px;
   height: 35px;
   border-radius: 10px;
   position: relative;
   display: flex;
-  /* Usando Flexbox */
   justify-content: center;
   align-items: center;
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #fff;
-  padding: 0 10px;
-  top: 20px;
+  padding: 0 20px;
 }
 
 .search input {
   width: 100%;
-  /* Ocupa toda a largura disponível */
   height: 100%;
   border: none;
   outline: none;
   text-align: left;
-  /* Texto alinhado à esquerda */
   padding-right: 40px;
-  /* Espaço para o ícone da lupa */
   font-size: 16px;
   border-radius: 10px;
 }
@@ -312,4 +305,124 @@ body {
 
 .category-dropdown.active {
   animation: fadeIn 0.3s ease;
+}
+
+/* Base styles remain the same until the breakpoints */
+
+/* Large tablets and smaller (max-width: 992px) */
+@media screen and (max-width: 992px) {
+  .header {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+
+  .fundo_logo {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .search {
+    width: 300px;
+    margin: 10px 0;
+  }
+
+  .nav-header ul {
+    gap: 25px;
+  }
+
+  .car {
+    margin: 0 25px;
+  }
+
+  .menu {
+    margin-top: 15px;
+  }
+}
+
+/* Medium tablets and smaller (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .search {
+    width: 250px;
+  }
+
+  .nav-header ul {
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .cart-counter {
+    right: -80px;
+  }
+
+  .menu_car {
+    right: 50%;
+    transform: translateX(50%) translateY(-10px);
+    top: 100%;
+  }
+
+  .menu_car.show {
+    transform: translateX(50%) translateY(0);
+  }
+}
+
+/* Mobile phones (max-width: 576px) */
+@media screen and (max-width: 576px) {
+  .header {
+    padding: 10px;
+  }
+
+  .fundo_logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .search {
+    width: 200px;
+  }
+
+  .nav-header ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .car {
+    margin: 15px 0;
+  }
+
+  .menu_car {
+    min-width: 90%;
+    right: 5%;
+    transform: translateY(-10px);
+  }
+
+  .menu_car.show {
+    transform: translateY(0);
+  }
+
+  .carrinho {
+    margin: 0 20px;
+  }
+
+  .cart-counter {
+    right: -25px;
+    top: -10px;
+  }
 }

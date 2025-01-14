@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
+
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/globais.css">
     <link rel="stylesheet" href="./src/css/header.css">
@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="./src/css/promotion.css">
     <link rel="stylesheet" href="./src/css/pesquisa.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    
+    <link rel="stylesheet" href="./src/css/menu.css">
+
     <!-- Bootstrap início -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -45,53 +46,63 @@
             <div class="fundo_logo">
                 <a class="logo" href="#"><img src="./src/images/logosemfundo.png" alt="logo do site"></a>
             </div>
+            <div id="menu-haburguer">
+                <div id="menu-bar" onclick="menuOnClick()">
+                    <div id="menu-bar" onclick="menuOnClick()">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+                    </div>
+                    
+                    <nav class="nav" id="nav">
+                        <div class="nav-header">
+                            <div class="search">
+                                <input type="search" class="search-input" id="searchInput" placeholder="Pesquisar..."
+                                    required placeholder="input">
+                                <span class="magnifying_glass">🔍</span>
+                            </div>
 
-            <div class="nav-header">
-                <div class="search">
-                    <input type="search" class="search-input" id="searchInput" placeholder="Pesquisar..." required
-                        placeholder="input">
-                    <span class="magnifying_glass">🔍</span>
-                </div>
-               
-            </div>
+                        </div>
 
 
-            <ul class="menu">
-                <li><a class="login" href="./login.html">Login</a></li>
-
-                <li>
-
-                    <div>
-
-                        <button id="car" href="#"><i class="car fa-solid fa-cart-shopping"></i></button>
-                        <ul id="menu_car" class="menu_car">
+                        <ul class="menu">
+                            <li><a class="login" href="./login.html">Login</a></li>
 
                             <li>
 
-                                <p class="meus_produtos" href="#home">MEUS PRODUTOS</p>
-                                <div class="carrinho">
-                                    <!-- <button onclick="limparCarrinho()">Limpar carrinho</button> -->
-                                    <ul id="listaCarrinho"></ul>
-                                    <div id="carrinhoVazio" >
-                                        <p>Seu carrinho está vazio</p>
-                                    </div>
-                                    <p>Total: R$ <span id="total">0.00</span></p>
-                                    <button class="btn btn-success" onclick="finalizarCompra()">Finalizar
-                                        compra</button>
-                                </div>
-                            </li>
-                            <li><a href="#about"></a></li>
-                            <li><a href="#contact"></a></li>
-                        </ul>
-                    </div>
+                                <div>
+
+                                    <button id="car" href="#"><i class="car fa-solid fa-cart-shopping"></i></button>
+                                    <ul id="menu_car" class="menu_car">
+
+                                        <li>
+
+                                            <p class="meus_produtos" href="#home">MEUS PRODUTOS</p>
+                                            <div class="carrinho">
+                                                <!-- <button onclick="limparCarrinho()">Limpar carrinho</button> -->
+                                                <ul id="listaCarrinho"></ul>
+                                                <div id="carrinhoVazio">
+                                                    <p>Seu carrinho está vazio</p>
+                                                </div>
+                                                <p>Total: R$ <span id="total">0.00</span></p>
+                                                <button class="btn btn-success" onclick="finalizarCompra()">Finalizar
+                                                    compra</button>
+                                            </div>
+                                        </li>
+                                        <li><a href="#about"></a></li>
+                                        <li><a href="#contact"></a></li>
+                                    </ul>
+                    </nav>
+                </div>
                 </li>
                 <div class="cart-icon">
                     <i class="fa-shopping-cart fa-2x"></i>
                     <span class="cart-counter">0</span>
                 </div>
-            </ul>
-
+                </ul>
+            </div>
         </div>
+
         <div class="nav-header-plus">
             <div class="nav-menu">
                 <ul id="nav-menu" class="nav-menu">
@@ -176,7 +187,7 @@
             </div> -->
 
         </div>
-        <h2 class="news" >Confira nossas novidades</h2>
+        <h2 class="news">Confira nossas novidades</h2>
         <div class="news1" id="news1">
             <div class="card produto" data-id="1">
                 <h2>
@@ -189,7 +200,8 @@
                 </div>
                 <p id="preco" class="preco" style="color: white;">R$ 99,50</p>
                 <div class="angles">
-                    <a class="angle" href="#"><img src="https://placehold.co/50x50" alt="camisa amarela tour de france"></a>
+                    <a class="angle" href="#"><img src="https://placehold.co/50x50"
+                            alt="camisa amarela tour de france"></a>
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
                     <div class="botao">
@@ -280,9 +292,12 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper dois">
                     <!-- Slides -->
-                    <div class="swiper-slide dois"><img src="./src/images/bike-verde.png" alt="bike verde de trilha"></div>
-                    <div class="swiper-slide dois"><img src="./src/images/download (1).png" alt="bike de bmx laranja"></div>
-                    <div class="swiper-slide dois"><img src="./src/images/bike-azul.png" alt="bike azul com cesto para transporte"></div>
+                    <div class="swiper-slide dois"><img src="./src/images/bike-verde.png" alt="bike verde de trilha">
+                    </div>
+                    <div class="swiper-slide dois"><img src="./src/images/download (1).png" alt="bike de bmx laranja">
+                    </div>
+                    <div class="swiper-slide dois"><img src="./src/images/bike-azul.png"
+                            alt="bike azul com cesto para transporte"></div>
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination dois"></div>
@@ -314,6 +329,7 @@
         <script src="./src/js/carrosselswp.js"></script>
         <script src="./src/js/pesquisa.js"></script>
         <script src="./pesquisa.js"></script>
+        <script src="./src/js/menu.js"></script>
 </body>
 
 </html>

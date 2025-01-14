@@ -16,6 +16,19 @@
    "footer footer footer footer" 100px
     / 1fr 1fr 1fr 1fr;
 }
+@media (max-width: 576px){
+    .container-fluid{
+        grid: 
+        "header " 100px
+        "nav " 45px
+        "main1 " 350px
+        "news " 70px
+        "news1 " 350px
+        "product " 300px
+       "footer " 100px
+        / 1fr 1fr 1fr 1fr;
+    }
+}
 
 .header{
    grid-area: header;
