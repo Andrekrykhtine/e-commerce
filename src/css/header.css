@@ -31,8 +31,8 @@
 }
 
 .fundo_logo {
-  width: 80px;
-  height: 80px;
+  max-width: 80px;
+  max-height: 80px;
   background: #fff;
   border-radius: 50%;
   position: relative;
@@ -114,6 +114,7 @@ ul {
   position: relative;
 }
 
+
 .car .cart-icon i {
   color: #FF8C00;
   position: absolute;
@@ -177,8 +178,8 @@ ul {
 
 .cart-counter {
   position: absolute;
-  top: -20px;
-  right: -120px;
+  top: -45px;
+  right: -125px;
   background-color: #e74c3c;
   color: white;
   border-radius: 50%;
@@ -227,7 +228,7 @@ body {
   margin-right: 20px;
 }
 
-.nav-menu-item a,
+.nav-menu-item,
 .category-button {
   text-decoration: none;
   color: #FF8C00;
@@ -238,7 +239,9 @@ body {
   border-radius: 4px;
   transition: all 0.3s ease;
 }
-
+.category-button{
+  display: none;
+}
 /* .nav-menu-item a:hover,
 .category-button:hover {
   
@@ -307,122 +310,80 @@ body {
   animation: fadeIn 0.3s ease;
 }
 
-/* Base styles remain the same until the breakpoints */
-
-/* Large tablets and smaller (max-width: 992px) */
-/* @media screen and (max-width: 992px) {
-  .header {
-    flex-direction: column;
-    padding: 15px 0;
-  }
-
-  .fundo_logo {
-    margin-left: 0;
-    margin-bottom: 15px;
-  }
-
-  .search {
-    width: 300px;
-    margin: 10px 0;
-  }
-
-  .nav-header ul {
-    gap: 25px;
-  }
-
-  .car {
-    margin: 0 25px;
-  }
-
-  .menu {
-    margin-top: 15px;
-  }
-}
-
-/* Medium tablets and smaller (max-width: 768px) */
 @media screen and (max-width: 768px) {
   .search {
-    width: 250px;
+    width: 50%;
   }
-
-  .nav-header ul {
-    gap: 15px;
-    font-size: 16px;
-  }
-
-  .menu {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
+  
   .cart-counter {
-    right: -80px;
+    position: relative;
+    right: -105px;
   }
 
-  .menu_car {
-    right: 50%;
-    transform: translateX(50%) translateY(-10px);
-    top: 100%;
-  }
 
-  .menu_car.show {
-    transform: translateX(50%) translateY(0);
+@media screen and (max-width: 600px) {
+  .search {
+    width: 40%;
+  }
+  .search input{
+    font-size: 1.5rem;
+  }
+  .category-button{
+    display: block;
+  }
+  .nav-menu-item{
+    display: none;
+  }
+  .nav-menu-item.contato{
+    display: block;
+  }
+  .fundo_logo {
+    width: 70px;
+    height: 70px;
+  }
+  .logo img{
+    width: 88px;
+    height: 88px;
+  }
+  .car{
+    margin-left: 10px;
+  }
+  .cart-counter {
+    position: relative;
+    right: -65px;
   }
 }
 
-/* Mobile phones (max-width: 576px) */
-/* @media screen and (max-width: 576px) {
-  .header {
-    padding: 10px;
-  }
-
-  .fundo_logo {
-    width: 60px;
-    height: 60px;
-  }
-
-  .logo img {
-    width: 90px;
-    height: 90px;
-  }
-
+@media screen and (max-width: 400px) {
   .search {
-    width: 200px;
+    width: 25%;
+    height: 30px;
   }
-
-  .nav-header ul {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
+  .search input {
+    display: none;
   }
-
-  .menu {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+  .category-button{
+    display: block;
   }
-
-  .car {
-    margin: 15px 0;
+  .nav-menu-item{
+    display: none;
   }
-
-  .menu_car {
-    min-width: 90%;
-    right: 5%;
-    transform: translateY(-10px);
+  .nav-menu-item.contato{
+    display: block;
   }
-
-  .menu_car.show {
-    transform: translateY(0);
+  .fundo_logo {
+    width: 50px;
+    height: 50px;
   }
-
-  .carrinho {
-    margin: 0 20px;
+  .logo img{
+    width: 68px;
+    height: 68px;
   }
-
+  .car{
+    margin-left: 10px;
+  }
   .cart-counter {
-    right: -25px;
-    top: -10px;
+    position: relative;
+    right: -65px;
   }
-} */
+}
