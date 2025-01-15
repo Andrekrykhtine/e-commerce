@@ -1,12 +1,14 @@
+
 #menu-hamburguer {
     z-index: 5;
   }
   
-  #menu-bar {
+  .menu-bar {
     width: 45px;
     height: 40px;
     margin: 30px 0 20px 20px;
     cursor: pointer;
+    display: none;
   }
   
   .bar {
@@ -28,7 +30,7 @@
   
   .nav {
     transition: 0.3s ease;
-    display: none;
+    
   }
   
   .nav ul {
@@ -43,7 +45,7 @@
   .nav li a {
     color: white;
     font-size: 20px;
-    text-decoration: none;
+   
   }
   
   .nav li a:hover {
