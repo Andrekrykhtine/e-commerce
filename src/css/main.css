@@ -71,3 +71,35 @@
 .preco{
     font-size: 2rem;
 }
+@media (max-width: 900px){
+    .container-fluid{
+        display: grid;
+        grid: 
+        "header header header header" 100px
+        "nav nav nav nav" 45px
+        "main1 main1 main1 main1" 350px
+        "news news news news" 70px
+        "news1 news1 news2 news2" 370px
+        "news3 news3 news4 news4" 370px
+        "product product product product" 300px
+       "footer footer footer footer" 100px
+        / 25% 25% 25% 25%;
+    }
+}
+@media (max-width: 530px){
+    .container-fluid{
+        display: grid;
+        grid: 
+        "header header header header" 100px
+        "nav nav nav nav" 45px
+        "main1 main1 main1 main1" 350px
+        "news news news news" 70px
+        "news1 news1 news1 news1" 370px
+        "news2 news2 news2 news2" 370px
+        "news3 news3 news3 news3" 370px
+        "news4 news4 news4 news4" 370px
+        "product product product product" 300px
+       "footer footer footer footer" 100px
+        / 25% 25% 25% 25%;
+    }
+}
