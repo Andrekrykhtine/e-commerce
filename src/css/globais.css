@@ -16,48 +16,46 @@
    "footer footer footer footer" 100px
     / 25% 25% 25% 25%;
 }
-
+body{
+    background-color: #aeaeae;
+}
 
 .header{
    grid-area: header;
 }
 .nav-header-plus{
     grid-area: nav ;
-    background-color: #aeaeae;
+  
 }
 .promotion{
     grid-area:main1;
-    background-color:#aeaeae ;
+ 
 }
 .news{
     grid-area: news;
-    background-color:#aeaeae 
-   
 }
+
 .news1{
  grid-area: news1;
- background-color:#aeaeae 
 }
+
 .news2{
     grid-area: news2;
-    background-color:#aeaeae 
 }
 .news3{
     grid-area: news3;
-    background-color:#aeaeae 
+   
 }
 .news4{
     grid-area: news4;
-    background-color:#aeaeae 
+    
 }
 .produto{
-    grid-area: product;
-    background-color:#aeaeae 
+    grid-area: product;  
 }
 
 .footer{
 grid-area: footer;
-background-color: aqua;
 }
 
 .empty-cart {

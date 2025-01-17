@@ -4,10 +4,12 @@
     font-size: 20px;
     color:#0c0c0c;
     font-weight: bold;
-    text-align: center;
-    align-content: center;
-  }
+    margin: 10px 0px 0px 50px;
+}
   
+.card.produto{
+    background-color: blue;
+}
 .card {
     display: flex;
     flex-direction: column;
@@ -33,12 +35,14 @@
     justify-content: center;
     width: 100%;
     gap: 8px;
+    background-color: blue;
 }
 
 .angles .price {
     display: flex;
     align-items: center;
     gap: 5px;
+    background-color: blue;
 }
 
 .card .angles .botao {
