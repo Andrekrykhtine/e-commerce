@@ -36,6 +36,10 @@
   .swiper-pagination-bullet-active.um {
 background-color:#FF8C00;
   }
+
+  .swiper-scrollbar{
+    display: none;
+  }
   @media screen and (max-width: 900px) {
     .swiper {
       width: 95%;

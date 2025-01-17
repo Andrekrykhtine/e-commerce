@@ -37,26 +37,26 @@
 // });
 
 // JavaScript ajustado
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {// Adiciona o event listener ao carregar o DOM
     const categoryButton = document.querySelector('.category-button');
     const categoryDropdown = document.getElementById('categoryDropdown');
 
     // Função para abrir/fechar o dropdown
-    function toggleDropdown(event) {
-        event.preventDefault();
-        categoryDropdown.classList.toggle('active');
+    function toggleDropdown(event) { 
+        event.preventDefault();// Impede o comportamento padrão do link
+        categoryDropdown.classList.toggle('active');// Alterna a classe 'active'
     }
 
     // Função para fechar o dropdown quando clicar fora
     function closeDropdown(event) {
-        if (!event.target.closest('.nav-menu-item-category')) {
-            categoryDropdown.classList.remove('active');
+        if (!event.target.closest('.nav-menu-item-category')) {// Verifica se o clique ocorreu fora do dropdown
+            categoryDropdown.classList.remove('active');// Remove a classe 'active'
         }
     }
 
     // Event listeners
-    categoryButton.addEventListener('click', toggleDropdown);
-    document.addEventListener('click', closeDropdown);
+    categoryButton.addEventListener('click', toggleDropdown);// Adiciona o event listener ao botão
+    document.addEventListener('click', closeDropdown); // Adiciona o event listener ao documento
 
     // Prevenir que o clique no dropdown feche ele
     categoryDropdown.addEventListener('click', function(event) {
