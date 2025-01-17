@@ -1,7 +1,6 @@
 .container {
     display: flex;
     max-width: 800px;
-    /* margin: 20px auto; */
     padding: 0 20px;
 }
 
@@ -11,23 +10,36 @@
 
 .products-grid {
     display: flex;
+    flex-direction: column;
     position: absolute;
     justify-content: center;
-    gap: 30px;
-    top: 80px;
+    align-items: center;
+    top: 63px;
+    left: 455px;
     z-index: 2;
-    width: 100%;
+    width: 25%;
+  
 }
 
 .product-card {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 15px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    padding-left: 10px;
     display: none; /* Produtos inicialmente ocultos */
     animation: fadeIn 0.5s ease-in;
-    background-color: #ddd;
+    background-color: #fff;
     z-index: 3; 
+    min-height: 100px;
+    width: 100%;
 }
+.product-card:hover { 
+  background-color:#FF8C00;
+    cursor: pointer;
+}
+
+
 .product-card.show {
     display: block;
 }
@@ -59,6 +71,7 @@
     text-align: center;
     grid-column: 1 / -1;
     padding: 20px;
-    color: #fff;
+    color: #000;
     font-size: 30px;
+    background-color: #fff;
 }
