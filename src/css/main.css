@@ -33,6 +33,10 @@
     width: 100%;
     gap: 8px;
 }
+.angles img {
+    width: 50px;
+    height: 50px;
+}
 
 .angles .price {
     display: flex;
@@ -113,6 +117,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 .news4 img{
     width: 50%;
