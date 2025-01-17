@@ -14,7 +14,8 @@
     align-items: center;
     height: 80%;
     margin-top: -15px;
-    background-color: #aeaeae ;
+    background-color: #fff;
+    border: none;
 }
 
 
@@ -71,6 +72,7 @@
 .preco{
     font-size: 2rem;
 }
+
 @media (max-width: 900px){
     .container-fluid{
         display: grid;

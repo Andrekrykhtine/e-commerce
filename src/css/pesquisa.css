@@ -4,9 +4,7 @@
     padding: 0 20px;
 }
 
-.search-container {
-    margin-bottom: 20px;
-}
+
 
 .products-grid {
     display: flex;
@@ -16,7 +14,7 @@
     align-items: center;
     top: 63px;
     left: 455px;
-    z-index: 2;
+    z-index: 100;
     width: 25%;
   
 }
@@ -25,12 +23,11 @@
     display: flex;
     align-content: center;
     justify-content: center;
-
     padding-left: 10px;
     display: none; /* Produtos inicialmente ocultos */
     animation: fadeIn 0.5s ease-in;
     background-color: #fff;
-    z-index: 3; 
+    z-index: 101; 
     min-height: 100px;
     width: 100%;
 }
