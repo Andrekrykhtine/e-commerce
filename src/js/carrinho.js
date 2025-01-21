@@ -13,75 +13,7 @@ document.addEventListener('click', (event) => {
         menuCar.classList.remove('show');
     }
 });
-// const menu = document.getElementById('menu');
-// const openButton = document.getElementById('open');
-// const closeButton = document.getElementById('close');
 
-// // Abrir o menu
-// openButton.addEventListener('click', () => {
-//     menu.classList.add('active'); // Adiciona a classe 'active' para mostrar o menu
-// });
-
-// // Fechar o menu
-// closeButton.addEventListener('click', () => {
-//     menu.classList.remove('active'); // Remove a classe 'active' para esconder o menu
-// });
-
-// script.js
-// let carrinho = [];
-// let total = 0;
-
-// function adicionarItem() {
-//     // Dados do produto (em uma aplicação real, estes viriam do banco de dados)
-//     const produto = {
-//         id: Date.now(), // Gerando ID único
-//         nome: "Produto Exemplo",
-//         preco: 99.90
-//     };
-
-//     // Adiciona o produto ao array do carrinho
-//     carrinho.push(produto);
-    
-//     // Atualiza o total
-//     total += produto.preco;
-//     document.getElementById('total').textContent = total.toFixed(2);
-    
-//     // Atualiza a lista visual do carrinho
-//     atualizarCarrinho();
-// }
-
-// function removerItem(id) {
-//     // Encontra o produto no carrinho
-//     const produto = carrinho.find(item => item.id === id);
-    
-//     // Atualiza o total
-//     total -= produto.preco;
-//     document.getElementById('total').textContent = total.toFixed(2);
-    
-//     // Remove o produto do carrinho
-//     carrinho = carrinho.filter(item => item.id !== id);
-    
-//     // Atualiza a lista visual do carrinho
-//     atualizarCarrinho();
-// }
-
-// function atualizarCarrinho() {
-//     const listaCarrinho = document.getElementById('listaCarrinho');
-//     listaCarrinho.innerHTML = '';
-    
-//     carrinho.forEach(produto => {
-//         const li = document.createElement('li');
-//         li.innerHTML = `
-//             ${produto.nome} - R$ ${produto.preco.toFixed(2)}
-//             <span class="remover-item" onclick="removerItem(${produto.id})">
-//                 <i class="fas fa-trash"></i>
-//             </span>
-//         `;
-//         listaCarrinho.appendChild(li);
-//     });
-// }
-
-// script.js
 let carrinho = [];
 let total = 0;
 
