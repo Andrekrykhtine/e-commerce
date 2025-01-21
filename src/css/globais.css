@@ -7,13 +7,29 @@
 
 .container-fluid {
     display: grid;
+<<<<<<< HEAD
     grid:
         "header header header header" 100px "nav nav nav nav" 45px "main1 main1 main1 main1" 350px "news news news news" 70px "news1 news2 news3 news4" 350px "product product product product" 300px "footer footer footer footer" 100px / 1fr 1fr 1fr 1fr;
+=======
+    grid: 
+    "header header header header" 100px
+    "nav nav nav nav" 45px
+    "main1 main1 main1 main1" 350px
+    "news news news news" 70px
+    "news1 news2 news3 news4" 370px
+    "product product product product" 300px
+   "footer footer footer footer" 100px
+    / 25% 25% 25% 25%;
+}
+body{
+    background-color: #aeaeae;
+>>>>>>> 94ece2d20a88ab883815666ec20752827975574f
 }
 
 .header {
     grid-area: header;
 }
+<<<<<<< HEAD
 
 .nav-header-plus {
     grid-area: nav;
@@ -58,6 +74,41 @@
 .footer {
     grid-area: footer;
     background-color: aqua;
+=======
+.nav-header-plus{
+    grid-area: nav ;
+  
+}
+.promotion{
+    grid-area:main1;
+ 
+}
+.news{
+    grid-area: news;
+}
+
+.news1{
+ grid-area: news1;
+}
+
+.news2{
+    grid-area: news2;
+}
+.news3{
+    grid-area: news3;
+   
+}
+.news4{
+    grid-area: news4;
+    
+}
+.produto{
+    grid-area: product;  
+}
+
+.footer{
+grid-area: footer;
+>>>>>>> 94ece2d20a88ab883815666ec20752827975574f
 }
 
 .empty-cart {

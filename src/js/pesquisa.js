@@ -35,7 +35,6 @@ const searchInput = document.getElementById('searchInput');
 function createProductCard(product) {
     return `
         <div class="product-card" data-id="${product.id}">
-            <img src="${product.image}" alt="${product.name}" class="product-image">
             <h3 class="product-name">${product.name}</h3>
             <p>${product.description}</p>
             <p class="product-price">R$ ${product.price.toFixed(2)}</p>

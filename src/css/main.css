@@ -4,17 +4,17 @@
     font-size: 20px;
     color:#0c0c0c;
     font-weight: bold;
-    text-align: center;
-    align-content: center;
-  }
-  
+    margin: 10px 0px 0px 50px;
+}
+
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 80%;
     margin-top: -15px;
-    background-color: #aeaeae ;
+    background-color: #fff;
+    border: none;
 }
 
 
@@ -32,6 +32,10 @@
     justify-content: center;
     width: 100%;
     gap: 8px;
+}
+.angles img {
+    width: 50px;
+    height: 50px;
 }
 
 .angles .price {
@@ -70,5 +74,56 @@
 }
 .preco{
     font-size: 2rem;
-;
+    color: #0c0c0c;
+    font-weight: bold;
+}
+
+@media (max-width: 900px){
+    .container-fluid{
+        display: grid;
+        grid: 
+        "header header header header" 100px
+        "nav nav nav nav" 45px
+        "main1 main1 main1 main1" 300px
+        "news news news news" 70px
+        "news1 news1 news2 news2" 370px
+        "news3 news3 news4 news4" 370px
+        "product product product product" 300px
+       "footer footer footer footer" 100px
+        / 25% 25% 25% 25%;
+    }
+}
+@media (max-width: 530px){
+    .container-fluid{
+        display: grid;
+        grid: 
+        "header header header header" 100px
+        "nav nav nav nav" 45px
+        "main1 main1 main1 main1" 250px
+        "news news news news" 70px
+        "news1 news1 news1 news1" 370px
+        "news2 news2 news2 news2" 370px
+        "news3 news3 news3 news3" 370px
+        "news4 news4 news4 news4" 370px
+        "product product product product" 300px
+       "footer footer footer footer" 100px
+        / 25% 25% 25% 25%;
+    }
+}
+.news4{
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.news4 img{
+    width: 50%;
+    height: 50%;
+}
+.news4 .angles img{
+    width: 50px;
+    height: 50px;
 }

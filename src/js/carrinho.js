@@ -6,6 +6,13 @@ car.addEventListener('click', () => {
     menuCar.classList.toggle('show');
 });
 
+document.addEventListener('click', (event) => {
+    // Check if the click was outside both the car button and menuCar
+    if (!car.contains(event.target) && !menuCar.contains(event.target)) {
+        // Remove the 'show' class to close the menu
+        menuCar.classList.remove('show');
+    }
+});
 // const menu = document.getElementById('menu');
 // const openButton = document.getElementById('open');
 // const closeButton = document.getElementById('close');

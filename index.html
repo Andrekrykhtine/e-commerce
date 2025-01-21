@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
+
+    <!-- Bootstrap início -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap fim -->
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/globais.css">
     <link rel="stylesheet" href="./src/css/header.css">
@@ -16,11 +20,8 @@
     <link rel="stylesheet" href="./src/css/promotion.css">
     <link rel="stylesheet" href="./src/css/pesquisa.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    
-    <!-- Bootstrap início -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- Bootstrap fim -->
+    <!-- <link rel="stylesheet" href="./src/css/menu.css"> -->
+
 
     <script src="https://kit.fontawesome.com/4f077d5d34.js" crossorigin="anonymous"></script>
 
@@ -52,7 +53,7 @@
                         placeholder="input">
                     <span class="magnifying_glass">🔍</span>
                 </div>
-               
+
             </div>
 
 
@@ -72,7 +73,7 @@
                                 <div class="carrinho">
                                     <!-- <button onclick="limparCarrinho()">Limpar carrinho</button> -->
                                     <ul id="listaCarrinho"></ul>
-                                    <div id="carrinhoVazio" >
+                                    <div id="carrinhoVazio">
                                         <p>Seu carrinho está vazio</p>
                                     </div>
                                     <p>Total: R$ <span id="total">0.00</span></p>
@@ -101,16 +102,16 @@
                         </a>
                         <div class="category-dropdown" id="categoryDropdown">
                             <ul class="dropdown-list">
-                                <li><a href="#"><i class="fas fa-mobile-alt"></i> Eletrônicos</a></li>
-                                <li><a href="#"><i class="fas fa-tshirt"></i> Roupas</a></li>
-                                <li><a href="#"><i class="fas fa-glasses"></i> Acessórios</a></li>
-                                <li><a href="#"><i class="fas fa-shoe-prints"></i> Calçados</a></li>
+                                <li><a href="#"><i class="fas fa-mobile-alt"></i> Ofertas</a></li>
+                                <li><a href="#"><i class="fas fa-tshirt"></i> Novidades</a></li>
+                                <li><a href="#"><i class="fas fa-glasses"></i> Mais Vendidos</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-menu-item"><a href="#">Ofertas</a></li>
-                    <li class="nav-menu-item"><a href="#news1">Novidades</a></li>
-                    <li class="nav-menu-item"><a href="#footer">Sobre</a></li>
+                    <li><a class="nav-menu-item" href="#promotion">Ofertas</a></li>
+                    <li><a class="nav-menu-item" href="#news1">Novidades</a></li>
+                    <li><a class="nav-menu-item" href="#produto">Mais Vendidos</a></li>
+                    <li class="nav-menu-item contato"><a href="#footer">Sobre</a></li>
                 </ul>
             </div>
         </div>
@@ -142,41 +143,10 @@
                 <div class="swiper-scrollbar um"></div>
 
             </div>
-            <!-- <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <h2 class="titulo">Titulo 1</h2>
-                        <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <a href="#" class="botao">Saiba Mais</a>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2 class="titulo">Titulo 1</h2>
-                        <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <a href="#" class="botao">Saiba Mais</a>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2 class="titulo">Titulo 1</h2>
-                        <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <a href="#" class="botao">Saiba Mais</a>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2 class="titulo">Titulo 1</h2>
-                        <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <a href="#" class="botao">Saiba Mais</a>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2 class="titulo">Titulo 1</h2>
-                        <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <a href="#" class="botao">Saiba Mais</a>
-                    </div>
-                </div>
-                <a href="#" id="seta-avancar" class="seta-avancar opacidade">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-            </div> -->
 
         </div>
-        <h2 class="news" >Confira nossas novidades</h2>
+        <h2 class="news" id="news">Confira nossas novidades</h2>
+
         <div class="news1" id="news1">
             <div class="card produto" data-id="1">
                 <h2>
@@ -187,11 +157,12 @@
                 <div class="colection-news">
                     <img src="./src/images/camisa-amarela.png" alt="camisa amarela tour de france">
                 </div>
-                <p id="preco" class="preco" style="color: white;">R$ 99,50</p>
+                <p id="preco" class="preco">R$ 99,50</p>
                 <div class="angles">
-                    <a class="angle" href="#"><img src="https://placehold.co/50x50" alt="camisa amarela tour de france"></a>
-                    <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
-                    <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
+                    <a class="angle" href="#"><img src="./src/images/camisa-bolinha.png"
+                            alt="camisa amarela tour de france"></a>
+                    <a class="angle" href="#"><img src="./src/images/camisa-branca.png" alt=""></a>
+                    <a class="angle" href="#"><img src="./src/images/camisa-verde.png" alt=""></a>
                     <div class="botao">
                         <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
                             title="Adicionar ao carrinho">
@@ -211,7 +182,7 @@
                 <div class="colection-news">
                     <img src="./src/images/oculos.png" alt="Bike preta">
                 </div>
-                <p id="preco" class="preco" style="color: white;">R$ 220,00</p>
+                <p id="preco" class="preco">R$ 220,00</p>
                 <div class="angles">
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
                     <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
@@ -236,35 +207,11 @@
                 <div class="colection-news">
                     <img src="./src/images/luva.png" alt="Luva para a pratica de ciclismo">
                 </div>
-                <p id="preco" class="preco" style="color: white;">R$ 200,00</p>
+                <p id="preco" class="preco">R$ 200,00</p>
                 <div class="angles">
-                    <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
-                    <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
-                    <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
-                    <div class="botao">
-                        <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
-                            title="Adicionar ao carrinho">
-                            <i class="fas fa-plus"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="news4">
-            <div class="card produto" data-id="4">
-                <h2>
-                    <a href="#">
-                        <p>Ciclocomputador</p>
-                    </a>
-                </h2>
-                <div class="colection-news">
-                    <img src="./src/images/compudador-de-bordo.png" alt="Bike preta">
-                </div>
-                <p id="preco" class="preco" style="color: white;">R$ 150,90</p>
-                <div class="angles">
-                    <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
-                    <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
-                    <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
+                    <a class="angle" href="#"><img src="./src/images/luva-preta.png" alt=""></a>
+                    <a class="angle" href="#"><img src="./src/images/luva-laranja.png" alt=""></a>
+                    <a class="angle" href="#"><img src="./src/images/luva-rosa.png" alt=""></a>
                     <div class="botao">
                         <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
                             title="Adicionar ao carrinho">
@@ -275,14 +222,62 @@
             </div>
         </div>
 
-        <div class="produto">
+        <div class="news4" class="card produto" data-id="4" >
+            <a href="#">
+                <p>Ciclocomputador</p>
+            </a>
+
+            <img src="./src/images/compudador-de-bordo.png" alt="Bike preta">
+
+            <p id="preco" class="preco">R$ 150,90</p>
+
+            <ul>
+                <li class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></li>
+                <li class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></li>
+                <li class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></li>
+                <li class="botao" > <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
+                    title="Adicionar ao carrinho">
+                    <i class="fas fa-plus"></i>
+                </button></li>
+            </ul>
+
+            <!-- <div class="card produto" data-id="4">
+                <h2>
+                    <a href="#">
+                        <p>Ciclocomputador</p>
+                    </a>
+                </h2>
+                <div class="colection-news">
+                    <img src="./src/images/compudador-de-bordo.png" alt="Bike preta">
+                </div>
+                <p id="preco" class="preco" style=>R$ 150,90</p>
+                <div class="angles">
+                    <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
+                    <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
+                    <a class="angle" href="#"><img src="https://placehold.co/50x50" alt=""></a>
+                    <div class="botao">
+                        <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
+                            title="Adicionar ao carrinho">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+
+        <div class="produto" id="produto">
             <div class="swiper dois">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper dois">
                     <!-- Slides -->
-                    <div class="swiper-slide dois"><img src="./src/images/bike-verde.png" alt="bike verde de trilha"></div>
-                    <div class="swiper-slide dois"><img src="./src/images/download (1).png" alt="bike de bmx laranja"></div>
-                    <div class="swiper-slide dois"><img src="./src/images/bike-azul.png" alt="bike azul com cesto para transporte"></div>
+                    <div class="swiper-slide dois primeiro"><img src="./src/images/bike-verde.png"
+                            alt="bike verde de trilha">
+                    </div>
+                    <div class="swiper-slide dois"><img src="./src/images/download (1).png" alt="bike de bmx laranja">
+                    </div>
+                    <div class="swiper-slide dois"><img src="./src/images/bike-azul.png"
+                            alt="bike azul com cesto para transporte"></div>
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination dois"></div>
@@ -314,6 +309,7 @@
         <script src="./src/js/carrosselswp.js"></script>
         <script src="./src/js/pesquisa.js"></script>
         <script src="./pesquisa.js"></script>
+        <script src="./src/js/menu.js"></script>
 </body>
 
 </html>
