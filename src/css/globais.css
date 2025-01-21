@@ -1,10 +1,11 @@
-.container-fluid{
+.container-fluid {
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
-.container-fluid{
+
+.container-fluid {
     display: grid;
     grid: 
     "header " 100px
@@ -20,8 +21,8 @@ body{
     background-color: #aeaeae;
 }
 
-.header{
-   grid-area: header;
+.header {
+    grid-area: header;
 }
 .nav-header-plus{
     grid-area: nav ;
