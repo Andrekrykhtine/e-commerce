@@ -40,8 +40,8 @@ body{
  grid-area: news;
 }
 
-.produto{
-    grid-area: product;  
+.product{
+    grid-area: product; 
 }
 
 .footer{

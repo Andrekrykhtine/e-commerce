@@ -1,42 +1,31 @@
-.promotion {
+.product {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
+  margin: 10px 0 0 0;
 }
 
 .swiper.dois {
-  background: url('../images/madeira-cinza.jpg') no-repeat center center/cover;
+  background: url('../images/madeira-cinza.jpg') no-repeat center center;
   display: flex;
   text-align: center;
   justify-content: center;
-  width:95%;
+  width: 95%;
   height: 100%;
-  /* Esconde qualquer parte da imagem que ultrapasse o contêiner */
-  position: relative;
-  /* Garante que o img respeite as dimensões do contêiner */
-}
 
-.swiper-slide.dois {
-  display: flex;
-  justify-content: center;
-  align-content: center;
 }
 
 .swiper-slide.dois img {
   width: 100%;
-  /* Ou qualquer largura desejada */
-  height: 100%;
-  /* Ou qualquer altura desejada */
-  object-fit: contain;
-  /* Mantém a proporção e ajusta a imagem dentro do contêiner */
- padding-bottom : 50px;
-}
-.swiper-slide.dois.primeiro img {
- padding : 50px;
+  height: 95%;
+  padding-bottom: 50px;
 }
 
+.swiper-slide.dois.primeiro img {
+  padding: 50px;
+}
 
 .swiper-button-next.dois,
 .swiper-button-prev.dois {
