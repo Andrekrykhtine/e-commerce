@@ -8,13 +8,15 @@
 }
 
 .swiper.dois {
-  background: url('../images/madeira-cinza.jpg') no-repeat center center;
-  display: flex;
-  text-align: center;
-  justify-content: center;
   width: 95%;
   height: 100%;
-
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-image: url('../images/madeira-cinza.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .swiper-slide.dois img {
@@ -29,17 +31,10 @@
 
 .swiper-button-next.dois,
 .swiper-button-prev.dois {
-  color: #FF8C00;
+  --swiper-navigation-color: #FF8C00;
 }
 
-.swiper-pagination-bullet.um {
-  background-color: #FF8C00;
-}
-
-.swiper-pagination-bullet-active.um {
-  background-color: #FF8C00;
-}
-
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #FF8C00;
+.swiper-pagination {
+  --swiper-pagination-color: #FF8C00;
+  --swiper-pagination-bullet-active-color: #FF8C00;
 }

@@ -2,13 +2,15 @@
 .news_title {
     font-size: 20px;
     color: #0c0c0c;
-    font-weight: bold;
+    font-weight: 700;
     margin: 10px 0px 0px 50px;
 }
 
 .news {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 0px 10px;
 }
 
 .card {
@@ -17,11 +19,15 @@
     align-items: center;
     height: 100%;
     background-color: #fff;
-    border: none;
-    margin: 0px 10px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    border: none;
+    /* margin: 0px 10px; */
     cursor: pointer;
+}
+.card:hover {
+    transform: translateY(-0.3125rem);
 }
 
 .card .nome-produto {
@@ -32,25 +38,21 @@
 
 .card img {
     max-width: 220px;
-    max-height: 220px;
+    max-height: auto;
+    aspect-ratio: 1;
 }
 
 .preco {
     font-size: 2rem;
-    color: #0c0c0c;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
+    font-weight: 700;
     margin: 0;
 }
 
 .angles {
     display: flex;
     justify-content: center;
-    width: 100%;
-    gap: 10px;
     align-items: center;
-    height: 100%;
+    gap : 10px;
 }
 
 .angles img {
@@ -74,10 +76,7 @@
 
     .news {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .card {
-        height: 360px;
+        gap: 1rem;
     }
 
 }
@@ -89,6 +88,9 @@
     }
 
     .news {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
+    }
+    .card{
+        max-height: none; 
     }
 }
