@@ -1,6 +1,5 @@
 .container-fluid {
   position: relative;
-}
 
 .header {
   display: flex;
@@ -31,29 +30,25 @@
 }
 
 .header_logo {
-  max-width: 80px;
-  max-height: 80px;
+  width: 80px;
+  height: 80px;
   background: #fff;
   border-radius: 50%;
   position: relative;
   display: flex;
-  /* Para usar Flexbox */
   justify-content: center;
-  /* Centraliza horizontalmente */
-  align-items: center;
-  /* Centraliza verticalmente */
   overflow: hidden;
-  /* Garante que nada "vaze" da borda */
   margin-left: 30px;
   transition: ease-in-out 0.3s;
 }
 
 .logo img {
   width: 120px;
-  /* Ajusta para o tamanho do logo2 */
   height: 120px;
   object-fit: cover;
-  /* Ajusta a proporção da imagem */
+  position: absolute;
+  top: -17px;
+  right: -19px;
 }
 
 .fundo_logo:hover {
@@ -230,12 +225,7 @@ ul {
 .category-button{
   display: none;
 }
-/* .nav-menu-item a:hover,
-.category-button:hover {
-  
-} */
 
-/* Estilização do dropdown */
 .category-dropdown {
   position: fixed;
   top: 0;
@@ -280,7 +270,6 @@ ul {
 .dropdown-list i {
   width: 20px;
   text-align: center;
-
 }
 
 /* Efeito de fade */
@@ -311,32 +300,41 @@ ul {
 }
 
 @media screen and (max-width: 600px) {
+ 
   .search {
     width: 50%;
   }
+
   .search input{
     font-size: 1rem;
   }
+
   .category-button{
     display: block;
   }
+
   .nav-menu-item{
     display: none;
   }
+
   .nav-menu-item.contato{
     display: block;
   }
+
   .fundo_logo {
     max-width: 50px;
     max-height: 50px;
   }
+
   .logo img{
     width: 68px;
     height: 68px;
-  
+  }
+
   .car{
     margin-left: 10px;
   }
+
   .cart-counter {
     position: relative;
     right: -65px;
@@ -348,29 +346,37 @@ ul {
     width: 25%;
     height: 30px;
   }
+
   .search input {
     display: none;
   }
+
   .category-button{
     display: block;
   }
+
   .nav-menu-item{
     display: none;
   }
+
   .nav-menu-item.contato{
     display: block;
   }
+
   .fundo_logo {
     width: 50px;
     height: 50px;
   }
+
   .logo img{
     width: 68px;
     height: 68px;
   }
+
   .car{
     margin-left: 10px;
   }
+
   .cart-counter {
     position: relative;
     right: -65px;
