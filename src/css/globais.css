@@ -19,6 +19,8 @@
 }
 body{
     background-color: #aeaeae;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .header {
