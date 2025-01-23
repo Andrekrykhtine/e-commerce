@@ -1,18 +1,20 @@
 /* NEWS */
 .news_title {
     font-size: 20px;
-    color: #0c0c0c;
+    color: #fff;
     font-weight: 700;
     margin: 10px 0px 0px 50px;
 }
 
 .news {
     width: 80vw;
+    height: 70vh;
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 25px;
     font-variant-caps: all-small-caps;
+
 }
 
 .card {

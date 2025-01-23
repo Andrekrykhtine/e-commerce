@@ -3,6 +3,7 @@
     padding-right: 0 !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
+    
 }
 
 .container-fluid {
@@ -18,8 +19,9 @@
     / 100%;
 }
 body{
-    background-color: #aeaeae;
+    background-color: #00000004;
     width: 100vw;
+    height: 100vh;
     overflow-x: hidden;
 }
 

@@ -1,6 +1,5 @@
   .promotion {
-    display: flex;
-    justify-content: center;
+    
     align-items: center;
     width: 100%;
     height: 100%;
@@ -8,7 +7,7 @@
 
   .swiper {
     width: 80%;
-    height: 100%;
+    height: 80%;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -17,6 +16,7 @@
   }
 
   .swiper-slide {
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;

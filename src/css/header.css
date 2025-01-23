@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  background-color: #333333;
+  background-color: #FF8C00;
 }
 
 .header .nav-header {
@@ -15,7 +15,9 @@
   align-items: center;
   justify-content: center;
   min-height: 100%;
+  
 }
+
 
 .nav-header ul {
   font-size: 20px;
@@ -195,7 +197,7 @@ ul {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 2;
-  background-color: #333333;
+  background-color: #08438236;
   display: flex;
   justify-content: center;
 }
