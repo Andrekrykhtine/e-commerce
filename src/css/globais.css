@@ -11,18 +11,17 @@
     grid: 
     "header " 100px
     "nav" 45px
-    "main1 " 350px
+    "promotion" 350px
     "newstitle " 70px
     "news " 370px
+    "news" 370px
     "product " 300px
    "footer" 100px
     / 100%;
 }
 body{
     background-color: #00000004;
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
+   
 }
 
 .header {
@@ -33,7 +32,7 @@ body{
   
 }
 .promotion{
-    grid-area:main1;
+    grid-area:promotion;
  
 }
 .news_title{
