@@ -53,7 +53,7 @@
   right: -19px;
 }
 
-.fundo_logo:hover {
+.fundo_logo:hover{
   transform: scale(1.1);
   /* Aumenta o tamanho do logo2 */
   background-color: #FF8C00;
@@ -123,7 +123,7 @@ ul {
 
 .car:hover,
 .login:hover {
-  color: #FF8C00;
+  color: #414141;
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out
 }

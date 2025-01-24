@@ -1,21 +1,19 @@
-  .promotion {
-    
-    align-items: center;
+   .promotion {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
     width: 100%;
     height: 100%;
-  }
+    overflow: hidden;
+  } 
 
   .swiper {
-    width: 80%;
-    height: 80%;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    max-width: 90%;
+  max-height: 100%;
+ 
   }
 
-  .swiper-slide {
+  /*.swiper-slide {
     margin-top: 60px;
     display: flex;
     justify-content: center;
@@ -27,7 +25,7 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
-  }
+  } */
 
   .swiper-button-next.um,
   .swiper-button-prev.um {
@@ -42,9 +40,6 @@
     background-color: #FF8C00;
   }
 
-  .swiper-scrollbar {
-    display: none;
-  }
 
   @media screen and (max-width: 900px) {
     .swiper {

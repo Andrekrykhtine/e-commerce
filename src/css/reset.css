@@ -10,6 +10,7 @@ html{
       font-family: "Roboto", sans-serif;
       box-sizing: border-box;
       font-weight: 300;
+      outline: 1px solid red;
   }
 ul, li{
     list-style: none;
