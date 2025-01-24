@@ -1,3 +1,6 @@
+.swiper-slide.dois.primeiro img {
+  padding: 60px;
+}
 /* .product {
   display: flex;
   justify-content: center;
@@ -24,9 +27,7 @@
   padding: 350px;
 }
 
-.swiper-slide.dois.primeiro img {
-  padding: 50px;
-}
+
 
 .swiper-button-next.dois,
 .swiper-button-prev.dois {
