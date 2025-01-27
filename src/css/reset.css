@@ -27,6 +27,7 @@ a{
     all: unset;
     text-decoration: none;
     color: inherit;
+    background-color: orange;
 }
 a:hover {
     color: #ef3b0e;
