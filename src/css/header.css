@@ -4,7 +4,6 @@
   align-items: center;
   overflow: hidden;
   background-color: #FF8C00;
-  position: relative;
 }
 
 .header .nav-header {
@@ -103,7 +102,7 @@ ul {
 }
 
 .menu_car {
-  background-color: #FF8C00;
+  background-color:#414141;
   color: #fff;
   min-width: 200px;
   min-height: 250px;

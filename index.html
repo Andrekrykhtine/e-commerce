@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glide-js/dist/glide.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     
 
     <link rel="stylesheet" href="./src/css/reset.css">
@@ -41,7 +42,7 @@
     <main class="container-fluid">
         <header class="header" id ="header">
             <div class="logo">
-                <a class="logo" href="#" aria-label="Click & Buy - Página inicial">
+                <a  href="#" aria-label="Click & Buy - Página inicial">
                     <img src="./src/images/logofundo.png" alt="logo Click & Buy">
                 </a>
             </div>
@@ -50,6 +51,9 @@
                 <div class="search">
                     <input type="search" class="search-input" id="searchInput" placeholder="Pesquisar..." required>
                     <span class="magnifying_glass">🔍</span>
+                    <div class="products-grid" id="productsGrid">
+                        <!-- Os produtos serão inseridos aqui via JavaScript -->
+                    </div>
                   
                 </div>
 
@@ -61,8 +65,8 @@
                     <a class="login" href="./login.html">Login</a>
                 </li>
 
-                <li>
-                    <div>
+                <li >
+                    <div class="carrinho333">
 
                         <button id="car" href="#"><i class="car fa-solid fa-cart-shopping"></i></button>
                         <ul id="menu_car" class="menu_car">
@@ -385,7 +389,7 @@
 
     </main>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   
     <script src="https://kit.fontawesome.com/4f077d5d34.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/glide-js/dist/glide.min.js"></script>
 
