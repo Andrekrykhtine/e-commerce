@@ -1,11 +1,12 @@
 const car = document.getElementById('car');
 const menuCar = document.getElementById('menu_car');
 const emptyCart = document.getElementById('emptyCart');
-
+//mostra o manu car
 car.addEventListener('click', () => {
     menuCar.classList.toggle('show');
 });
 
+//ao clicar fora fecha o meunu
 document.addEventListener('click', (event) => {
     // Check if the click was outside both the car button and menuCar
     if (!car.contains(event.target) && !menuCar.contains(event.target)) {
@@ -19,14 +20,16 @@ let total = 0;
 
 function adicionarItem(button) {
     // Encontra o elemento pai mais próximo com a classe 'produto'
-    const produtoElement = button.closest('.produto');
+    const produtoElement = button.closest('.card');
     
     // Extrai as informações do produto do HTML
     const produto = {
         id: produtoElement.dataset.id,
-        nome: produtoElement.querySelector('h2').textContent,
+        nome: produtoElement.querySelector('.nome-produto').textContent,
         preco: parseFloat(produtoElement.querySelector('.preco').textContent.replace('R$ ', ''))
+       
     };
+    console.log(produto);
 
     // Adiciona o produto ao array do carrinho
     carrinho.push(produto);

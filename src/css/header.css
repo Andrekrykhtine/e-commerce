@@ -88,7 +88,6 @@ ul {
   position: relative;
 }
 
-
 .car .cart-icon i {
   color: #FF8C00;
   position: absolute;
@@ -202,9 +201,6 @@ ul {
 }
 
 .category-dropdown {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   display: none;
@@ -218,8 +214,8 @@ ul {
 .dropdown-list {
   position: absolute;
   flex-direction: column;
-  top: 60px;
-  left: 35%;
+;
+  left: 25%;
   transform: translateY(40px);
   background: white;
   border-radius: 8px;
