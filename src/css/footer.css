@@ -2,7 +2,7 @@
   margin-top: 30px;
   background-color: #FF8C00;
   color: #fff;
-  height: 100%;
+  height: 100;
 }
 
 .footer-content {
@@ -35,8 +35,8 @@
     color: #ef3b0e;
     transition: ease-in-out 0.3s;
 }
-
 .footer .copyright{
-margin: 90px 10px 0px 0px;
+margin: 90px 10px 40px 0px;
 }
+
 

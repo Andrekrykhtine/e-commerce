@@ -4,8 +4,6 @@
     padding: 0 20px;
 }
 
-
-
 .products-grid {
     display: flex;
     flex-direction: column;
@@ -16,7 +14,6 @@
     left: 455px;
     z-index: 100;
     width: 25%;
-  
 }
 
 .product-card {

@@ -27,18 +27,11 @@
   justify-content: space-between;
 }
 
-
 .logo img {
   width: 90px;
   height: 90px;
   object-fit: cover;
   border-radius: 50%;
-}
-
-.fundo_logo:hover{
-  transform: scale(1.1);
-  /* Aumenta o tamanho do logo2 */
-  background-color: #FF8C00;
 }
 
 .search {
