@@ -27,26 +27,12 @@
   justify-content: space-between;
 }
 
-.header_logo {
-  width: 80px;
-  height: 80px;
-  background: #fff;
-  border-radius: 50%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  margin-left: 30px;
-  transition: ease-in-out 0.3s;
-}
 
 .logo img {
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   object-fit: cover;
-  position: absolute;
-  top: -17px;
-  right: -19px;
+  border-radius: 50%;
 }
 
 .fundo_logo:hover{
@@ -368,6 +354,7 @@ ul {
   .logo img{
     width: 68px;
     height: 68px;
+   
   }
 
   .car{
