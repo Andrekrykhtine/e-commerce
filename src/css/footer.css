@@ -1,4 +1,5 @@
 .footer {
+  margin-top: 30px;
   background-color: #FF8C00;
   color: #fff;
 }
@@ -30,7 +31,7 @@
 }
 
 .footer .social-links a:hover{
-    color: rgb(239, 59, 14);
+    color: #ef3b0e;
     transition: ease-in-out 0.3s;
 }
 

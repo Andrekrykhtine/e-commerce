@@ -11,6 +11,7 @@ html{
       box-sizing: border-box;
       font-weight: 300;
       outline: 1px solid red;
+      caret-color: transparent;
   }
 ul, li{
     list-style: none;
@@ -26,4 +27,8 @@ a{
     all: unset;
     text-decoration: none;
     color: inherit;
+}
+a:hover {
+    color: #ef3b0e;
+    text-decoration: none;
 }

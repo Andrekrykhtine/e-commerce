@@ -18,11 +18,11 @@
 
   }
 
-  .swiper-button-next.um,
-  .swiper-button-prev.um {
+  .swiper-button-next,
+  .swiper-button-prev {
     --swiper-navigation-color: #FF8C00;
   }
-  .swiper-pagination.um{
+  .swiper-pagination{
     --swiper-pagination-color: #FF8C00;
     --swiper-pagination-bullet-active-color: #FF8C00;
   }

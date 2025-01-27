@@ -38,7 +38,7 @@
 <body>
 
     <main class="container-fluid">
-        <header class="header">
+        <header class="header" id ="header">
             <div class="header_logo">
                 <a href="#" aria-label="Click & Buy - Página inicial">
                     <a class="logo" href="#"><img src="./src/images/logosemfundo.png" alt="logo Click & Buy"></a>
@@ -49,9 +49,7 @@
                     <input type="search" class="search-input" id="searchInput" placeholder="Pesquisar..." required
                         placeholder="input">
                     <span class="magnifying_glass">🔍</span>
-                    <div class="products-grid" id="productsGrid">
-                        <!-- Os produtos serão inseridos aqui via JavaScript -->
-                    </div>
+                  
                 </div>
 
             </div>
@@ -92,7 +90,9 @@
                     <span class="cart-counter">0</span>
                 </div>
             </ul>
-
+            <div class="products-grid" id="productsGrid">
+                <!-- Os produtos serão inseridos aqui via JavaScript -->
+            </div>
         </header>
         <nav class="nav-header-plus">
             <div class="nav-menu">
@@ -155,33 +155,35 @@
                     <div class="colection-news">
                         <img src="./src/images/camisa-amarela.png" alt="camisa amarela tour de france">
                     </div>
-                    <h2>
-                        <a href="#">
-                            <p class="nome-produto">Camisa amarela do Campeonato Tour de France</p>
-                        </a>
-                    </h2>
-                    <p id="preco" class="preco">R$ 99,50</p>
-                    <div class="angles">
 
+                    <a href="#" class="nome-produto">
+                        Camisa amarela do Campeonato Tour de France
+                    </a>
+
+                    <p id="preco" class="preco">R$ 99,50</p>
+
+                    <div class="angles">
                         <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
                             title="Adicionar ao carrinho">
                             <i class="fas">Adicionar ao carrinho</i>
                         </button>
                     </div>
+
                 </div>
             </div>
-           
+
 
             <div class="news2">
                 <div class="card" data-id="2">
+
                     <div class="colection-news">
                         <img src="./src/images/oculos.png" alt="Bike preta">
                     </div>
-                    <h2>
-                        <a href="#">
-                            <p class="nome-produto">Óculos para ciclismo</p>
-                        </a>
-                    </h2>
+
+                    <a href="#" class="nome-produto">
+                        Óculos Armor ideal para prática do ciclismo
+                    </a>
+
                     <p id="preco" class="preco">R$ 220,00</p>
                     <div class="angles">
 
@@ -192,19 +194,19 @@
                     </div>
                 </div>
             </div>
-           
+
 
             <div class="news3">
 
                 <div class="card" data-id="3">
-                    <h2>
-                        <a href="#">
-                            <p class="nome-produto">Luva ciclismo</p>
-                        </a>
-                    </h2>
                     <div class="colection-news">
                         <img src="./src/images/luva.png" alt="Luva para a pratica de ciclismo">
                     </div>
+
+                    <a href="#" class="nome-produto">
+                        Luva Bike preta/ laranja para ciclismo meio dedo ClicleTur
+                    </a>
+
                     <p id="preco" class="preco">R$ 200,00</p>
                     <div class="angles">
 
@@ -215,19 +217,19 @@
                     </div>
                 </div>
             </div>
-         
+
 
             <div class="news4">
 
                 <div class="card" data-id="4">
-                    <h2>
-                        <a href="#">
-                            <p class="nome-produto">Ciclocomputador</p>
-                        </a>
-                    </h2>
                     <div class="colection-news">
                         <img src="./src/images/compudador-de-bordo.png" alt="Bike preta">
                     </div>
+
+                    <a href="#" class="nome-produto">
+                        Ciclocomputador com medidor de batimentos cardiacos para ciclismo ClicleLife
+                    </a>
+
                     <p id="preco" class="preco" style=>R$ 150,90</p>
                     <div class="angles">
 
@@ -238,18 +240,18 @@
                     </div>
                 </div>
             </div>
-          
+
 
             <div class="news5" id="news5">
                 <div class="card" data-id="5">
-                    <h2>
-                        <a href="#">
-                            <p class="nome-produto">Camisa Tour de France</p>
-                        </a>
-                    </h2>
                     <div class="colection-news">
-                        <img src="./src/images/camisa-amarela.png" alt="camisa amarela tour de france">
+                        <img src="./src/images/camisa-bolinha.png" alt="camisa de bolinha tour de france">
                     </div>
+
+                    <a href="#" class="nome-produto">
+                        Camisa de bolinha do Campeonato Tour de France melhor escalador
+                    </a>
+
                     <p id="preco" class="preco">R$ 99,50</p>
                     <div class="angles">
 
@@ -260,18 +262,18 @@
                     </div>
                 </div>
             </div>
-            
+
 
             <div class="news6">
                 <div class="card" data-id="6">
-                    <h2>
-                        <a href="#">
-                            <p class="nome-produto">Óculos para ciclismo</p>
-                        </a>
-                    </h2>
                     <div class="colection-news">
                         <img src="./src/images/oculos.png" alt="Bike preta">
                     </div>
+
+                    <a href="#" class="nome-produto">
+                        Óculos para ciclismo
+                    </a>
+
                     <p id="preco" class="preco">R$ 220,00</p>
                     <div class="angles">
 
@@ -282,18 +284,18 @@
                     </div>
                 </div>
             </div>
-           
+
 
             <div class="news7">
                 <div class="card" data-id="7">
-                    <h2>
-                        <a href="#">
-                            <p class="nome-produto">Luva ciclismo</p>
-                        </a>
-                    </h2>
                     <div class="colection-news">
                         <img src="./src/images/luva.png" alt="Luva para a pratica de ciclismo">
                     </div>
+
+                    <a href="#" class="nome-produto">
+                        Luva ciclismo
+                    </a>
+
                     <p id="preco" class="preco">R$ 200,00</p>
                     <div class="angles">
 
@@ -304,19 +306,19 @@
                     </div>
                 </div>
             </div>
-         
+
 
             <div class="news8">
 
                 <div class="card" data-id="8">
-                    <h2>
-                        <a href="#">
-                            <p class="nome-produto">Ciclocomputador</p>
-                        </a>
-                    </h2>
                     <div class="colection-news">
                         <img src="./src/images/compudador-de-bordo.png" alt="Bike preta">
                     </div>
+
+                    <a href="#" class="nome-produto">
+                        Ciclocomputador
+                    </a>
+
                     <p id="preco" class="preco" style=>R$ 150,90</p>
                     <div class="angles">
 
@@ -327,7 +329,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </section>
 
         <div class="product" id="produto">
@@ -338,10 +340,10 @@
                     <div class="swiper-slide dois primeiro">
                         <img src="./src/images/bike-verde.png" alt="bike verde de trilha">
                     </div>
-                    <div class="swiper-slide dois">
+                    <div class="swiper-slide dois segundo">
                         <img src="./src/images/download (1).png" alt="bike de bmx laranja">
                     </div>
-                    <div class="swiper-slide dois">
+                    <div class="swiper-slide dois terceiro">
                         <img src="./src/images/bike-azul.png" alt="bike azul com cesto para transporte">
                     </div>
                 </div>
@@ -353,7 +355,7 @@
                 <div class="swiper-button-next dois"></div>
 
                 <!-- If we need scrollbar -->
-               
+
             </div>
         </div>
 
@@ -362,7 +364,7 @@
             <div class="footer-content">
                 <!-- Logo e descrição -->
                 <div class="footer-brand">
-                    <a class="logo-footer" href="">C&B</a>
+                    <a class="logo-footer" href="#header">C&B</a>
                     <p class="footer-description">Click & Buy -- Produtos para ciclismo</p>
                 </div>
 
@@ -376,7 +378,7 @@
                     </ul>
                 </div>
                 <!-- Copyright -->
-                <p class="copyright">&copy; 2024 Click & Buy. Todos os direitos reservados.</p>
+                <p class="copyright">&copy; 2025 Click & Buy. Todos os direitos reservados.</p>
             </div>
 
 

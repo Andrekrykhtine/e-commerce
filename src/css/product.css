@@ -1,5 +1,14 @@
 .swiper-slide.dois.primeiro img {
-  padding: 60px;
+  
+}
+.swiper-slide.dois.segundo img
+{
+padding: 0 0 0 0;
+background-color: blueviolet;
+}
+
+.swiper-slide.dois.terceiro img{
+  background-color: blueviolet;
 }
 /* .product {
   display: flex;
