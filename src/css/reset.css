@@ -10,6 +10,8 @@ html{
       font-family: "Roboto", sans-serif;
       box-sizing: border-box;
       font-weight: 300;
+      outline: 1px solid red;
+      caret-color: transparent;
   }
 ul, li{
     list-style: none;
@@ -26,4 +28,8 @@ a{
     text-decoration: none;
     color: inherit;
     background-color: orange;
+}
+a:hover {
+    color: #ef3b0e;
+    text-decoration: none;
 }
