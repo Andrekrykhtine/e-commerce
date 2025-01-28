@@ -31,6 +31,7 @@
   height: 90px;
   object-fit: cover;
   border-radius: 50%;
+  margin-left: 20px;
 }
 
 .search {
@@ -150,8 +151,8 @@ ul {
 
 .cart-counter {
   position: absolute;
-  top: -25px;
-  right: -125px;
+
+
   background-color: #e74c3c;
   color: white;
   border-radius: 50%;
@@ -214,7 +215,6 @@ ul {
 .dropdown-list {
   position: absolute;
   flex-direction: column;
-;
   left: 25%;
   transform: translateY(40px);
   background: white;

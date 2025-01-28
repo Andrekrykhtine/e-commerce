@@ -48,7 +48,7 @@ function renderProducts() {
         .map(product => createProductCard(product))
         .join('');
 }
-
+// Filtra os produtos com base na busca
 function filterProducts(searchTerm) {
     const productCards = document.querySelectorAll('.product-card');
     let hasResults = false;
