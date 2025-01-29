@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Click & Buy - Sua loja de produtos para ciclismo">
+
+    <!-- Links para folhas de estilo externas -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glide-js/dist/glide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/globais.css">
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/news.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
+    <link rel="stylesheet" href="./src/css/carrossel.css">
+    <link rel="stylesheet" href="./src/css/product.css">
+    <link rel="stylesheet" href="./src/css/promotion.css">
+    <link rel="stylesheet" href="./src/css/pesquisa.css">
+
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Ícone da página -->
+    <link rel="shortcut icon" href="./src/images/shop-solid.svg" type="image/svg+xml">
+
+    <title>Click & Buy - Produtos para Ciclismo</title>
+</head>
+<body>
+    <main class="main">
+        <!-- Header -->
+        <header class="header" id="header">
+            <div class="header__logo">
+                <a href="#" aria-label="Click & Buy - Página inicial">
+                    <img src="./src/images/logofundo.png" alt="Logo Click & Buy" class="header__logo-image">
+                </a>
+            </div>
+
+            <div class="header__search">
+                <input type="search" class="header__search-input" id="searchInput" placeholder="Pesquisar..." required>
+                <span class="header__search-icon">🔍</span>
+                <div class="header__search-results" id="productsGrid">
+                    <!-- Os produtos serão inseridos aqui via JavaScript -->
+                </div>
+            </div>
+
+            <ul class="header__menu">
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="./login.html">Login</a>
+                </li>
+                <li class="header__menu-item">
+                    <button class="header__cart-button" id="cartButton">
+                        <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                        <span class="header__cart-counter">0</span>
+                    </button>
+                    <div class="header__cart-dropdown" id="cartDropdown">
+                        <div class="header__cart-item">
+                            <p class="header__cart-title">MEUS PRODUTOS</p>
+                            <div class="header__cart-content">
+                                <ul id="cartList"></ul> 
+                                <div id="emptyCart">
+                                    <p>Seu carrinho está vazio</p>
+                                </div>
+                                <p>Total: R$ <span id="cartTotal">0.00</span></p>
+                                <button class="header__cart-checkout btn btn-success" onclick="finalizarCompra()">Finalizar compra</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </header>
+
+        <!-- Navegação adicional -->
+        <nav class="nav" aria-label="Navegação principal">
+            <ul class="nav__menu">
+                <!-- Item de menu com dropdown -->
+                <li class="nav__menu-item nav__menu-item--category">
+                    <button class="nav__menu-link nav__menu-link--category" aria-expanded="false">
+                        Categorias <i class="nav__menu-icon fas fa-chevron-down"></i>
+                    </button>
+                    <div class="nav__dropdown" id="categoryDropdown">
+                        <a href="#promotion" class="nav__dropdown-link"><i class="fas fa-mobile-alt"></i> Ofertas</a>
+                        <a href="#news" class="nav__dropdown-link"><i class="fas fa-tshirt"></i> Novidades</a>
+                        <a href="#product" class="nav__dropdown-link"><i class="fas fa-glasses"></i> Mais Vendidos</a>
+                    </div>
+                </li>
+        
+                <!-- Itens de menu simples -->
+                <li class="nav__menu-item"><a href="#promotion" class="nav__menu-link">Ofertas</a></li>
+                <li class="nav__menu-item"><a href="#news" class="nav__menu-link">Novidades</a></li>
+                <li class="nav__menu-item"><a href="#product" class="nav__menu-link">Mais Vendidos</a></li>
+                <li class="nav__menu-item"><a href="#footer" class="nav__menu-link">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <!-- Seção de Promoções -->
+        <section class="promotion" id="promotion">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./src/images/bike-branca.png" alt="Bike de corrida">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/images/bike-crianca.png" alt="Bike de criança">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/images/bike-trilha.png" alt="Bike de trilha">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <!-- Seção de Novidades -->
+        <h2 class="news__title" id="newsTitle">Confira nossas novidades</h2>
+        <section class="news" id="news">
+            <!-- Cards de produtos serão gerados dinamicamente via JavaScript -->
+        </section>
+
+        <!-- Seção de Produtos -->
+        <section class="product" id="product">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./src/images/bike-verde.png" alt="Bike verde de trilha">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/images/download (1).png" alt="Bike de BMX laranja">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/images/bike-azul.png" alt="Bike azul com cesto">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer" id="footer">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a class="footer__logo" href="#header">C&B</a>
+                    <p class="footer__description">Click & Buy — Produtos para ciclismo</p>
+                </div>
+                <div class="footer__social">
+                    <ul class="footer__social-links">
+                        <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+                        <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+                <p class="footer__copyright">&copy; 2025 Click & Buy. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/4f077d5d34.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glide-js/dist/glide.min.js"></script>
+    <script src="./src/js/header.js"></script>
+    <script src="./src/js/carrinho.js"></script>
+    <script src="./src/js/carrosselswp.js"></script>
+    <script src="./src/js/pesquisa.js"></script>
+</body>
+</html>

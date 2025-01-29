@@ -150,9 +150,9 @@ ul {
 }
 
 .cart-counter {
-  position: absolute;
-
-
+  position: relative;
+  top: -25px;
+  right: -125px;
   background-color: #e74c3c;
   color: white;
   border-radius: 50%;
