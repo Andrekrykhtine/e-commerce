@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glide-js/dist/glide.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="./src/css/teste.css">
+    <link rel="stylesheet" href="./src/css/teste.css">
 
     <!-- Fontes do Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,11 +52,11 @@
                         <div class="header__cart-item">
                             <p class="header__cart-title">MEUS PRODUTOS</p>
                             <div class="header__cart-content">
-                                <ul id="cartList"></ul> <!-- Lista de produtos no carrinho -->
-                                <div id="emptyCart">
+                                <ul id="listaCarrinho"></ul> <!-- Lista de produtos no carrinho -->
+                                <div id="carrinhoVazio">
                                     <p>Seu carrinho está vazio</p>
                                 </div>
-                                <p>Total: R$ <span id="cartTotal">0.00</span></p>
+                                <p>Total: R$ <span id="total">0.00</span></p>
                                 <button class="header__cart-checkout btn btn-success" onclick="finalizarCompra()">Finalizar compra</button>
                             </div>
                         </div>
@@ -81,9 +81,9 @@
                 </li>
         
                 <!-- Itens de menu simples -->
-                <li class="nav__menu-item"><a href="#promotion" class="nav__menu-link">Ofertas</a></li>
-                <li class="nav__menu-item"><a href="#news" class="nav__menu-link">Novidades</a></li>
-                <li class="nav__menu-item"><a href="#product" class="nav__menu-link">Mais Vendidos</a></li>
+                <li class="nav__menu-item"><a href="#promotion" class="nav__menu-links">Ofertas</a></li>
+                <li class="nav__menu-item"><a href="#news" class="nav__menu-links">Novidades</a></li>
+                <li class="nav__menu-item"><a href="#product" class="nav__menu-links">Mais Vendidos</a></li>
                 <li class="nav__menu-item"><a href="#footer" class="nav__menu-link">Sobre</a></li>
             </ul>
         </nav>

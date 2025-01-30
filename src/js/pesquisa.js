@@ -87,3 +87,4 @@ searchInput.addEventListener('input', (e) => {
 
 // Inicializa os produtos (ocultos)
 renderProducts();
+
