@@ -1,0 +1,492 @@
+/* reset.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* globais.css */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn--success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn--success:hover {
+    background-color: #218838;
+}
+
+/* header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header__logo-image {
+    width: 150px;
+}
+
+.header__search {
+    position: relative;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.header__search-input {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.header__search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__menu-link {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.header__cart {
+    position: relative;
+}
+
+.header__cart-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header__cart-icon {
+    font-size: 24px;
+    color: #333;
+}
+
+.header__cart-counter {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff4d4d;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    min-width: 20px;
+    text-align: center;
+}
+
+.header__cart-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    z-index: 1000;
+    padding: 15px;
+}
+
+.header__cart-dropdown.active {
+    display: block;
+}
+
+.header__cart-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header__cart-content {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.header__cart-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.header__cart-product:last-child {
+    border-bottom: none;
+}
+
+.header__cart-remove {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header__cart-remove:hover {
+    background-color: #cc0000;
+}
+
+#emptyCart {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #666;
+}
+.search__card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.search__card:last-child {
+    border-bottom: none;
+}
+
+.search__card:hover {
+    background-color: #f9f9f9;
+}
+
+.search__card-image img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.search__card-content {
+    flex-grow: 1;
+}
+
+.search__card-title {
+    font-size: 14px;
+    margin: 0;
+}
+
+.search__card-price {
+    font-size: 12px;
+    color: #28a745;
+    margin: 0;
+}
+
+/* nav.css */
+.nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+/* Estilo do menu principal */
+.nav__menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__menu-item {
+    position: relative;
+}
+
+.nav__menu-link {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.nav__menu-link:hover {
+    background-color: #444;
+}
+
+/* Estilo do botão de dropdown */
+.nav__menu-link--category {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+/* Estilo do dropdown */
+.nav__dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 10px;
+    z-index: 1000;
+    min-width: 150px;
+}
+
+.nav__menu-item--category:hover .nav__dropdown {
+    display: block;
+}
+
+.nav__dropdown-link {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.nav__dropdown-link:hover {
+    background-color: #555;
+}
+
+
+/* promotion.css */
+.promotion {
+    margin: 40px 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 400px; /* Altura do carrossel */
+    overflow: hidden; /* Garante que nada ultrapasse o container */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9; /* Cor de fundo para áreas sem imagem */
+}
+
+.swiper-slide img {
+    width: auto; /* Largura automática para manter a proporção */
+    height: 100%; /* Altura máxima igual à do carrossel */
+    object-fit: contain; /* Mantém a proporção da imagem sem cortar */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o container */
+}
+
+.swiper-pagination {
+    bottom: 20px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #000;
+}
+
+/* news.css */
+.news {
+    padding: 40px 0;
+}
+
+.news__title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.news__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.news__card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.news__card:hover {
+    transform: translateY(-5px);
+}
+
+.news__card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news__card-content {
+    padding: 15px;
+}
+
+.news__card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.news__card-price {
+    font-size: 16px;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.news__card-button {
+    width: 100%;
+}
+
+/* product.css */
+.product {
+    margin: 40px 0;
+}
+
+/* footer.css */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__brand {
+    max-width: 300px;
+}
+
+.footer__logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer__description {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.footer__social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer__social-links a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer__social-links a:hover {
+    color: #28a745;
+}
+
+.footer__copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.news__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.news__card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.news__card:hover {
+    transform: translateY(-5px);
+}
+
+.news__card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news__card-content {
+    padding: 15px;
+}
+
+.news__card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.news__card-price {
+    font-size: 16px;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.news__card-button {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .swiper {
+        height: 300px; /* Altura menor para dispositivos móveis */
+    }
+}
