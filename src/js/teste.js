@@ -19,7 +19,7 @@ const produtos = [
     },
     {
         id: 4,
-        nome: "Ciclocomputador com medidor de batimentos cardíacos para ciclismo ClicleLife",
+        nome: "Ciclocomputador de bordo ultra resistente ClicleLife",
         preco: 150.90,
         imagem: "./src/images/compudador-de-bordo.png"
     },
@@ -43,6 +43,18 @@ const produtos = [
     },
     {
         id: 8,
+        nome: "Ciclocomputador",
+        preco: 150.90,
+        imagem: "./src/images/compudador-de-bordo.png"
+    },
+    {
+        id: 9,
+        nome: "Luva ciclismo",
+        preco: 200.00,
+        imagem: "./src/images/luva.png"
+    },
+    {
+        id: 10,
         nome: "Ciclocomputador",
         preco: 150.90,
         imagem: "./src/images/compudador-de-bordo.png"

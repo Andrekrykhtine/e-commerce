@@ -273,8 +273,10 @@ img {
     
 }
 
-.nav__menu-link:hover {
+.nav__menu-link:hover, .nav__menu-links:hover {
     background-color: #444;
+    text-decoration: none;
+    color: #f24e13;
 }
 
 /* Estilo do botão de dropdown */
@@ -372,11 +374,16 @@ img {
 }
 
 .news__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
     transition: transform 0.3s ease;
+    height: 400px;
+
 }
 
 .news__card:hover {
@@ -385,8 +392,8 @@ img {
 
 .news__card img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    max-height: 200px;
+    object-fit: contain;
 }
 
 .news__card-content {
@@ -406,6 +413,8 @@ img {
 
 .news__card-button {
     width: 100%;
+    letter-spacing: 2px;
+    font-size: 10px;
 }
 
 /* product.css */
@@ -461,49 +470,7 @@ img {
     font-size: 14px;
 }
 
-.news__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
 
-.news__card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.news__card:hover {
-    transform: translateY(-5px);
-}
-
-.news__card-image img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.news__card-content {
-    padding: 15px;
-}
-
-.news__card-title {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.news__card-price {
-    font-size: 16px;
-    color: #28a745;
-    margin-bottom: 10px;
-}
-
-.news__card-button {
-    width: 100%;
-}
 
 @media (max-width: 768px) {
     .swiper {
