@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Click & Buy - Sua loja de produtos para ciclismo">
+    <title>Click & Buy - Produtos para Ciclismo </title>
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -23,7 +24,7 @@
     <link rel="stylesheet" href="./src/css/promotion.css">
     <link rel="stylesheet" href="./src/css/pesquisa.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
+    <link rel="stylesheet" href="./src/css/responsive.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +34,6 @@
 
     <link rel="shortcut icon" href="./src/images/shop-solid.svg" type="">
 
-    <title>Click & Buy - Produtos para Ciclismo </title>
 
 </head>
 
@@ -74,7 +74,7 @@
                                 <p class="meus_produtos" href="#home">MEUS PRODUTOS</p>
                                 <div class="carrinho">
                                     <!-- <button onclick="limparCarrinho()">Limpar carrinho</button> -->
-                                    <ul id="listaCarrinho"></ul>
+                                    <ul class="listaCarrinho" id="listaCarrinho"></ul>
                                     <div id="carrinhoVazio">
                                         <p>Seu carrinho está vazio</p>
                                     </div>
@@ -93,7 +93,7 @@
                     </div>
                 </li>
             </ul>
-            
+
 
         </header>
         <nav class="nav-header-plus">
@@ -164,12 +164,12 @@
 
                     <p id="preco" class="preco">R$ 99,50</p>
 
-                    <div class="angles">
-                        <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
-                            title="Adicionar ao carrinho">
-                            <i class="fas">Adicionar ao carrinho</i>
-                        </button>
-                    </div>
+
+                    <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
+                        title="Adicionar ao carrinho">
+                        <i class="fas">Adicionar ao carrinho</i>
+                    </button>
+
 
                 </div>
             </div>
@@ -187,13 +187,12 @@
                     </a>
 
                     <p id="preco" class="preco">R$ 220,00</p>
-                    <div class="angles">
 
-                        <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
-                            title="Adicionar ao carrinho">
-                            <i class="fas">Adicionar ao carrinho</i>
-                        </button>
-                    </div>
+                    <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
+                        title="Adicionar ao carrinho">
+                        <i class="fas">Adicionar ao carrinho</i>
+                    </button>
+
                 </div>
             </div>
 
@@ -210,13 +209,13 @@
                     </a>
 
                     <p id="preco" class="preco">R$ 200,00</p>
-                    <div class="angles">
 
-                        <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
-                            title="Adicionar ao carrinho">
-                            <i class="fas">Adicionar ao carrinho</i>
-                        </button>
-                    </div>
+
+                    <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
+                        title="Adicionar ao carrinho">
+                        <i class="fas">Adicionar ao carrinho</i>
+                    </button>
+
                 </div>
             </div>
 
@@ -233,13 +232,12 @@
                     </a>
 
                     <p id="preco" class="preco" style=>R$ 150,90</p>
-                    <div class="angles">
 
-                        <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
-                            title="Adicionar ao carrinho">
-                            <i class="fas">Adicionar ao carrinho</i>
-                        </button>
-                    </div>
+                    <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
+                        title="Adicionar ao carrinho">
+                        <i class="fas">Adicionar ao carrinho</i>
+                    </button>
+
                 </div>
             </div>
 
@@ -255,13 +253,12 @@
                     </a>
 
                     <p id="preco" class="preco">R$ 99,50</p>
-                    <div class="angles">
 
-                        <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
-                            title="Adicionar ao carrinho">
-                            <i class="fas">Adicionar ao carrinho</i>
-                        </button>
-                    </div>
+                    <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
+                        title="Adicionar ao carrinho">
+                        <i class="fas">Adicionar ao carrinho</i>
+                    </button>
+
                 </div>
             </div>
 
@@ -277,13 +274,12 @@
                     </a>
 
                     <p id="preco" class="preco">R$ 220,00</p>
-                    <div class="angles">
 
-                        <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
-                            title="Adicionar ao carrinho">
-                            <i class="fas">Adicionar ao carrinho</i>
-                        </button>
-                    </div>
+                    <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
+                        title="Adicionar ao carrinho">
+                        <i class="fas">Adicionar ao carrinho</i>
+                    </button>
+
                 </div>
             </div>
 
@@ -299,13 +295,12 @@
                     </a>
 
                     <p id="preco" class="preco">R$ 200,00</p>
-                    <div class="angles">
 
-                        <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
-                            title="Adicionar ao carrinho">
-                            <i class="fas">Adicionar ao carrinho</i>
-                        </button>
-                    </div>
+                    <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
+                        title="Adicionar ao carrinho">
+                        <i class="fas">Adicionar ao carrinho</i>
+                    </button>
+
                 </div>
             </div>
 
@@ -322,13 +317,12 @@
                     </a>
 
                     <p id="preco" class="preco" style=>R$ 150,90</p>
-                    <div class="angles">
 
-                        <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
-                            title="Adicionar ao carrinho">
-                            <i class="fas">Adicionar ao carrinho</i>
-                        </button>
-                    </div>
+                    <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
+                        title="Adicionar ao carrinho">
+                        <i class="fas">Adicionar ao carrinho</i>
+                    </button>
+
                 </div>
             </div>
 
@@ -367,7 +361,7 @@
 
                 <div class="footer-brand">
                     <a class="logo-footer" href="#header">C&B</a>
-                    <p class="footer-description">Click & Buy -- Produtos para ciclismo</p>
+                    <a class="footer-description"> Click & Buy -- Produtos para ciclismo</a>
                 </div>
 
 

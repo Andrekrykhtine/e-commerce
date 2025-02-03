@@ -5,7 +5,7 @@
     margin-right: 0 !important;
     
 }
-
+/* 
 .container-fluid {
     display: grid;
     grid: 
@@ -18,38 +18,13 @@
     "product " 300px
    "footer" 100px
     / 100%;
-}
+} */
 body{
     background-color: #00000004;
    
 }
 
-.header {
-    grid-area: header;
-}
-.nav-header-plus{
-    grid-area: nav ;
-  
-}
-.promotion{
-    grid-area:promotion;
- 
-}
-.news_title{
-    grid-area: newstitle;
-}
 
-.news{
- grid-area: news;
-}
-
-.product{
-    grid-area: product; 
-}
-
-.footer{
-grid-area: footer;
-}
 
 .empty-cart {
     display: none;

@@ -151,8 +151,8 @@ ul {
 
 .cart-counter {
   position: relative;
-  top: -25px;
-  right: -125px;
+  top: -40px;
+  right: -70px;
   background-color: #e74c3c;
   color: white;
   border-radius: 50%;
@@ -163,6 +163,10 @@ ul {
   justify-content: center;
   font-size: 12px;
   font-weight: bold;
+}
+
+.listaCarrinho ul li{
+  font-size: 30px;
 }
 
 /* Estilização do nav */
@@ -258,99 +262,4 @@ ul {
   animation: fadeIn 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
-  .search {
-    width: 85%;
-  }
-  
-  .cart-counter {
-    position: relative;
-    right: -105px;
-    top: -15px;
-  }
-}
 
-@media screen and (max-width: 600px) {
- 
-  .search {
-    width: 50%;
-  }
-
-  .search input{
-    font-size: 1rem;
-  }
-
-  .category-button{
-    display: block;
-  }
-
-  .nav-menu-item{
-    display: none;
-  }
-
-  .nav-menu-item.contato{
-    display: block;
-  }
-
-  .fundo_logo {
-    max-width: 50px;
-    max-height: 50px;
-  }
-
-  .logo img{
-    width: 68px;
-    height: 68px;
-  }
-
-  .car{
-    margin-left: 10px;
-  }
-
-  .cart-counter {
-    position: relative;
-    right: -65px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .search {
-    width: 25%;
-    height: 30px;
-  }
-
-  .search input {
-    display: none;
-  }
-
-  .category-button{
-    display: block;
-  }
-
-  .nav-menu-item{
-    display: none;
-  }
-
-  .nav-menu-item.contato{
-    display: block;
-  }
-
-  .fundo_logo {
-    width: 50px;
-    height: 50px;
-  }
-
-  .logo img{
-    width: 68px;
-    height: 68px;
-   
-  }
-
-  .car{
-    margin-left: 10px;
-  }
-
-  .cart-counter {
-    position: relative;
-    right: -65px;
-  }
-}

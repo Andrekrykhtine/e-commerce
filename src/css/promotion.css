@@ -27,20 +27,4 @@
     --swiper-pagination-bullet-active-color: #FF8C00;
   }
 
-  @media screen and (max-width: 900px) {
-    .swiper {
-      width: 95%;
-    }
-  }
- 
-
-  @media screen and (max-width: 400px) {
-    .swiper {
-      width: 100%;
-    }
-
-    .swiper img {
-      width: 100%;
-    }
-  }
 
