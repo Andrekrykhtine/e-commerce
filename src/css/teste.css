@@ -498,3 +498,12 @@ img {
         display: none;
     }
 }
+
+
+
+.menu_car.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    z-index: 3;
+  }
