@@ -2,29 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden;
   background-color: #FF8C00;
 }
 
-.header .nav-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100%;
-}
-
-.nav-header ul {
-  font-size: 20px;
-  display: flex;
-  gap: 50px;
-  align-items: flex-start;
-}
-
-.nav-header-plus ul li {
-  display: flex;
-  justify-content: space-between;
-}
 
 .logo img {
   width: 90px;
@@ -172,11 +152,11 @@ ul {
 /* Estilização do nav */
 .nav-header-plus {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 2;
   background-color: #08438236;
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 50px ;
 }
 
 .nav-menu {
@@ -209,7 +189,7 @@ ul {
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   display: none;
-  z-index: 1001;
+  z-index: 4;
 }
 
 .category-dropdown.active {

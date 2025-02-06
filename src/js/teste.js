@@ -197,6 +197,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 });
 
+// ####PESQUISA####
 function filtrarProdutos(termo) {
     return produtos.filter(produto => {
         // Converte o nome do produto e o termo de pesquisa para minúsculas

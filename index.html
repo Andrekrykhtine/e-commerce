@@ -14,16 +14,15 @@
 
 
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/globais.css">
     <link rel="stylesheet" href="./src/css/header.css">
     <link rel="stylesheet" href="./src/css/news.css">
     <link rel="stylesheet" href="./src/css/footer.css">
-    <link rel="stylesheet" href="./src/css/carrossel.css">
     <link rel="stylesheet" href="./src/css/product.css">
     <link rel="stylesheet" href="./src/css/promotion.css">
     <link rel="stylesheet" href="./src/css/pesquisa.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="./src/css/responsive.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,14 +46,11 @@
                 </a>
             </div>
 
-            <div class="nav-header">
-                <div class="search">
-                    <input type="search" class="search-input" id="searchInput" placeholder="Pesquisar..." required>
-                    <span class="magnifying_glass">🔍</span>
-                    <div class="products-grid" id="productsGrid">
-
-                        <!-- Os produtos serão inseridos aqui via JavaScript -->
-                    </div>
+            <div class="header__search">
+                <input type="search" class="header__search-input" id="searchInput" placeholder="Pesquisar..." required>
+                <span class="header__search-icon">🔍</span>
+                <div class="header__search-results" id="productsGrid">
+                    <!-- Os resultados da pesquisa serão exibidos aqui -->
                 </div>
             </div>
 
