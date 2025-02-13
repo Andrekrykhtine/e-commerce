@@ -16,6 +16,7 @@
 
 .new{
     width: min-content;
+    height: 50vh;
     flex: auto;
 }
 

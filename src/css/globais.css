@@ -39,10 +39,6 @@ body{
     grid-area: newstitle;
 }
 
-.news{
- grid-area: news;
-}
-
 .product{
     grid-area: product; 
 }
