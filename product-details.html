@@ -72,27 +72,27 @@
                 </li>
             </ul>
 
-        </header> 
+        </header>
 
         <section id="product-details" class="product-details">
 
-            <div class="product-details-container">
+            <div class="back-to-home">
+                <a href="index.html" class="btn-back">Voltar à Página Inicial</a>
+            </div>
+            <div class="product-details-container card"  data-id="">
                 <div class="product-image">
                     <img id="product-image" src="" alt="Imagem do Produto">
                 </div>
                 <div class="product-info">
-                    <h1 id="product-name"></h1>
-                    <p id="product-price"></p>
+                    <h1 id="product-name" class="nome-produto"></h1>
+                    <p id="product-price" class="preco"></p>
                     <p id="product-description"></p>
                     <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
-                    title="Adicionar ao carrinho">
-                    <i class="fas">Adicionar ao carrinho</i>
-                </button>
-            </div>
-            <div class="back-to-home">
-                <a href="index.html" class="btn-back">Voltar à Página Inicial</a>
-            </div>
-            
+                        title="Adicionar ao carrinho">
+                        <i class="fas">Adicionar ao carrinho</i>
+                    </button>
+                </div>
+
             </div>
         </section>
 
@@ -120,7 +120,8 @@
     </main>
 
     <script src="./src/js/product-details.js"></script>
-  <script src="https://kit.fontawesome.com/4f077d5d34.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4f077d5d34.js" crossorigin="anonymous"></script>
+    <script src="./src/js/carrinho.js"></script>
     <!-- Scripts existentes -->
 </body>
 

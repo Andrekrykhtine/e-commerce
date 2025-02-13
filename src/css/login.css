@@ -4,13 +4,13 @@
 }
 
 html body {
-    background-color: #5366c6;
+    background-color: #00000004;
     height: 100vh;
     width: 100vw;
 }
 
 body {
-    background-image: linear-gradient(to top, #5366c6, #49A09D);
+    background-image: linear-gradient(to top, #000000a1, #1b1713);
 }
 
 main {
@@ -37,14 +37,16 @@ div.campo i {
 
 .person {
     position: absolute;
-    background-color: #49A09D;
+    background-color: #000;
+    color: white;
     border-radius: 5px;
     height: 100%;
 }
 
 .key {
     position: absolute;
-    background-color: #49A09D;
+    background-color: #000;
+    color: white;
     border-radius: 5px;
     height: 100%;
 }
@@ -72,7 +74,7 @@ div.campo input {
     width: 500px;
     height: 350px;
     text-align: center;
-    background: white;
+    background: #FF8C00;
     border-radius: 40px;
 }
 
@@ -85,28 +87,29 @@ form input[type=submit] {
     font-size: 1em;
     width: 40%;
     height: 30px;
-    background-color: #49A09D;
-    color: white;
+    background-color: white;
+    color: #000;
     border: none;
     border-radius: 5px;
     margin-top: 7px;
 }
 
 form input[type=submit]:hover {
-    background-color: aqua;
+    background-color: #000;
+    color: white;
 }
 
 form button {
     width: 40%;
     height: 30px;
-    background-color: white;
-    color: #49A09D;
+    background-color: #00000004;
+    color: #000;
     border-radius: 7px;
     margin-top: 7px;
 }
 
 form button:hover {
-    background-color: aqua;
+    background-color: #000;
     color: white;
 }
 
@@ -121,11 +124,10 @@ form button:hover {
     align-items: center;
     gap: 8px;
     padding: 8px 16px;
-    color: #49A09D;
+    color: #000;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    border: 0.8px solid #49A09D;
     margin :10px;
 }
 
