@@ -2,29 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden;
   background-color: #FF8C00;
 }
 
-.header .nav-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100%;
-}
-
-.nav-header ul {
-  font-size: 20px;
-  display: flex;
-  gap: 50px;
-  align-items: flex-start;
-}
-
-.nav-header-plus ul li {
-  display: flex;
-  justify-content: space-between;
-}
 
 .logo img {
   width: 90px;
@@ -151,8 +131,8 @@ ul {
 
 .cart-counter {
   position: relative;
-  top: -25px;
-  right: -125px;
+  top: -40px;
+  right: -70px;
   background-color: #e74c3c;
   color: white;
   border-radius: 50%;
@@ -165,14 +145,18 @@ ul {
   font-weight: bold;
 }
 
+.listaCarrinho ul li{
+  font-size: 30px;
+}
+
 /* Estilização do nav */
 .nav-header-plus {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 2;
   background-color: #08438236;
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 50px ;
 }
 
 .nav-menu {
@@ -205,7 +189,7 @@ ul {
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   display: none;
-  z-index: 1001;
+  z-index: 4;
 }
 
 .category-dropdown.active {
@@ -258,99 +242,4 @@ ul {
   animation: fadeIn 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
-  .search {
-    width: 85%;
-  }
-  
-  .cart-counter {
-    position: relative;
-    right: -105px;
-    top: -15px;
-  }
-}
 
-@media screen and (max-width: 600px) {
- 
-  .search {
-    width: 50%;
-  }
-
-  .search input{
-    font-size: 1rem;
-  }
-
-  .category-button{
-    display: block;
-  }
-
-  .nav-menu-item{
-    display: none;
-  }
-
-  .nav-menu-item.contato{
-    display: block;
-  }
-
-  .fundo_logo {
-    max-width: 50px;
-    max-height: 50px;
-  }
-
-  .logo img{
-    width: 68px;
-    height: 68px;
-  }
-
-  .car{
-    margin-left: 10px;
-  }
-
-  .cart-counter {
-    position: relative;
-    right: -65px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .search {
-    width: 25%;
-    height: 30px;
-  }
-
-  .search input {
-    display: none;
-  }
-
-  .category-button{
-    display: block;
-  }
-
-  .nav-menu-item{
-    display: none;
-  }
-
-  .nav-menu-item.contato{
-    display: block;
-  }
-
-  .fundo_logo {
-    width: 50px;
-    height: 50px;
-  }
-
-  .logo img{
-    width: 68px;
-    height: 68px;
-   
-  }
-
-  .car{
-    margin-left: 10px;
-  }
-
-  .cart-counter {
-    position: relative;
-    right: -65px;
-  }
-}

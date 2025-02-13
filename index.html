@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Click & Buy - Sua loja de produtos para ciclismo">
+    <title>Click & Buy - Produtos para Ciclismo </title>
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -13,17 +14,16 @@
 
 
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/globais.css">
     <link rel="stylesheet" href="./src/css/header.css">
     <link rel="stylesheet" href="./src/css/news.css">
     <link rel="stylesheet" href="./src/css/footer.css">
-    <link rel="stylesheet" href="./src/css/carrossel.css">
     <link rel="stylesheet" href="./src/css/product.css">
     <link rel="stylesheet" href="./src/css/promotion.css">
     <link rel="stylesheet" href="./src/css/pesquisa.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
+    <link rel="stylesheet" href="./src/css/responsive.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +33,6 @@
 
     <link rel="shortcut icon" href="./src/images/shop-solid.svg" type="">
 
-    <title>Click & Buy - Produtos para Ciclismo </title>
 
 </head>
 
@@ -47,14 +46,11 @@
                 </a>
             </div>
 
-            <div class="nav-header">
-                <div class="search">
-                    <input type="search" class="search-input" id="searchInput" placeholder="Pesquisar..." required>
-                    <span class="magnifying_glass">🔍</span>
-                    <div class="products-grid" id="productsGrid">
-
-                        <!-- Os produtos serão inseridos aqui via JavaScript -->
-                    </div>
+            <div class="header__search">
+                <input type="search" class="header__search-input" id="searchInput" placeholder="Pesquisar..." required>
+                <span class="header__search-icon">🔍</span>
+                <div class="header__search-results" id="productsGrid">
+                    <!-- Os resultados da pesquisa serão exibidos aqui -->
                 </div>
             </div>
 
@@ -74,7 +70,7 @@
                                 <p class="meus_produtos" href="#home">MEUS PRODUTOS</p>
                                 <div class="carrinho">
                                     <!-- <button onclick="limparCarrinho()">Limpar carrinho</button> -->
-                                    <ul id="listaCarrinho"></ul>
+                                    <ul class="listaCarrinho" id="listaCarrinho"></ul>
                                     <div id="carrinhoVazio">
                                         <p>Seu carrinho está vazio</p>
                                     </div>
@@ -93,7 +89,7 @@
                     </div>
                 </li>
             </ul>
-            
+
 
         </header>
         <nav class="nav-header-plus">
@@ -127,14 +123,17 @@
                     <!-- Slides -->
                     <div class="swiper-slide um ">
                         <img src="./src/images/bike-branca.png" alt="bike corrida">
+                        <p>10% off na primeira compra</p>
                     </div>
 
                     <div class="swiper-slide um ">
                         <img src="./src/images/bike-crianca.png" alt="bike de criança">
+                        <p>Promoção dia das Crianças</p>
                     </div>
 
                     <div class="swiper-slide um ">
                         <img src="./src/images/bike-trilha.png" alt="bike de bike-trilha">
+                        <p>Aproveite as bikes em promoção de té </p>
                     </div>
 
                 </div>
@@ -154,115 +153,117 @@
         <section id="news" class="news">
             <div class="new news1" id="news1">
                 <div class="card" data-id="1">
-                    <div class="colection-news">
-                        <img src="./src/images/camisa-amarela.png" alt="camisa amarela tour de france">
-                    </div>
+                        <a href="product-details.html?id=1"class="colection-news">
+                            <img src="./src/images/camisa-amarela.png" alt="camisa amarela tour de france">
+                        </a>
 
-                    <a href="#" class="nome-produto">
-                        Camisa amarela do Campeonato Tour de France
-                    </a>
+                        <span class="nome-produto">Camisa amarela do Campeonato Tour de France</span>
 
-                    <p id="preco" class="preco">R$ 99,50</p>
+                        <p id="preco" class="preco">R$ 99,50</p>
+                    
 
-                    <div class="angles">
-                        <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
-                            title="Adicionar ao carrinho">
-                            <i class="fas">Adicionar ao carrinho</i>
-                        </button>
-                    </div>
+                    <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
+                        title="Adicionar ao carrinho">
+                        <i class="fas">Adicionar ao carrinho</i>
+                    </button>
+
 
                 </div>
+
             </div>
 
 
             <div class="new news2">
-                <div class="card" data-id="2">
+                <a href="product-details.html?id=2" class="nome-produto">
+                    <div class="card" data-id="2">
 
-                    <div class="colection-news">
-                        <img src="./src/images/oculos.png" alt="Bike preta">
-                    </div>
+                        <div class="colection-news">
+                            <img src="./src/images/oculos.png" alt="Bike preta">
+                        </div>
 
-                    <a href="#" class="nome-produto">
+
                         Óculos Armor ideal para prática do ciclismo
-                    </a>
 
-                    <p id="preco" class="preco">R$ 220,00</p>
-                    <div class="angles">
+
+                        <p id="preco" class="preco">R$ 220,00</p>
 
                         <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
                             title="Adicionar ao carrinho">
                             <i class="fas">Adicionar ao carrinho</i>
                         </button>
+
                     </div>
-                </div>
+                </a>
             </div>
 
 
             <div class="new news3">
+                <a href="product-details.html?id=3" class="nome-produto">
+                    <div class="card" data-id="3">
+                        <div class="colection-news">
+                            <img src="./src/images/luva.png" alt="Luva para a pratica de ciclismo">
+                        </div>
 
-                <div class="card" data-id="3">
-                    <div class="colection-news">
-                        <img src="./src/images/luva.png" alt="Luva para a pratica de ciclismo">
-                    </div>
 
-                    <a href="#" class="nome-produto">
                         Luva Bike preta/ laranja para ciclismo meio dedo ClicleTur
-                    </a>
 
-                    <p id="preco" class="preco">R$ 200,00</p>
-                    <div class="angles">
+
+                        <p id="preco" class="preco">R$ 200,00</p>
+
 
                         <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
                             title="Adicionar ao carrinho">
                             <i class="fas">Adicionar ao carrinho</i>
                         </button>
+
                     </div>
-                </div>
+                </a>
             </div>
 
 
             <div class="new news4">
+                <a href="product-details.html?id=4" class="nome-produto">
+                    <div class="card" data-id="4">
+                        <div class="colection-news">
+                            <img src="./src/images/compudador-de-bordo.png" alt="Bike preta">
+                        </div>
 
-                <div class="card" data-id="4">
-                    <div class="colection-news">
-                        <img src="./src/images/compudador-de-bordo.png" alt="Bike preta">
-                    </div>
 
-                    <a href="#" class="nome-produto">
                         Ciclocomputador com medidor de batimentos cardiacos para ciclismo ClicleLife
-                    </a>
 
-                    <p id="preco" class="preco" style=>R$ 150,90</p>
-                    <div class="angles">
+
+                        <p id="preco" class="preco" style=>R$ 150,90</p>
 
                         <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
                             title="Adicionar ao carrinho">
                             <i class="fas">Adicionar ao carrinho</i>
                         </button>
+
                     </div>
-                </div>
+                </a>
             </div>
 
 
             <div class="new news5" id="news5">
+                <a href="product-details.html?id=5" class="nome-produto"></a>
                 <div class="card" data-id="5">
                     <div class="colection-news">
                         <img src="./src/images/camisa-bolinha.png" alt="camisa de bolinha tour de france">
                     </div>
 
-                    <a href="#" class="nome-produto">
-                        Camisa de bolinha do Campeonato Tour de France melhor escalador
-                    </a>
+
+                    Camisa de bolinha do Campeonato Tour de France melhor escalador
+
 
                     <p id="preco" class="preco">R$ 99,50</p>
-                    <div class="angles">
 
-                        <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
-                            title="Adicionar ao carrinho">
-                            <i class="fas">Adicionar ao carrinho</i>
-                        </button>
-                    </div>
+                    <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
+                        title="Adicionar ao carrinho">
+                        <i class="fas">Adicionar ao carrinho</i>
+                    </button>
+
                 </div>
+                </a>
             </div>
 
 
@@ -272,19 +273,19 @@
                         <img src="./src/images/oculos.png" alt="Bike preta">
                     </div>
 
-                    <a href="#" class="nome-produto">
+                    <a href="product-details.html?id=6" class="nome-produto">
                         Óculos para ciclismo
-                    </a>
 
-                    <p id="preco" class="preco">R$ 220,00</p>
-                    <div class="angles">
+                        <p id="preco" class="preco">R$ 220,00</p>
 
                         <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
                             title="Adicionar ao carrinho">
                             <i class="fas">Adicionar ao carrinho</i>
                         </button>
-                    </div>
+
                 </div>
+                </a>
+
             </div>
 
 
@@ -294,18 +295,17 @@
                         <img src="./src/images/luva.png" alt="Luva para a pratica de ciclismo">
                     </div>
 
-                    <a href="#" class="nome-produto">
+                    <a href="product-details.html?id=7" class="nome-produto">
                         Luva ciclismo
                     </a>
 
                     <p id="preco" class="preco">R$ 200,00</p>
-                    <div class="angles">
 
-                        <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
-                            title="Adicionar ao carrinho">
-                            <i class="fas">Adicionar ao carrinho</i>
-                        </button>
-                    </div>
+                    <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
+                        title="Adicionar ao carrinho">
+                        <i class="fas">Adicionar ao carrinho</i>
+                    </button>
+
                 </div>
             </div>
 
@@ -317,18 +317,17 @@
                         <img src="./src/images/compudador-de-bordo.png" alt="Bike preta">
                     </div>
 
-                    <a href="#" class="nome-produto">
+                    <a href="product-details.html?id=8" class="nome-produto">
                         Ciclocomputador
                     </a>
 
                     <p id="preco" class="preco" style=>R$ 150,90</p>
-                    <div class="angles">
 
-                        <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
-                            title="Adicionar ao carrinho">
-                            <i class="fas">Adicionar ao carrinho</i>
-                        </button>
-                    </div>
+                    <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
+                        title="Adicionar ao carrinho">
+                        <i class="fas">Adicionar ao carrinho</i>
+                    </button>
+
                 </div>
             </div>
 
@@ -366,10 +365,8 @@
             <div class="footer-content">
 
                 <div class="footer-brand">
-                    <a class="logo-footer" href="#header">C&B</a>
-                    <p class="footer-description">Click & Buy -- Produtos para ciclismo</p>
+                    <a class="logo-footer" href="#header">C&B <span>-- Click & Buy -- Produtos para ciclismo,</span></a>
                 </div>
-
 
                 <div class="social-media">
                     <ul class="social-links">
@@ -382,6 +379,7 @@
 
                 <p class="copyright">&copy; 2025 Click & Buy. Todos os direitos reservados.</p>
             </div>
+        </footer>
 
 
 

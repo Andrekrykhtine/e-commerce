@@ -5,7 +5,7 @@
     margin-right: 0 !important;
     
 }
-
+/* 
 .container-fluid {
     display: grid;
     grid: 
@@ -18,27 +18,14 @@
     "product " 300px
    "footer" 100px
     / 100%;
-}
+} */
 body{
     background-color: #00000004;
    
 }
 
-.header {
-    grid-area: header;
-}
-.nav-header-plus{
-    grid-area: nav ;
-  
-}
-.promotion{
-    grid-area:promotion;
- 
-}
-.news_title{
-    grid-area: newstitle;
-}
 
+<<<<<<< HEAD
 .product{
     grid-area: product; 
 }
@@ -46,6 +33,8 @@ body{
 .footer{
 grid-area: footer;
 }
+=======
+>>>>>>> 58d02730db2b05527c54027cf6ef8ab167f88bd6
 
 .empty-cart {
     display: none;

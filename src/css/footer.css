@@ -1,6 +1,6 @@
 .footer {
   margin-top: 30px;
-  background-color: #FF8C00;
+  background-color:#FF8C00;
   color: #fff;
   height: 100;
 }
@@ -16,14 +16,19 @@
   font-size: 2.5rem;
   font-weight: 700;
 }
+.logo-footer span {
+  font-size: 1rem;
+  font-weight: 500;
+}
 .logo-footer a:hover{
-  color: rgb(239, 59, 14);
+  color:  #ef3b0e;
   transition: ease-in-out 0.3s;
 }
 
 .footer-brand{
     margin-left: 10px;
 }
+
 .footer .social-links{
     font-size: 40px;
     display: flex ;
@@ -38,5 +43,4 @@
 .footer .copyright{
 margin: 90px 10px 40px 0px;
 }
-
 

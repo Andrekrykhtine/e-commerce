@@ -1,72 +1,90 @@
-.container {
-    display: flex;
-    max-width: 800px;
-    padding: 0 20px;
-}
-
-.products-grid {
-    display: flex;
-    flex-direction: column;
+/* Container do campo de pesquisa */
+.header__search {
     position: relative;
+    flex-grow: 1;
+    margin: 0 20px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    top: 63px;
-    left: 455px;
-    z-index: 100;
-    width: 100px;
 }
 
-.product-card {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    padding-left: 10px;
-    display: none; /* Produtos inicialmente ocultos */
-    animation: fadeIn 0.5s ease-in;
-    background-color: #fff;
-    z-index: 101; 
-    min-height: 100px;
-    width: 100%;
+/* Campo de entrada de texto */
+.header__search-input {
+    width: 80%;
+    padding: 10px 40px 10px 10px; /* Padding à direita para o ícone */
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none; /* Remove o contorno ao focar */
+}
+
+/* Ícone de pesquisa */
+.header__search-icon {
     position: absolute;
-}
-.product-card:hover { 
-  background-color:#FF8C00;
+    font-size: 20px;
+    right: 12%; /* Posiciona o ícone dentro do input */
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza verticalmente */
     cursor: pointer;
+    color: #555; /* Cor do ícone */
+    pointer-events: none; /* Permite clicar no input através do ícone */
 }
 
-
-.product-card.show {
-    display: block;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-.product-image {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-.product-name {
-    margin: 10px 0;
-    font-weight: bold;
-}
-
-.product-price {
-    color: #2ecc71;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.no-results {
-    text-align: center;
-    grid-column: 1 / -1;
-    padding: 20px;
-    color: #000;
-    font-size: 30px;
+/* Resultados da pesquisa */
+.header__search-results {
+    position: absolute;
+    top: 100%;
+    width: 80%;
     background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    overflow-y: auto;
+    border-radius: 20px;
+    overflow: hidden; 
+}
+
+/* Cards dos resultados da pesquisa */
+.search__card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+/* Remove a borda do último card */
+.search__card:last-child {
+    border-bottom: none;
+}
+
+/* Efeito de hover nos cards */
+.search__card:hover {
+    background-color: #f9f9f9;
+}
+
+/* Imagem dentro do card */
+.search__card-image img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Conteúdo dentro do card */
+.search__card-content {
+    flex-grow: 1;
+}
+
+/* Título dentro do card */
+.search__card-title {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Preço dentro do card */
+.search__card-price {
+    font-size: 12px;
+    color: #28a745;
+    margin: 0;
 }

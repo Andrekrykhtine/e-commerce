@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Click & Buy - Detalhes do Produto">
+    <title>Click & Buy - Detalhes do Produto</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/globais.css">
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/product-details.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="stylesheet" href="./src/css/header.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="./src/images/shop-solid.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <main class="container-fluid">
+        <header class="header" id="header">
+            <div class="logo">
+                <a href="#" aria-label="Click & Buy - Página inicial">
+                    <img src="./src/images/logofundo.png" alt="logo Click & Buy">
+                </a>
+            </div>
+
+            <ul class="menu">
+
+                <li>
+                    <a class="login" href="./login.html">Login</a>
+                </li>
+
+                <li>
+                    <div>
+
+                        <button id="car" href="#"><i class="car fa-solid fa-cart-shopping"></i></button>
+                        <ul id="menu_car" class="menu_car">
+
+                            <li>
+                                <p class="meus_produtos" href="#home">MEUS PRODUTOS</p>
+                                <div class="carrinho">
+                                    <!-- <button onclick="limparCarrinho()">Limpar carrinho</button> -->
+                                    <ul class="listaCarrinho" id="listaCarrinho"></ul>
+                                    <div id="carrinhoVazio">
+                                        <p>Seu carrinho está vazio</p>
+                                    </div>
+                                    <p>Total: R$ <span id="total">0.00</span></p>
+                                    <button class="btn btn-success" onclick="finalizarCompra()">Finalizar
+                                        compra</button>
+                                </div>
+                            </li>
+                            <li><a href="#about"></a></li>
+                            <li><a href="#contact"></a></li>
+                        </ul>
+                        <div class="cart-icon">
+                            <i class="fa-shopping-cart fa-2x"></i>
+                            <span class="cart-counter">0</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </header>
+
+        <section id="product-details" class="product-details">
+
+            <div class="back-to-home">
+                <a href="index.html" class="btn-back">Voltar à Página Inicial</a>
+            </div>
+            <div class="product-details-container card"  data-id="">
+                <div class="product-image">
+                    <img id="product-image" src="" alt="Imagem do Produto">
+                </div>
+                <div class="product-info">
+                    <h1 id="product-name" class="nome-produto"></h1>
+                    <p id="product-price" class="preco"></p>
+                    <p id="product-description"></p>
+                    <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
+                        title="Adicionar ao carrinho">
+                        <i class="fas">Adicionar ao carrinho</i>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="footer" id="footer">
+
+            <div class="footer-content">
+
+                <div class="footer-brand">
+                    <a class="logo-footer" href="#header">C&B <span>-- Click & Buy -- Produtos para ciclismo,</span></a>
+                </div>
+
+
+                <div class="social-media">
+                    <ul class="social-links">
+                        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+
+                <p class="copyright">&copy; 2025 Click & Buy. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="./src/js/product-details.js"></script>
+    <script src="https://kit.fontawesome.com/4f077d5d34.js" crossorigin="anonymous"></script>
+    <script src="./src/js/carrinho.js"></script>
+    <!-- Scripts existentes -->
+</body>
+
+</html>
