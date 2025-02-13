@@ -1,6 +1,5 @@
-.swiper-slide.dois.segundo img, .swiper-slide.dois.terceiro img
-{
-padding: 0 0 0 0;
+.swiper-slide.dois{
+  min-height: 500px;
 }
 
 
