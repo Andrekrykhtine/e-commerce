@@ -93,6 +93,9 @@
       position: relative;
       right: -30px;
     }
+    .swiper img {
+      width: 80%;
+    }
   }
 
 
@@ -100,6 +103,9 @@
     .footer .social-links{
       font-size: 25px;
       gap: 10px;
+  }
+  .new {
+   height: 35vh; 
   }
   }
 
