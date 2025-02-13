@@ -47,17 +47,14 @@
     position: relative;
     right: -30px;
   }
+}
 
   @media screen and (max-width: 600px) {
+    .header {
+      flex-direction: column;
+    }
+
    
-    .search {
-      width: 50%;
-    }
-  
-    .search input{
-      font-size: 1rem;
-    }
-  
     .category-button{
       display: block;
     }
@@ -69,15 +66,23 @@
     .nav-menu-item.contato{
       display: block;
     }
+
+    .header__search-results {
+      width: 100%;
+  }
   
-    .fundo_logo {
-      max-width: 50px;
-      max-height: 50px;
-    }
-  
+  /* Styles for the search input field */
+  .header__search-input {
+      width: 100%;
+  }
+  .header__search {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
     .logo img{
-      width: 68px;
-      height: 68px;
+      margin-bottom: 10px;
+      
     }
   
     .car{
@@ -89,7 +94,7 @@
       right: -30px;
     }
   }
-}
+
 
 @media screen and (max-width: 700px) {
     .footer .social-links{
@@ -98,13 +103,6 @@
   }
   }
 
-  @media screen and (max-width: 768px) {
-    .search {
-      width: 85%;
-    }
-    
-  }
-  
   @media screen and (max-width: 900px) {
     .swiper {
       width: 90%;

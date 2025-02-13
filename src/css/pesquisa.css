@@ -4,32 +4,30 @@
     position: relative;
     flex-grow: 1;
     margin: 0 20px;
-}
-
-/* Container for the search bar */
-.header__search-container {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #28a745;
 }
 
 /* Styles for the search results dropdown */
 .header__search-results {
     position: absolute;
     top: 100%;
-    left: 0;
-    width: 100%;
+    width: 80%;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 10; 
     max-height: 300px; 
     overflow-y: auto;
+    border-radius: 20px;
 }
 
 /* Styles for the search input field */
 .header__search-input {
-    width: 100%;
+    width: 80%;
     padding: 10px 40px 10px 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 20px;
     font-size: 16px;
 }
 
