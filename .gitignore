@@ -1,0 +1,47 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Dependency directories
+jspm_packages/
+bower_components/
+
+# Build directories
+dist/
+build/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+!.vscode/extensions.json
+
+# Environment variables
+.env
+
+# Compiled files
+*.out
+*.exe
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Miscellaneous
+*.bak
+*.old
+
+
+
