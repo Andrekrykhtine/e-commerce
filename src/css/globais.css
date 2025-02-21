@@ -1,15 +1,12 @@
 .container-fluid {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    
+    padding: 0;
+    margin: 0;
 }
 
-body{
-    background-color: #00000004;
-   
+body {
+    background-color: rgba(0, 0, 0, 0.04)
 }
+
 .empty-cart {
     display: none;
 }

@@ -3,84 +3,88 @@
     position: relative;
     flex-grow: 1;
     margin: 0 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 600px; /* Limita a largura máxima */
 }
 
 /* Campo de entrada de texto */
 .header__search-input {
-    width: 80%;
-    padding: 10px 40px 10px 10px; /* Padding à direita para o ícone */
+    width: 100%;
+    padding: 10px 40px 10px 15px; /* Padding para o ícone */
     border: 1px solid #ddd;
     border-radius: 20px;
     font-size: 16px;
-    outline: none; /* Remove o contorno ao focar */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.header__search-input:focus {
+    border-color: #FF8C00; /* Cor laranja ao focar */
 }
 
 /* Ícone de pesquisa */
 .header__search-icon {
     position: absolute;
-    font-size: 20px;
-    right: 12%; /* Posiciona o ícone dentro do input */
+    right: 15px;
     top: 50%;
-    transform: translateY(-50%); /* Centraliza verticalmente */
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #555;
     cursor: pointer;
-    color: #555; /* Cor do ícone */
-    pointer-events: none; /* Permite clicar no input através do ícone */
+    pointer-events: none; /* Permite clicar no input */
 }
 
 /* Resultados da pesquisa */
 .header__search-results {
     position: absolute;
     top: 100%;
-    width: 80%;
+    left: 0;
+    width: 100%;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     z-index: 10;
+    max-height: 300px;
     overflow-y: auto;
-    border-radius: 20px;
-    overflow: hidden; 
+    margin-top: 5px;
 }
 
 /* Cards dos resultados da pesquisa */
 .search__card {
+    display: flex;
     align-items: center;
     gap: 10px;
     padding: 10px;
-    border-bottom: 1px solid #ddd;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
 }
 
-/* Remove a borda do último card */
 .search__card:last-child {
     border-bottom: none;
 }
 
-/* Efeito de hover nos cards */
 .search__card:hover {
     background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao hover */
 }
 
 /* Imagem dentro do card */
 .search__card-image img {
-    display: none;
+ display: none;
 }
 
 /* Conteúdo dentro do card */
 .search__card-content {
     flex-grow: 1;
-    min-width: 0; /* Garante que o conteúdo não ultrapasse o card */
+    min-width: 0;
 }
 
 /* Título dentro do card */
 .search__card-title {
     font-size: 14px;
     margin: 0;
-    white-space: nowrap; /* Evita que o título quebre em várias linhas */
-    overflow: hidden; /* Esconde o texto que ultrapassa o card */
-    text-overflow: ellipsis; /* Adiciona "..." ao texto que ultrapassa */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333;
 }
 
 /* Preço dentro do card */
@@ -88,10 +92,25 @@
     font-size: 12px;
     color: #28a745;
     margin: 0;
+    font-weight: 500;
 }
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
+    .header__search {
+        margin: 0 10px;
+    }
+
+    .header__search-input {
+        font-size: 14px;
+        padding: 8px 35px 8px 12px;
+    }
+
+    .header__search-icon {
+        font-size: 18px;
+        right: 12px;
+    }
+
     .search__card-image img {
         width: 40px;
         height: 40px;

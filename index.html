@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Click & Buy - Sua loja de produtos para ciclismo">
-    <title>Click & Buy - Produtos para Ciclismo </title>
+    <title>Click & Buy - Produtos para Ciclismo</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glide-js/dist/glide.min.css">
-
+    <!-- Links para folhas de estilo e fontes -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/globais.css">
@@ -29,16 +27,14 @@
         rel="stylesheet">
 
     <link rel="shortcut icon" href="./src/images/shop-solid.svg" type="image/svg+xml">
-
 </head>
 
 <body>
-
     <main class="container-fluid">
         <header class="header" id="header">
-            <div class="logo">
+            <div class="header__logo">
                 <a href="#" aria-label="Click & Buy - Página inicial">
-                    <img src="./src/images/logofundo.png" alt="logo Click & Buy">
+                    <img src="./src/images/logofundo.png" alt="Logo Click & Buy">
                 </a>
             </div>
 
@@ -46,290 +42,229 @@
                 <input type="search" class="header__search-input" id="searchInput" placeholder="Pesquisar..." required>
                 <span class="header__search-icon">🔍</span>
                 <div class="header__search-results" id="productsGrid">
-                    <!-- Os resultados da pesquisa serão exibidos aqui -->
+                    <!-- Resultados da pesquisa serão exibidos aqui -->
                 </div>
             </div>
 
-            <ul class="menu">
-
-                <li>
-                    <a class="login" href="./login.html">Login</a>
+            <ul class="header__menu">
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="./login.html">Login</a>
                 </li>
-
-                <li>
-                    <div>
-
-                        <button id="car" href="#"><i class="car fa-solid fa-cart-shopping"></i></button>
-                        <ul id="menu_car" class="menu_car">
-
-                            <li>
-                                <p class="meus_produtos" href="#home">MEUS PRODUTOS</p>
-                                <div class="carrinho">
-                                    <!-- <button onclick="limparCarrinho()">Limpar carrinho</button> -->
-                                    <ul class="listaCarrinho" id="listaCarrinho"></ul>
-                                    <div id="carrinhoVazio">
-                                        <p>Seu carrinho está vazio</p>
-                                    </div>
-                                    <p>Total: R$ <span id="total">0.00</span></p>
-                                    <button class="btn btn-success" onclick="finalizarCompra()">Finalizar
-                                        compra</button>
+                <li class="header__menu-item">
+                    <button class="header__cart-button" id="car" aria-label="Carrinho de compras">
+                        <i class="fas fa-cart-shopping"></i>
+                        <span class="header__cart-counter">0</span>
+                    </button>
+                    <ul class="header__cart-menu" id="menu_car">
+                        <li>
+                            <p class="header__cart-title">MEUS PRODUTOS</p>
+                            <div class="header__cart-content">
+                                <ul class="header__cart-list" id="listaCarrinho"></ul>
+                                <div id="carrinhoVazio">
+                                    <p>Seu carrinho está vazio</p>
                                 </div>
-                            </li>
-                            <li><a href="#about"></a></li>
-                            <li><a href="#contact"></a></li>
-                        </ul>
-                        <div class="cart-icon">
-                            <i class="fa-shopping-cart fa-2x"></i>
-                            <span class="cart-counter">0</span>
-                        </div>
-                    </div>
+                                <p>Total: R$ <span id="total">0.00</span></p>
+                                <button class="btn btn-success" onclick="finalizarCompra()">Finalizar compra</button>
+                            </div>
+                        </li>
+                    </ul>
+                   
                 </li>
             </ul>
-
         </header>
-        
-        <nav class="nav-header-plus">
-            <div class="nav-menu">
-                <ul id="nav-menu" class="nav-menu">
-                    <li id="category" class="nav-menu-item-category">
-                        <a href="#" class="category-button">
-                            Categorias <i class="fas fa-chevron-down"></i>
-                        </a>
-                        <div class="category-dropdown" id="categoryDropdown">
-                            <ul class="dropdown-list">
-                                <li><a href="#promotion"><i class="fas fa-mobile-alt"></i> Ofertas</a></li>
-                                <li><a href="#news"><i class="fas fa-tshirt"></i> Novidades</a></li>
-                                <li><a href="#product"><i class="fas fa-glasses"></i> Mais Vendidos</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a class="nav-menu-item" href="#promotion">Ofertas</a></li>
-                    <li><a class="nav-menu-item" href="#news">Novidades</a></li>
-                    <li><a class="nav-menu-item" href="#product">Mais Vendidos</a></li>
-                    <li class="nav-menu-item contato"><a href="#footer">Sobre</a></li>
-                </ul>
-            </div>
+
+        <nav class="nav">
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__menu-item nav__menu-item--category">
+                    <a href="#" class="nav__category-button">
+                        Categorias <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="nav__dropdown" id="categoryDropdown">
+                        <ul class="nav__dropdown-list">
+                            <li><a href="#promotion"><i class="fas fa-mobile-alt"></i> Ofertas</a></li>
+                            <li><a href="#news"><i class="fas fa-tshirt"></i> Novidades</a></li>
+                            <li><a href="#product"><i class="fas fa-glasses"></i> Mais Vendidos</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="nav__menu-item" href="#promotion">Ofertas</a></li>
+                <li><a class="nav__menu-item" href="#news">Novidades</a></li>
+                <li><a class="nav__menu-item" href="#product">Mais Vendidos</a></li>
+                <li><a class="nav__menu-item" href="#footer">Sobre</a></li>
+            </ul>
         </nav>
 
-
         <section class="promotion" id="promotion">
-            <div class="swiper ">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper um  ">
-                    <!-- Slides -->
-                    <div class="swiper-slide um ">
-                        <img src="./src/images/bike-branca.png" alt="bike corrida">
-                        <p>10% off na primeira compra</p>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./src/images/bike-branca.png" alt="Bike de corrida">
+                        <p class="promo-top">🎉 10% off na primeira compra 🎉</p>
                     </div>
-
-                    <div class="swiper-slide um ">
-                        <img src="./src/images/bike-crianca.png" alt="bike de criança">
-                        <p>Promoção dia das Crianças</p>
+                    <div class="swiper-slide">
+                        <img src="./src/images/bike-crianca.png" alt="Bike de criança">
+                        <p class="promo-bottom">🎈 Promoção dia das Crianças 🎈</p>
                     </div>
-
-                    <div class="swiper-slide um ">
-                        <img src="./src/images/bike-trilha.png" alt="bike de bike-trilha">
-                        <p>Aproveite as bikes em promoção de té </p>
+                    <div class="swiper-slide">
+                        <img src="./src/images/bike-trilha.png" alt="Bike de trilha">
+                        <p class="promo-overlay">⚡ Aproveite as bikes em promoção ⚡</p>
                     </div>
-
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination um"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
 
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev um"></div>
-                <div class="swiper-button-next um"></div>
+        <h2 class="news__title" id="news_title">Confira nossas novidades</h2>
 
+        <section class="news" id="news">
+
+            <div class="news__card" data-id="1">
+                <a href="product-details.html?id=1" class="news__link">
+                    <img src="./src/images/camisa-amarela.png" alt="Camisa amarela Tour de France">
+                    <span class="news__product-name">Camisa amarela do Campeonato Tour de France</span>
+                    <p class="news__product-price">R$ 99,50</p>
+                </a>
+                <button class="btn btn-success news__button" onclick="adicionarItem(this)"
+                    title="Adicionar ao carrinho">
+                    <i class="fas">Adicionar ao carrinho</i>
+                </button>
+            </div>
+
+            <div class="news__card" data-id="2">
+                <a href="product-details.html?id=2" class="news__link">
+                    <img src="./src/images/oculos.png" alt="Óculos Armor ideal para prática do ciclismo">
+                    <span class="news__product-name">Óculos Armor ideal para prática do ciclismo</span>
+                    <p class="news__product-price">R$ 220,00</p>
+                </a>
+                <button class="btn btn-success news__button" onclick="adicionarItem(this)"
+                    title="Adicionar ao carrinho">
+                    <i class="fas">Adicionar ao carrinho</i>
+                </button>
+            </div>
+
+            <div class="news__card" data-id="3">
+                <a href="product-details.html?id=3" class="news__link">
+                    <img src="./src/images/luva.png" alt="Luva Bike preta/ laranja para ciclismo meio dedo ClicleTur">
+                    <span class="news__product-name">Luva Bike preta/ laranja para ciclismo meio dedo ClicleTur</span>
+                    <p class="news__product-price">R$ 200,00</p>
+                </a>
+                <button class="btn btn-success news__button" onclick="adicionarItem(this)"
+                    title="Adicionar ao carrinho">
+                    <i class="fas">Adicionar ao carrinho</i>
+                </button>
+            </div>
+
+            <div class="news__card" data-id="4">
+                <a href="product-details.html?id=4" class="news__link">
+                    <img src="./src/images/compudador-de-bordo.png"
+                        alt="Ciclocomputador com medidor de batimentos cardiacos para ciclismo ClicleLife">
+                    <span class="news__product-name">Ciclocomputador com medidor de batimentos cardiacos para ciclismo
+                        ClicleLife</span>
+                    <p class="news__product-price">R$ 150,90</p>
+                </a>
+                <button class="btn btn-success news__button" onclick="adicionarItem(this)"
+                    title="Adicionar ao carrinho">
+                    <i class="fas">Adicionar ao carrinho</i>
+                </button>
+            </div>
+
+            <div class="news__card" data-id="5">
+                <a href="product-details.html?id=5" class="news__link">
+                    <img src="./src/images/camisa-bolinha.png"
+                        alt="Camisa de bolinha do Campeonato Tour de France melhor escalador">
+                    <span class="news__product-name">Camisa de bolinha do Campeonato Tour de France melhor
+                        escalador</span>
+                    <p class="news__product-price">R$ 99,50</p>
+                </a>
+                <button class="btn btn-success news__button" onclick="adicionarItem(this)"
+                    title="Adicionar ao carrinho">
+                    <i class="fas">Adicionar ao carrinho</i>
+                </button>
+            </div>
+
+            <div class="news__card" data-id="6">
+                <a href="product-details.html?id=6" class="news__link">
+                    <img src="./src/images/oculos.png" alt="Óculos para ciclismo">
+                    <span class="news__product-name">Óculos para ciclismo</span>
+                    <p class="news__product-price">R$ 220,00</p>
+                </a>
+                <button class="btn btn-success news__button" onclick="adicionarItem(this)"
+                    title="Adicionar ao carrinho">
+                    <i class="fas">Adicionar ao carrinho</i>
+                </button>
+            </div>
+
+            <div class="news__card" data-id="7">
+                <a href="product-details.html?id=7" class="news__link">
+                    <img src="./src/images/luva.png" alt="Luva para a pratica de ciclismo">
+                    <span class="news__product-name">Luva ciclismo</span>
+                    <p class="news__product-price">R$ 200,00</p>
+                </a>
+                <button class="btn btn-success news__button" onclick="adicionarItem(this)"
+                    title="Adicionar ao carrinho">
+                    <i class="fas">Adicionar ao carrinho</i>
+                </button>
+            </div>
+
+            <div class="news__card" data-id="8">
+                <a href="product-details.html?id=8" class="news__link">
+                    <img src="./src/images/compudador-de-bordo.png" alt="Ciclocomputador">
+                    <span class="news__product-name">Ciclocomputador</span>
+                    <p class="news__product-price">R$ 150,90</p>
+                </a>
+                <button class="btn btn-success news__button" onclick="adicionarItem(this)"
+                    title="Adicionar ao carrinho">
+                    <i class="fas">Adicionar ao carrinho</i>
+                </button>
             </div>
 
         </section>
 
-        <h2 class="news_title" id="news_title">Confira nossas novidades</h2>
-
-        <section id="news" class="news">
-            <div class="new news1" id="news1">
-                <div class="card" data-id="1">
-                    <a href="product-details.html?id=1" class="colection-news">
-                        <img src="./src/images/camisa-amarela.png" alt="camisa amarela tour de france">
-
-                        <span class="nome-produto">Camisa amarela do Campeonato Tour de France</span>
-
-                        <p id="preco" class="preco">R$ 99,50</p>
-                    </a>
-
-
-                    <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
-                        title="Adicionar ao carrinho">
-                        <i class="fas">Adicionar ao carrinho</i>
-                    </button>
-
-
+        <section class="product" id="product">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./src/images/bike-verde.png" alt="Bike verde de trilha">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/images/download (1).png" alt="Bike de BMX laranja">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/images/bike-azul.png" alt="Bike azul com cesto">
+                    </div>
                 </div>
-
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-
-
-            <div class="new news2" id="news2">
-                <div class="card" data-id="2">
-                    <a href="product-details.html?id=2" class="colection-news">
-                        <img src="./src/images/oculos.png" alt="Bike preta">
-                        <span class="nome-produto">Óculos Armor ideal para prática do ciclismo</span>
-                        <p id="preco" class="preco">R$ 220,00</p>
-                    </a>
-                    <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
-                        title="Adicionar ao carrinho">
-                        <i class="fas">Adicionar ao carrinho</i>
-                    </button>
-                </div>
-            </div>
-
-            <div class="new news3" id="news3">
-                <div class="card" data-id="3">
-                    <a href="product-details.html?id=3" class="colection-news">
-                        <img src="./src/images/luva.png" alt="Luva para a pratica de ciclismo">
-                        <span class="nome-produto">Luva Bike preta/ laranja para ciclismo meio dedo ClicleTur</span>
-                        <p id="preco" class="preco">R$ 200,00</p>
-                    </a>
-                    <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
-                        title="Adicionar ao carrinho">
-                        <i class="fas">Adicionar ao carrinho</i>
-                    </button>
-                </div>
-            </div>
-
-            <div class="new news4" id="news4">
-                <div class="card" data-id="4">
-                    <a href="product-details.html?id=4" class="colection-news">
-                        <img src="./src/images/compudador-de-bordo.png" alt="Bike preta">
-                        <span class="nome-produto">Ciclocomputador com medidor de batimentos cardiacos para ciclismo
-                            ClicleLife</span>
-                        <p id="preco" class="preco">R$ 150,90</p>
-                    </a>
-                    <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
-                        title="Adicionar ao carrinho">
-                        <i class="fas">Adicionar ao carrinho</i>
-                    </button>
-                </div>
-            </div>
-
-            <div class="new news5" id="news5">
-                <div class="card" data-id="5">
-                    <a href="product-details.html?id=5" class="colection-news">
-                        <img src="./src/images/camisa-bolinha.png" alt="camisa de bolinha tour de france">
-                        <span class="nome-produto">Camisa de bolinha do Campeonato Tour de France melhor
-                            escalador</span>
-                        <p id="preco" class="preco">R$ 99,50</p>
-                    </a>
-                    <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
-                        title="Adicionar ao carrinho">
-                        <i class="fas">Adicionar ao carrinho</i>
-                    </button>
-                </div>
-            </div>
-
-            <div class="new news6" id="news6">
-                <div class="card" data-id="6">
-                    <a href="product-details.html?id=6" class="colection-news">
-                        <img src="./src/images/oculos.png" alt="Bike preta">
-                        <span class="nome-produto">Óculos para ciclismo</span>
-                        <p id="preco" class="preco">R$ 220,00</p>
-                    </a>
-                    <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
-                        title="Adicionar ao carrinho">
-                        <i class="fas">Adicionar ao carrinho</i>
-                    </button>
-                </div>
-            </div>
-
-            <div class="new news7" id="news7">
-                <div class="card" data-id="7">
-                    <a href="product-details.html?id=7" class="colection-news">
-                        <img src="./src/images/luva.png" alt="Luva para a pratica de ciclismo">
-                        <span class="nome-produto">Luva ciclismo</span>
-                        <p id="preco" class="preco">R$ 200,00</p>
-                    </a>
-                    <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
-                        title="Adicionar ao carrinho">
-                        <i class="fas">Adicionar ao carrinho</i>
-                    </button>
-                </div>
-            </div>
-
-            <div class="new news8" id="news8">
-                <div class="card" data-id="8">
-                    <a href="product-details.html?id=8" class="colection-news">
-                        <img src="./src/images/compudador-de-bordo.png" alt="Bike preta">
-                        <span class="nome-produto">Ciclocomputador</span>
-                        <p id="preco" class="preco">R$ 150,90</p>
-                    </a>
-                    <button type="button" class="btn btn-success" onclick="adicionarItem(this)"
-                        title="Adicionar ao carrinho">
-                        <i class="fas">Adicionar ao carrinho</i>
-                    </button>
-                </div>
-            </div>
-
         </section>
-
-        <div class="product" id="product">
-            <div class="swiper dois">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper dois">
-                    <!-- Slides -->
-                    <div class="swiper-slide dois primeiro">
-                        <img src="./src/images/bike-verde.png" alt="bike verde de trilha">
-                    </div>
-                    <div class="swiper-slide dois segundo">
-                        <img src="./src/images/download (1).png" alt="bike de bmx laranja">
-                    </div>
-                    <div class="swiper-slide dois terceiro">
-                        <img src="./src/images/bike-azul.png" alt="bike azul com cesto para transporte">
-                    </div>
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination dois"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev dois"></div>
-                <div class="swiper-button-next dois"></div>
-
-                <!-- If we need scrollbar -->
-
-            </div>
-        </div>
 
         <footer class="footer" id="footer">
-
-            <div class="footer-content">
-
-                <div class="footer-brand">
-                    <a class="logo-footer" href="#header">C&B <span>-- Click & Buy -- Produtos para ciclismo,</span></a>
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a class="footer__logo" href="#header">C&B <span>-- Click & Buy -- Produtos para ciclismo</span></a>
                 </div>
-
-                <div class="social-media">
-                    <ul class="social-links">
-                        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
-                        <li><a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
-                        <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                <div class="footer__social">
+                    <ul class="footer__social-links">
+                        <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+                        <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
                     </ul>
                 </div>
-
-                <p class="copyright">&copy; 2025 Click & Buy. Todos os direitos reservados.</p>
+                <p class="footer__copyright">&copy; 2025 Click & Buy. Todos os direitos reservados.</p>
             </div>
         </footer>
-
     </main>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/4f077d5d34.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/glide-js/dist/glide.min.js"></script>
-
     <script src="./src/js/header.js"></script>
     <script src="./src/js/carrinho.js"></script>
     <script src="./src/js/carrosselswp.js"></script>
     <script src="./src/js/pesquisa.js"></script>
-
 </body>
 
 </html>

@@ -1,46 +1,65 @@
 .footer {
   margin-top: 30px;
-  background-color:#FF8C00;
+  background-color: #FF8C00;
   color: #fff;
-  height: 100;
+  padding: 20px 0; /* Substituí height: 100 por padding para melhor controle do espaçamento */
 }
 
-.footer-content {
+.footer__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
+  max-width: 1200px; /* Adicionei um limite máximo para o conteúdo */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  padding: 0 20px; /* Adiciona espaçamento interno */
 }
 
-.logo-footer{
+.footer__logo {
   font-size: 2.5rem;
   font-weight: 700;
+  color: inherit; /* Herda a cor do footer */
+  text-decoration: none; /* Remove sublinhado padrão de links */
 }
-.logo-footer span {
+
+.footer__logo:hover {
+  color: #ef3b0e;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer__logo span {
   font-size: 1rem;
   font-weight: 500;
 }
-.logo-footer a:hover{
-  color:  #ef3b0e;
-  transition: ease-in-out 0.3s;
+
+.footer__brand {
+  margin-left: 10px;
 }
 
-.footer-brand{
-    margin-left: 10px;
+.footer__social {
+  display: flex;
+  gap: 30px;
 }
 
-.footer .social-links{
-    font-size: 40px;
-    display: flex ;
-    justify-content: center;
-    gap: 30px;
+.footer__social-links {
+  display: flex;
+  gap: 30px;
+  list-style: none; /* Remove marcadores de lista */
+  padding: 0; /* Remove padding padrão */
+  margin: 0; /* Remove margem padrão */
 }
 
-.footer .social-links a:hover{
-    color: #ef3b0e;
-    transition: ease-in-out 0.3s;
-}
-.footer .copyright{
-margin: 90px 10px 40px 0px;
+.footer__social-links a {
+  color: inherit; /* Herda a cor do footer */
+  font-size: 2.5rem; /* Reduzi o tamanho para melhor proporção */
+  text-decoration: none; /* Remove sublinhado padrão de links */
 }
 
+.footer__social-links a:hover {
+  color: #ef3b0e;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer__copyright {
+  margin: 20px 0; /* Ajustei a margem para um espaçamento mais equilibrado */
+  text-align: center; /* Centraliza o texto */
+}
