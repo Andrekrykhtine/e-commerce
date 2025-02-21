@@ -5,37 +5,11 @@
     margin-right: 0 !important;
     
 }
-/* 
-.container-fluid {
-    display: grid;
-    grid: 
-    "header " 100px
-    "nav" 45px
-    "promotion" 350px
-    "newstitle " 70px
-    "news " 370px
-    "news" 370px
-    "product " 300px
-   "footer" 100px
-    / 100%;
-} */
+
 body{
     background-color: #00000004;
    
 }
-
-
-<<<<<<< HEAD
-.product{
-    grid-area: product; 
-}
-
-.footer{
-grid-area: footer;
-}
-=======
->>>>>>> 58d02730db2b05527c54027cf6ef8ab167f88bd6
-
 .empty-cart {
     display: none;
 }

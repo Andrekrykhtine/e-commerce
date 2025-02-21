@@ -45,12 +45,11 @@
 
 /* Cards dos resultados da pesquisa */
 .search__card {
-    display: flex;
     align-items: center;
     gap: 10px;
     padding: 10px;
     border-bottom: 1px solid #ddd;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Remove a borda do último card */
@@ -61,25 +60,27 @@
 /* Efeito de hover nos cards */
 .search__card:hover {
     background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao hover */
 }
 
 /* Imagem dentro do card */
 .search__card-image img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 5px;
+    display: none;
 }
 
 /* Conteúdo dentro do card */
 .search__card-content {
     flex-grow: 1;
+    min-width: 0; /* Garante que o conteúdo não ultrapasse o card */
 }
 
 /* Título dentro do card */
 .search__card-title {
     font-size: 14px;
     margin: 0;
+    white-space: nowrap; /* Evita que o título quebre em várias linhas */
+    overflow: hidden; /* Esconde o texto que ultrapassa o card */
+    text-overflow: ellipsis; /* Adiciona "..." ao texto que ultrapassa */
 }
 
 /* Preço dentro do card */
@@ -87,4 +88,20 @@
     font-size: 12px;
     color: #28a745;
     margin: 0;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .search__card-image img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .search__card-title {
+        font-size: 12px;
+    }
+
+    .search__card-price {
+        font-size: 10px;
+    }
 }

@@ -13,18 +13,12 @@
     flex-wrap: wrap;
     margin: 0px 10px 10px 10px;
     gap: 30px;
-    
- 
 }
 
 .new{
     width: min-content;
     height: 50vh;
-<<<<<<< HEAD
-    flex: auto;
-=======
-    /* width: 300px; */
->>>>>>> 58d02730db2b05527c54027cf6ef8ab167f88bd6
+     width: 300px; 
 }
 
 .card {
@@ -46,6 +40,11 @@
 .card:hover {
     transform: translateY(-0.3125rem);
 }
+.colection-news{
+    display: flex;
+    flex-direction: column;
+}
+
 
 .card .nome-produto {
     font-size: 1.2rem;
@@ -72,6 +71,7 @@
     border-radius: 10px;
     letter-spacing: 2px;
     font-size: 9px;
+    margin-bottom: 10px;
 }
 
 .nome-produto{
@@ -79,29 +79,3 @@
 }
 
 
-/* @media (max-width: 900px) {
-    .container-fluid {
-        grid:
-            "header " 100px "nav " 45px "promotion" 250px "newstitle " 70px "news " 370px "news " 370px "news " 370px "news " 370px"product " 300px "footer " 100px / 100%;
-    }
-
-    .news {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1rem;
-    }
-
-}
-
-@media (max-width: 580px) {
-    .container-fluid {
-        grid:
-            "header " 100px "nav " 45px "promotion" 250px "newstitle " 70px "news " 370px "news " 370px "news " 370px "news " 370px "news " 370px "news " 370px "news " 370px "news " 370px "product " 300px "footer " 100px / 100%;
-    }
-
-    .news {
-        grid-template-columns: repeat(8, 1fr);
-    }
-    .card{
-        max-height: none; 
-    }
-} */

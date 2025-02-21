@@ -89,15 +89,15 @@ function exibirResultados(produtosFiltrados) {
         const cardHTML = `
             
             <div class="search__card" data-id="${produto.id}">
-            <a href="product-details.html?id=${produto.id}">
-                <div class="search__card-image">
-                    <img src="${produto.imagem}" alt="${produto.nome}">
-                </div>
-                <div class="search__card-content">
-                    <h3 class="search__card-title">${produto.nome}</h3>
-                    <p class="search__card-price">R$ ${produto.preco.toFixed(2)}</p>
-                </div>
-                /a>
+                <a href="product-details.html?id=${produto.id}">
+                    <div class="search__card-image">
+                        <img src="${produto.imagem}" alt="${produto.nome}">
+                    </div>
+                    <div class="search__card-content">
+                        <h3 class="search__card-title">${produto.nome}</h3>
+                        <p class="search__card-price">R$ ${produto.preco.toFixed(2)}</p>
+                    </div>
+                </a>
             </div>
         `;
         productsGrid.innerHTML += cardHTML;
