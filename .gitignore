@@ -21,7 +21,8 @@ build/
 # OS files
 .DS_Store
 Thumbs.db
-*.json
+packege-lock.json
+packege.json
 
 # Environment variables
 .env
