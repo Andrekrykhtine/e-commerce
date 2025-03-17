@@ -99,9 +99,7 @@
       gap: 10px; /* Reduz o espaçamento entre os ícones */
   }
 
-  .news__card {
-      height: 35vh; /* Ajusta a altura dos cards de notícias */
-  }
+
 }
 
 /* Responsividade para telas menores que 900px */

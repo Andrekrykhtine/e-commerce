@@ -1,5 +1,5 @@
 /* Seção de Promoções */
-.promotion {
+.promotion, .product {
   width: 100%;
   height: 100%;
   padding: 20px 0; /* Adicionado para espaçamento interno */
@@ -8,7 +8,7 @@
 /* Container do Swiper */
 .swiper {
   width: 90%;
-  height: 100%;
+  height: 60vh;
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adicionado sombra para destaque */
