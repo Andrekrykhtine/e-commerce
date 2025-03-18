@@ -31,34 +31,23 @@ const produtos = [
     },
     {
         id: 6,
-        nome: "Óculos para ciclismo",
-        preco: 220.00,
+        nome: "Squeeze de 1L MonsBike",
+        preco: 90.00,
         imagem: "./src/images/oculos.png"
     },
     {
         id: 7,
-        nome: "Luva ciclismo",
-        preco: 200.00,
+        nome: "Capacete para ciclismo",
+        preco: 150.00,
         imagem: "./src/images/luva.png"
     },
     {
         id: 8,
-        nome: "Ciclocomputador",
-        preco: 150.90,
+        nome: "Sapatilha para ciclismo",
+        preco: 111.99,
         imagem: "./src/images/compudador-de-bordo.png"
     },
-    {
-        id: 9,
-        nome: "Luva ciclismo",
-        preco: 200.00,
-        imagem: "./src/images/luva.png"
-    },
-    {
-        id: 10,
-        nome: "Ciclocomputador",
-        preco: 150.90,
-        imagem: "./src/images/compudador-de-bordo.png"
-    }
+   
 ];
 
 function filtrarProdutos(termo) {
