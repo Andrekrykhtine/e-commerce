@@ -1,65 +1,66 @@
+@import url("./variables.css");
 .footer {
-  margin-top: 30px;
-  background-color: #FF8C00;
-  color: #fff;
-  padding: 20px 0; /* Substituí height: 100 por padding para melhor controle do espaçamento */
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  margin-top: var(--spacing-large);
+  padding: var(--spacing-medium) 0;
 }
 
 .footer__content {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  max-width: 1200px; /* Adicionei um limite máximo para o conteúdo */
-  margin: 0 auto; /* Centraliza o conteúdo */
-  padding: 0 20px; /* Adiciona espaçamento interno */
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 var(--spacing-medium);
 }
 
 .footer__logo {
-  font-size: 2.5rem;
+  color: inherit;
+  font-size: var(--font-size-large);
   font-weight: 700;
-  color: inherit; /* Herda a cor do footer */
-  text-decoration: none; /* Remove sublinhado padrão de links */
+  text-decoration: none;
+  cursor: var(--cursor-pointer);
 }
 
 .footer__logo:hover {
-  color: #ef3b0e;
-  transition: color 0.3s ease-in-out;
+  color: var( --accent-color);
+  transition: color var(--transition-speed);
 }
 
 .footer__logo span {
-  font-size: 1rem;
+  font-size: var(--font-size-medium);
   font-weight: 500;
 }
 
 .footer__brand {
-  margin-left: 10px;
+  margin-left: var(--spacing-small);
 }
 
 .footer__social {
   display: flex;
-  gap: 30px;
+  gap: var(--spacing-large);
 }
 
 .footer__social-links {
   display: flex;
-  gap: 30px;
-  list-style: none; /* Remove marcadores de lista */
-  padding: 0; /* Remove padding padrão */
-  margin: 0; /* Remove margem padrão */
+  gap: var(--spacing-large);
+  list-style: none;
 }
 
 .footer__social-links a {
-  color: inherit; /* Herda a cor do footer */
-  font-size: 2.5rem; /* Reduzi o tamanho para melhor proporção */
-  text-decoration: none; /* Remove sublinhado padrão de links */
+  color: inherit;
+  font-size: var(--font-size-large);
+  text-decoration: none;
+  cursor: var(--cursor-pointer)
 }
 
 .footer__social-links a:hover {
-  color: #ef3b0e;
-  transition: color 0.3s ease-in-out;
+  color: var( --accent-color);
+  transition: color var(--transition-speed);
 }
 
 .footer__copyright {
-  margin: 20px 0; /* Ajustei a margem para um espaçamento mais equilibrado */
-  text-align: center; /* Centraliza o texto */
+  margin: var(--spacing-medium) 0;
+  text-align: center;
 }

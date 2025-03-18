@@ -14,39 +14,40 @@
 </head>
 
 <body>
-    <main>
-        <section id="login">
-            <div id="formulario">
-                <h1>Login</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <main class="main">
+        <section class="login">
+            <div class="form">
+                <h1 class="form__title">Login</h1>
+                <p class="form__description">Entre para acessar sua conta</p>
 
-                <form action="" method="post">
-                    <div class="campo">
+                <form class="form__content" action="" method="post">
+                    <div class="form__field">
                         <i class="person material-symbols-outlined">person</i>
-                        <input class="email" type="email" name="email" id="iemail" required placeholder="seu email">
-                        <label for="iemail">Login</label>
+                        <input class="form__input form__input--email" type="email" name="email" id="iemail" required placeholder="Login">
+                        <label class="form__label" for="iemail"></label>
                     </div>
 
-                    <div class="campo">
+                    <div class="form__field">
                         <i class="key material-symbols-outlined">vpn_key</i>
-                        <input class="senha" type="password" name="senha" id="isenha" required placeholder="sua senha">
-                        <label for="isenha">Senha</label>
+                        <input class="form__input form__input--password" type="password" name="senha" id="isenha" required placeholder="Senha">
+                        <label class="form__label" for="isenha"></label>
                     </div>
 
+                    <input class="form__submit" type="submit" value="Enter">
 
-                    <input id="submit" type="submit" value="Entrar">
-                    <div class="campo esqueci">
+                    <div class="form__forgot-password">
                         <button class="btn">
-                            <i class="carta material-symbols-outlined">mail</i>
+                            <i class="btn__icon material-symbols-outlined">mail</i>
                             Esqueci a senha
                         </button>
                     </div>
                 </form>
 
-                <p>Não tem cadastro?<a href="#">cadastre-se</a></p>
+                <p class="form__signup-text">Não tem cadastro? <a href="#" class="form__signup-link">cadastre-se</a></p>
 
-                <p>Ao continuar com o acesso, você concorda com a nossa <a href="#">política de privacidade</a></p>
-
+                <p class="form__privacy-policy">
+                    Ao continuar com o acesso, você concorda com a nossa <a href="#" class="form__privacy-link">política de privacidade</a>.
+                </p>
             </div>
         </section>
     </main>

@@ -80,7 +80,7 @@ function exibirResultados(produtosFiltrados) {
 
     // Se não houver produtos correspondentes, exibe uma mensagem
     if (produtosFiltrados.length === 0) {
-        productsGrid.innerHTML = "<p>Nenhum produto encontrado.</p>";
+        productsGrid.innerHTML = "<p class='no-products'>Nenhum produto encontrado.</p>";
         return;
     }
 

@@ -1,33 +1,37 @@
-html{
-    font-size: 62.5%;
-    background-color:#000000e2;
-  }
-  
-  *{
-      margin: 0;
-      padding: 0;
-      text-decoration: none;
-      font-family: "Roboto", sans-serif;
-      box-sizing: border-box;
-      font-weight: 300;
-      caret-color: transparent;
-  }
-ul, li{
-    list-style: none;
-}  
+@import url("./variables.css");
+
+html {
+  background-color: var(--background-dark);
+  font-size: var(--font-size-base);
+}
+
+* {
+  box-sizing: var(--box-sizing);
+  caret-color: transparent;
+  font-weight: var(--font-weight-light);
+  margin: var(--spacing-none);
+  padding: var(--spacing-none);
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
 
 button {
-    all: unset; /* Remove todas as propriedades padrão */
-    display: inline-block; /* Garante que o botão seja exibido corretamente */
-    cursor: pointer; /* Adiciona o cursor de "mão" */
+  all: unset;
+  cursor: var(--cursor-pointer);
+  display: var(--display-inline-block);
 }
 
-a{
-    all: unset;
-    text-decoration: none;
-    color: inherit;
+a {
+  all: unset;
+  color: inherit;
+  text-decoration: none;
 }
+
 a:hover {
-    color: #ef3b0e;
-    text-decoration: none;
+  color: var(--text-hover);
+  text-decoration: none;
 }

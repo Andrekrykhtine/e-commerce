@@ -1,110 +1,122 @@
-/* Responsividade para telas menores que 400px */
+@import url("./variables.css");
+
 @media screen and (max-width: 400px) {
   .swiper {
-      width: 100%; /* Ocupa toda a largura da tela */
+    width: var(--width-full);
   }
 
   .swiper img {
-      width: 80%; /* Reduz o tamanho das imagens */
+    width: var(--width-80);
   }
 
   .header__search {
-      width: 25%; /* Reduz a largura do campo de pesquisa */
-      height: 30px; /* Ajusta a altura */
+    height: var(--height-small);
+    width: var(--width-25);
   }
 
   .header__search-input {
-      display: none; /* Oculta o campo de pesquisa */
+    display: var(--display-none);
   }
 
   .category-button {
-      display: block; /* Exibe o botão de categorias */
+    display: var(--display-block);
   }
 
   .nav__menu-item {
-      display: none; /* Oculta os itens do menu */
+    display: var(--display-none);
   }
 
   .nav__menu-item.contato {
-      display: block; /* Exibe apenas o item "Contato" */
+    display: var(--display-block);
   }
 
   .header__logo img {
-      width: 68px;
-      height: 68px; /* Ajusta o tamanho do logo */
+    height: 68px;
+    width: 68px;
   }
 
   .header__cart-button {
-      margin-left: 10px; /* Ajusta a margem do ícone do carrinho */
+    margin-left: var(--margin-left-small);
   }
 
   .header__cart-counter {
-      right: -30px; /* Ajusta a posição do contador do carrinho */
+    right: var(--margin-right-small);
   }
 }
 
-/* Responsividade para telas menores que 600px */
 @media screen and (max-width: 600px) {
   .header {
-      flex-direction: column; /* Altera o layout do header para coluna */
-      align-items: center; /* Centraliza os itens */
+    align-items: center;
+    flex-direction: var(--flex-direction-column);
+  }
+  .header__menu{
+    margin-top: var(--margin-bottom-small);
   }
 
-  .category-button {
-      display: block; /* Exibe o botão de categorias */
+  .nav__menu-item.hide {
+    display: var(--display-none);
   }
 
-  .nav__menu-item {
-      display: none; /* Oculta os itens do menu */
+  .nav__category-button{
+    display: var(--display-block);
   }
 
-  .nav__menu-item.contato {
-      display: block; /* Exibe apenas o item "Contato" */
-  }
+
 
   .header__search-results {
-      width: 100%; /* Ocupa toda a largura da tela */
+    width: var(--width-full);
   }
 
   .header__search-input {
-      width: 100%; /* Ocupa toda a largura disponível */
+    width: var(--width-full);
   }
 
   .header__search {
-      width: 80%; /* Reduz a largura do campo de pesquisa */
-      margin-bottom: 10px; /* Adiciona margem inferior */
+    margin-bottom: var(--spacing-small);
+    width: var(--width-80);
   }
 
   .header__logo img {
-      margin-bottom: 10px; /* Adiciona margem inferior */
+    margin-bottom: var(--spacing-small);
   }
 
   .header__cart-button {
-      margin-left: 10px; /* Ajusta a margem do ícone do carrinho */
-  }
-
-  .header__cart-counter {
-      right: -30px; /* Ajusta a posição do contador do carrinho */
+    margin-left: var(--margin-left-small);
   }
 
   .swiper img {
-      width: 80%; /* Reduz o tamanho das imagens */
+    width: var(--width-80);
   }
 }
 
-/* Responsividade para telas menores que 700px */
 @media screen and (max-width: 700px) {
-  .footer__social-links {
-      font-size: 25px; /* Reduz o tamanho dos ícones */
-      gap: 10px; /* Reduz o espaçamento entre os ícones */
+  .footer__content {
+    flex-direction: var(--flex-direction-column);
+ 
   }
 
+  .footer__social-links {
+    font-size: var(--font-size-large);
+    gap: var(--gap-small);
+    margin-top: var(--margin-bottom-medium);
 
+  }
 }
 
-/* Responsividade para telas menores que 900px */
+@media (max-width: 768px) {
+  .swiper-slide p {
+    font-size: var(--font-size-large);
+    padding: var(--spacing-tiny) var(--spacing-small);
+  }
+
+  .swiper-slide p.promo-overlay {
+    font-size: var(--font-size-extra-large);
+  }
+}
+
+
 @media screen and (max-width: 900px) {
   .swiper {
-      width: 90%; /* Reduz a largura do Swiper */
+    width: var(--width-90);
   }
 }

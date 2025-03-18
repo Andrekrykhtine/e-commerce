@@ -41,39 +41,26 @@ function loadProductDetails() {
         },
         {
             id: 6,
-            nome: "Óculos para ciclismo",
-            preco: 220.00,
-            imagem: "./src/images/oculos.png",
-            descricao: "Óculos aerodinâmicos projetados para proteger contra vento, poeira e raios UV durante o ciclismo."
+            nome: "Squeeze de 1L MonsBike",
+            preco: 90.00,
+            imagem: "./src/images/squeeze.png",
+            descricao: "Garrafa Bike Squeeze Bike Caramanhola Big 1L Ciclismo. Livre de BPA, boca larga que facilita a limpeza."
         },
         {
             id: 7,
-            nome: "Luva ciclismo",
-            preco: 200.00,
-            imagem: "./src/images/luva.png",
-            descricao: "Luvas de ciclismo com acolchoamento estratégico para maior conforto e controle ao pedalar."
+            nome: "Capacete de ciclismo",
+            preco: 150.00,
+            imagem: "./src/images/capacete.png",
+            descricao: "O acessório necessário para suas atividades. Esse capacete lhe dará comodidade e segurança para que você possa aproveitar as atividades que você mais gosta sem preocupações"
         },
         {
             id: 8,
-            nome: "Ciclocomputador",
-            preco: 150.90,
-            imagem: "./src/images/compudador-de-bordo.png",
-            descricao: "Ciclocomputador compacto que registra métricas essenciais para monitorar seu desempenho."
+            nome: "Sapatilha para ciclismo",
+            preco: 111.99,
+            imagem: "./src/images/sapatilha.png",
+            descricao: " Ideal para longas pedaladas devido ao seu design e materiais.As perfurações e malha respirável ajudam a manter os pés frescos."
         },
-        {
-            id: 9,
-            nome: "Luva ciclismo",
-            preco: 200.00,
-            imagem: "./src/images/luva.png",
-            descricao: "Luvas leves e respiráveis, projetadas para manter suas mãos protegidas durante longas pedaladas."
-        },
-        {
-            id: 10,
-            nome: "Ciclocomputador",
-            preco: 150.90,
-            imagem: "./src/images/compudador-de-bordo.png",
-            descricao: "Ferramenta prática para medir velocidade, distância e tempo, ajudando a otimizar seus treinos."
-        }
+        
     ];
 
     const produto = produtos.find(p => p.id == productId);
