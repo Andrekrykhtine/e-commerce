@@ -176,6 +176,7 @@
   color: var(--text-light);
   font-size: 1.5rem;
   margin-right: var(--spacing-medium);
+  cursor: var(--cursor-pointer);
 }
 .nav__menu-link {
   font-weight: 500;
