@@ -5,30 +5,33 @@
         <h2> 2. Estrutura do Projeto</h2>
         <p>A estrutura do projeto é organizada da seguinte forma:</p>
         <pre>
-/projeto
-│
-├── /src
-│   ├── /css
-│   │   ├── reset.css
-│   │   ├── globais.css
-│   │   ├── header.css
-│   │   ├── product-details.css
-│   │   ├── footer.css
-│   │   ├── responsive.css
-│   ├── /images
-│   │   ├── camisa-amarela.png
-│   │   ├── oculos.png
-│   │   ├── luva.png
-│   │   ├── compudador-de-bordo.png
-│   │   ├── camisa-bolinha.png
-│   │   ├── logofundo.png
-│   │   ├── shop-solid.svg
-│   ├── /js
-│   │   ├── carrinho.js
-│   │   ├── product-details.js
-│
-├── index.html
-├── product-details.html
+e-commerce/
+├── index.html                  # Main HTML file for the homepage
+├── login.html                  # HTML file for the login page (inferred from header.html)
+├── product-details.html        # HTML file for product details page (inferred from search.js)
+├── src/
+│   ├── css/                    # CSS Stylesheets
+│   │   ├── header.css          # Styles for the header section
+│   │   ├── news.css            # Styles for the news/products section
+│   │   ├── footer.css          # Styles for the footer section
+│   │   ├── product.css         # Styles for product display sections
+│   │   ├── promotion.css       # Styles for promotional sections
+│   │   ├── search.css          # Styles for search results
+│   │   ├── responsive.css      # Media queries for responsive design
+│   │   ├── reset.css           # CSS reset for consistent styling
+│   │   ├── globais.css         # Global styles and variables
+│   │   ├── variables.css       # CSS variables for theming
+│   │   └── login.css           # Styles for the login page
+│   ├── images/                 # Image Assets
+│   │  
+│   └── js/                     # JavaScript Files
+│       ├── header.js           # JavaScript for header interactions
+│       ├── carrinho.js         # JavaScript for cart functionality
+│       ├── carousel.js         # JavaScript for the image carousel
+│       └── search.js           # JavaScript for search functionality
+├── package.json                # (Likely) Project metadata and dependencies (not provided, but standard)
+└── README.md                   # (Likely) Project description and instructions (not provided, but standard)
+
         </pre>
         <h2>3. Funcionalidades</h2>
         <ul>
@@ -215,6 +218,7 @@ git commit -m "Adicionando nova funcionalidade"</code></pre>
         <p>
             Este projeto é uma demonstração de como criar uma loja online simples com funcionalidades básicas de carrinho de compras. Ele pode ser expandido com novas funcionalidades, como integração com um backend, autenticação de usuários e pagamento online.
         </p>
+        <p> Um projeto realizado por Andre Krykhtine (https://github.com/Andrekrykhtine) e Álvaro Alves (https://github.com/alvaro-asouza). </p>
         <p>
             Se tiver dúvidas ou sugestões, sinta-se à vontade para entrar em contato! 😊
         </p>
