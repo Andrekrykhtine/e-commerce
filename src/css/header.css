@@ -73,7 +73,7 @@
   border: none;
   color: var(--text-color);
   cursor: pointer;
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size-large);
   margin: var(--spacing-none) var(--spacing-extra-large);
   position: relative;
 }
