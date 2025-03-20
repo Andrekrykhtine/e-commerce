@@ -32,7 +32,8 @@ e-commerce/
 ├── package.json                # (Likely) Project metadata and dependencies (not provided, but standard)
 └── README.md                   # (Likely) Project description and instructions (not provided, but standard)
 
-        </pre>
+        
+</pre>
         <h2>3. Funcionalidades</h2>
         <ul>
             <li><strong>Listagem de Produtos</strong>:
