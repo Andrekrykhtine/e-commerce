@@ -129,7 +129,20 @@ e-commerce/
                 </ul>
             </li>
         </ul>
-        <h2>7. Explicação das Funções</h2>
+         <h2>7. Capturas de Tela</h2>
+        <p>
+            Aqui estão algumas capturas de tela do projeto para que você possa ter uma ideia de como ele se parece:
+        </p>
+        <div class="screenshot-section">
+            <div class="screenshot-container">
+            <p>Página inicial:</p>
+                <img src="./src/images/click&buy.gif" alt="Captura de Tela  - Página Inicial" class="screenshot">
+                <p>Página inicial mobile</p>
+                <img src="./src/images/click&buymobile.gif" alt="Captura de Tela  - Página inicial para celulares" class="screenshot">
+                <p>Funcionamento da página</p>
+                <img src="./src/images/click&buydetalhes.gif" alt="Captura de Tela  - Funcionamento da página" class="screenshot">
+            </div>
+        <h2>8. Explicação das Funções</h2>
         <h3>Funções Principais em <code>carrinho.js</code></h3>
         <ul>
             <li><strong><code>carregarCarrinho()</code></strong>:
@@ -169,7 +182,7 @@ e-commerce/
                 </ul>
             </li>
         </ul>
-        <h2>8. Como Contribuir</h2>
+        <h2>9. Como Contribuir</h2>
         <p>Se você deseja contribuir para o projeto, siga os passos abaixo:</p>
         <ol>
             <li><strong>Faça um fork do repositório</strong>:
@@ -197,7 +210,7 @@ git commit -m "Adicionando nova funcionalidade"</code></pre>
                 </ul>
             </li>
         </ol>
-        <h2>9. Exemplo de Uso</h2>
+        <h2>10. Exemplo de Uso</h2>
         <h3>Adicionar um Produto ao Carrinho</h3>
         <ol>
             <li>Na página inicial, clique no botão "Adicionar ao carrinho" de um produto.</li>
@@ -215,7 +228,7 @@ git commit -m "Adicionando nova funcionalidade"</code></pre>
             <li>Clique em "Finalizar compra".</li>
             <li>Um alerta será exibido com o total da compra, e o carrinho será limpo.</li>
         </ol>
-        <h2>10. Considerações Finais</h2>
+        <h2>11. Considerações Finais</h2>
         <p>
             Este projeto é uma demonstração de como criar uma loja online simples com funcionalidades básicas de carrinho de compras. Ele pode ser expandido com novas funcionalidades, como integração com um backend, autenticação de usuários e pagamento online.
         </p>
