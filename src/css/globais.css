@@ -1,0 +1,14 @@
+@import url("./variables.css");
+.container-fluid {
+    margin: var(--spacing-none);
+    padding: var(--spacing-none);
+  }
+  
+  body {
+    background-color: var(--background-light);
+    font-family: var(--font-family);
+  }
+  
+  .empty-cart {
+    display: var(--display-none);
+  }

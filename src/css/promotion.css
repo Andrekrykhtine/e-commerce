@@ -1,0 +1,60 @@
+@import url("./variables.css");
+
+/* Seção de Promoções */
+.promotion,
+.product {
+  height: 100%;
+  padding: var(--spacing-large) var(--spacing-none);
+  width: 100%;
+}
+
+/* Container do Swiper */
+.swiper {
+  background-color: var(--background-card);
+  border-radius: var(--border-radius-medium);
+  box-shadow: var(--box-shadow-light);
+  height: 60vh;
+  width: 90%;
+}
+
+/* Slides do Swiper */
+.swiper-slide {
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: var(--border-radius-medium);
+  display: var(--display-flex);
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+/* Imagens dentro dos slides */
+.swiper-slide img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  padding: var(--spacing-extra-large);
+}
+
+/* Responsividade */
+
+
+/* Botões de navegação (próximo e anterior) */
+.swiper-button-next,
+.swiper-button-prev {
+  --swiper-navigation-color: var(--primary-color);
+  --swiper-navigation-size: var(--spacing-extra-large);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: var(--border-radius-circle);
+  box-shadow: var(--box-shadow-light);
+  padding: var(--spacing-small);
+}
+
+/* Paginação (bullets) */
+.swiper-pagination {
+  --swiper-pagination-bullet-active-color: var(--primary-color);
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+  --swiper-pagination-bullet-size: var(--spacing-small);
+  --swiper-pagination-color: var(--primary-color);
+}

@@ -1,0 +1,134 @@
+@import url("./variables.css");
+
+/* Container do campo de pesquisa */
+.header__search {
+  flex-grow: 1;
+  margin: var(--spacing-none) var(--spacing-large);
+  max-width: 600px;
+  position: relative;
+  background-color: var(--text-light);
+}
+
+/* Campo de entrada de texto */
+.header__search-input {
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius-large);
+  font-size: var(--font-size-large);
+  outline: none;
+  padding: var(--spacing-small) var(--spacing-extra-large) var(--spacing-small) var(--spacing-medium);
+  transition: border-color var(--transition-speed);
+  width: 100%;
+}
+
+.header__search-input:focus {
+  border-color: var(--primary-color);
+}
+
+/* Ícone de pesquisa */
+.header__search-icon {
+  color: var(--text-gray);
+  cursor: pointer;
+  font-size: var(--font-size-extra-large);
+  pointer-events: none;
+  position: absolute;
+  right: var(--spacing-medium);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Resultados da pesquisa */
+.header__search-results {
+  background-color: var(--background-card);
+  border-radius: var(--border-radius-medium);
+  box-shadow: var(--box-shadow-light);
+  margin-top: var(--spacing-tiny);
+  max-height: 300px;
+  overflow-y: auto;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  z-index: 10
+}
+
+.no-products{
+  padding: var(--spacing-medium) ;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-small);
+}
+/* Cards dos resultados da pesquisa */
+.search__card {
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  display: var(--display-flex);
+  gap: var(--spacing-small);
+  padding: var(--spacing-small);
+  transition: background-color var(--transition-speed);
+}
+
+.search__card:last-child {
+  border-bottom: none;
+}
+
+.search__card:hover {
+  background-color: #f9f9f9;
+}
+
+/* Imagem dentro do card */
+.search__card-image img {
+  display: none;
+}
+
+/* Conteúdo dentro do card */
+.search__card-content {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+/* Título dentro do card */
+.search__card-title {
+  color: var(--text-dark);
+  font-size: var(--font-size-medium);
+  margin: var(--spacing-none);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Preço dentro do card */
+.search__card-price {
+  color: var(--success-color);
+  font-size: var(--font-size-small);
+  font-weight: 500;
+  margin: var(--spacing-none);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .header__search {
+    margin: var(--spacing-none) var(--spacing-medium);
+  }
+
+  .header__search-input {
+    font-size: var(--font-size-medium);
+    padding: var(--spacing-tiny) 35px var(--spacing-tiny) var(--spacing-small);
+  }
+
+  .header__search-icon {
+    font-size: 18px;
+    right: var(--spacing-small);
+  }
+
+  .search__card-image img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .search__card-title {
+    font-size: var(--font-size-small);
+  }
+
+  .search__card-price {
+    font-size: 10px;
+  }
+}

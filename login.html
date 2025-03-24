@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/css/login.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="./src/images/shop-solid.svg" type="">
+    <title>Login</title>
+</head>
+
+<body>
+    <main class="main">
+        <section class="login">
+            <div class="form">
+                <h1 class="form__title">Login</h1>
+                <p class="form__description">Entre para acessar sua conta</p>
+
+                <form class="form__content" action="" method="post">
+                    <div class="form__field">
+                        <i class="person material-symbols-outlined">person</i>
+                        <input class="form__input form__input--email" type="email" name="email" id="iemail" required placeholder="Login">
+                        <label class="form__label" for="iemail"></label>
+                    </div>
+
+                    <div class="form__field">
+                        <i class="key material-symbols-outlined">vpn_key</i>
+                        <input class="form__input form__input--password" type="password" name="senha" id="isenha" required placeholder="Senha">
+                        <label class="form__label" for="isenha"></label>
+                    </div>
+
+                    <input class="form__submit" type="submit" value="Enter">
+
+                    <div class="form__forgot-password">
+                        <button class="btn">
+                            <i class="btn__icon material-symbols-outlined">mail</i>
+                            Esqueci a senha
+                        </button>
+                    </div>
+                </form>
+
+                <p class="form__signup-text">Não tem cadastro? <a href="#" class="form__signup-link">cadastre-se</a></p>
+
+                <p class="form__privacy-policy">
+                    Ao continuar com o acesso, você concorda com a nossa <a href="#" class="form__privacy-link">política de privacidade</a>.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

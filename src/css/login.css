@@ -1,0 +1,156 @@
+@import url("./variables.css");
+
+/* Reset geral */
+* {
+  margin: var(--spacing-none);
+  padding: var(--spacing-none);
+}
+
+/* Configuração global */
+html body {
+  background-color: var(--background-light);
+  font-family: var(--font-family);
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background-image: var(--background-gradient);
+}
+
+/* Main container */
+.main {
+  align-items: center;
+  display: var(--display-flex);
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+}
+
+/* Login section */
+.login {
+  align-items: center;
+  background: var(--primary-color);
+  border-radius: var(--border-radius-large);
+  display: var(--display-flex);
+  justify-content: center;
+  text-align: center;
+  width: 500px;
+}
+
+/* Form container */
+.form {
+  flex-direction: var(--flex-direction-column);
+}
+
+/* Form title */
+.form__title {
+  font-size: var(--font-size-extra-large);
+  margin-bottom: var(--spacing-medium);
+}
+
+/* Form description */
+.form__description {
+  font-size: var(--font-size-medium);
+  margin-bottom: var(--spacing-large);
+}
+
+/* Form fields */
+.form__field {
+  margin: var(--margin-small);
+  position: relative;
+}
+
+/* Form icons */
+.form__icon {
+  font-size: var(--font-size-extra-large);
+  position: absolute;
+  color: var(--text-light);
+}
+
+/* Form inputs */
+.form__input {
+  border: 0.8px solid var(--border-color);
+  border-radius: var(--border-radius-small);
+  height: var(--height-small);
+  width: var(--width-40);
+  padding-left: var(--spacing-large); /* Espaço para o ícone */
+}
+
+/* Submit button */
+.form__submit {
+  align-items: center;
+  background-color: var(--text-light);
+  border: none;
+  border-radius: var(--border-radius-small);
+  color: var(--secondary-color);
+  cursor: var(--cursor-pointer);
+  display: var(--display-flex);
+  font-size: var(--font-size-small);
+  height: var(--height-small);
+  justify-content: center;
+  margin: auto;
+  margin-top: var(--margin-medium);
+  width: var(--width-40);
+}
+
+.form__submit:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-light);
+}
+
+/* Forgot password */
+.form__forgot-password {
+  display: var(--display-flex);
+  justify-content: center;
+}
+
+/* Custom button */
+.btn {
+  align-items: center;
+  color: var(--secondary-color);
+  cursor: var(--cursor-pointer);
+  display: var(--display-flex);
+  font-size: var(--font-size-small);
+  gap: var(--gap-small);
+  margin: var(--spacing-small);
+  padding: var(--padding-small) var(--padding-medium);
+  border-radius: var(--border-radius-small);
+}
+
+.btn__icon {
+  font-size: var(--font-size-xxl);
+}
+
+/* Signup text */
+.form__signup-text {
+  font-size: var(--font-size-small);
+  margin-top: var(--spacing-medium);
+}
+
+.form__signup-link {
+  color: var( --text-light);
+  text-decoration: none;
+}
+
+.form__signup-link:hover {
+  text-decoration: underline;
+}
+
+/* Privacy policy */
+.form__privacy-policy {
+  font-size: var(--font-size-small);
+  margin-top: var( --spacing-small);
+  margin-bottom: var(--margin-medium);
+}
+
+.form__privacy-link {
+  color: var( --text-light);
+  text-decoration: none;
+
+}
+
+.form__privacy-link:hover {
+  text-decoration: underline;
+}
